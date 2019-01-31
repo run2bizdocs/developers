@@ -1,33 +1,33 @@
-title: Alterar SLA via script Rhino
-Description: Permite alterar SLA via script rhino
-# Alterar SLA via script Rhino
+title: Change SLA via Rhino script
+Description: It allows to change the SLA via rhino script
+# Change SLA via Rhino script
 
-Esta funcionalidade tem por objetivo alterar o SLA através de script Rhino.
+This functionality is intended to change the SLA through Rhino script.
 
-Procedimento
+Procedure
 ------------
 
-1. Acessar a funcionalidade através da navegação no menu principal Sistema \>
-    Processamento Batch;
+1. Access the main menu System \>
+    Batch Processing;
 
-2. Clicar no botão "Novo";
+2. Click on "New";
 
-3. Preencher os campos disponibilizados, sendo:
+3. Complete the fields available, being:
 
-    - tipo: RhinoScript;
+    - type: RhinoScript;
     
 
-    !!! Abstract "NOTA"
+    !!! Abstract "NOTE"
 
-        Expressão cron: define o horário de execução da rotina e o conteúdo da
-        rotina, onde será descrito o contexto da rotina a ser executada na ferramenta.
+        Cron expression: it defines the routine execution time and its content,
+        where it'll be described the context of the routine that will be executed in the tool.
 
-    - conteúdo: ver script na próxima seção.
+    - content: see script in the next section.
 
 
-4. Clicar em "Gravar".
+4. Click on "Save".
 
-Script Rhino
+Rhino Script
 ------------
 
 ```java
