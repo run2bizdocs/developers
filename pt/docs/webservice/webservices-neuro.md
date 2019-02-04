@@ -39,8 +39,8 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 ####Inclusão de objeto de negócio
 
 -   **HTTP verb**: POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
--   **Body:** JSON contendo os atributos do registro do objeto de negócio a ser incluído
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
+-   **Body**: JSON contendo os atributos do registro do objeto de negócio a ser incluído
 
 ![](../img/9182.png)
 
@@ -49,8 +49,8 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 ####Alteração de objeto de negócio
 
 -   **HTTP verb**: POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name} /update.json
--   **Body:** JSON contendo os atributosdo registro do objeto de negócio a ser alterado
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name} /update.json
+-   **Body**: JSON contendo os atributosdo registro do objeto de negócio a ser alterado
 
 ![](../img/9183.png)
 
@@ -58,9 +58,9 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ####Exclusão de objeto de negócio
 
--   **HTTP verb: **POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/remove.json
--   **Body: **JSON contendo a chave primária do registro do objeto de negócio a ser excluído
+-   **HTTP verb**: POST
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/remove.json
+-   **Body**: JSON contendo a chave primária do registro do objeto de negócio a ser excluído
 
 ![](../img/9184.png)
 
@@ -68,8 +68,8 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ####Listagem de objetos de negócio
 
--   **HTTP verb:** GET
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
+-   **HTTP verb**: GET
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
 
 ![](../img/9185.png)
 
@@ -77,9 +77,9 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ####Recuperação de objeto de negócio pela chave primária
 
--   **HTTP verb: **POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/restore.json
--   **Body:** JSON contendo:
+-   **HTTP verb**: POST
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/restore.json
+-   **Body**: JSON contendo:
     -   A chave primária do registro do objeto de negócio a ser excluído
     -   Atributo boolean findManyToOne, indicando se o sistema deve recuperar os relacionamentos muitos para um do objeto
     -   Atributo boolean findOneToMany, indicando se o sistema deve recuperar os relacionamentos um para muitos do objeto
@@ -91,8 +91,8 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ####Recuperação da estrutura do objeto de negócio
 
--   **HTTP verb: **GET
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/getStructure.json
+-   **HTTP verb**: GET
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/getStructure.json
 
 ![](../img/9187.png)
 
@@ -101,8 +101,8 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 ####SQL Execution of the Business Object
 
 -   **HTTP verb**: POST
--   **URL:** / cit-esi-web / rest / dynamic / {application name} / {business object name} /list.son
--   **Body:** JSON contendo:
+-   **URL**: / cit-esi-web / rest / dynamic / {application name} / {business object name} /list.son
+-   **Body**: JSON contendo:
     -   Atributo SQLName com o nome do SQL a ser executado
     -   Atributo JSON dynamicModel contendo os valores dos parâmetros esperados no SQL
     -   Atributo boolean findManyToOne (opcional), indicando se o sistema deve recuperar os relacionamentos muitos para um do objeto
