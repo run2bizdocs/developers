@@ -62,9 +62,9 @@ Following are examples using the hotel business object of the hotels application
 
 ####Business Object Deletion
 
--   **HTTP verb: **POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/remove.json
--   **Body: **JSON containing the primary key of the business object record to be deleted
+-   **HTTP verb**: POST
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/remove.json
+-   **Body**: JSON containing the primary key of the business object record to be deleted
 
 ![](../img/9184.png)
 
@@ -72,8 +72,8 @@ Following are examples using the hotel business object of the hotels application
 
 ####Listing of business objects
 
--   **HTTP verb:** GET
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
+-   **HTTP verb**: GET
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}.json
 
 ![](../img/9185.png)
 
@@ -81,9 +81,9 @@ Following are examples using the hotel business object of the hotels application
 
 #### Business object recovery by primary key
 
--   **HTTP verb: **POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/restore.json
--   **Body:** JSON containing:
+-   **HTTP verb**: POST
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/restore.json
+-   **Body**: JSON containing:
     -   The primary key of the business object record to be deleted
     -   Attribute boolean findManyToOne, indicating whether the system should retrieve many relationships for one of the object
     -   Boolean findOneToMany attribute, indicating whether the system should retrieve one-to-many relationships from the object
@@ -94,8 +94,8 @@ Following are examples using the hotel business object of the hotels application
 
 #### Retrieving the structure of the business object
 
--   **HTTP verb: **GET
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name}/getStructure.json
+-   **HTTP verb**: GET
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name}/getStructure.json
 
 ![](../img/9187.png)
 
