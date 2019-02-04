@@ -54,7 +54,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9183.png)
 
-**Figure 3 - Change of business object**
+**Figure 3 - Mudança de objeto de negócio**
 
 ####Exclusão de objeto de negócio
 
@@ -98,7 +98,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 **Figura 7 - Recuperação da estrutura do objeto de negócio**
 
-####SQL Execution of the Business Object
+####SQL Execução de objeto de negócio
 
 -   **HTTP verb**: POST
 -   **URL**: / cit-esi-web / rest / dynamic / {application name} / {business object name} /list.son
