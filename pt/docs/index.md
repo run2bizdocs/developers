@@ -6,12 +6,12 @@ A plataforma permite que você execute as migrações ou integrações necessár
 
 A documentação é dividida da seguinte maneira:
 
--	Visão geral  
--	Configuração de acesso  
--	Carga de operações  
--	Registro de operações  
--	APIs ESP  
--	Webservice (Exportar Dados, Docs, ESP e Neuro)  
+*	Visão geral  
+*	Configuração de acesso  
+*	Carga de operações  
+*	Registro de operações  
+*	APIs ESP  
+*	Webservice (Exportar Dados, Docs, ESP e Neuro)  
 
 Siga o menu ao lado para acessar a documentação.
 
