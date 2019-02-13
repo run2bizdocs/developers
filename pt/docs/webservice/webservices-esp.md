@@ -13,14 +13,15 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
 
 
 1.	Antes de se utilizar qualquer operação REST do CITSmart, é necessário que o usuário esteja autenticado.
-2.	A autenticação é feita através da operação REST login na URL /services/login, que recebe um objeto CtLogin contendo os atributos userName, password e platform.
+2.	A autenticação é feita através da operação REST login na URL **/services/login**, que recebe um objeto **CtLogin** contendo os atributos **userName**, **password** e **platform**.
 3.	O atributo platform deve conter a identificação do site que está solicitando o serviço.
-4.	A operação login retorna um valor alfanumérico no atributo SessionID. Este mesmo SessionID deve ser utilizado nas outras chamadas REST. O objeto retornado contém o código e descrição do erro em caso de problemas na execução da operação login.
-5.	O usuário autenticado compõe a chave para sincronização dos dados, quando o atributo synchronize tiver o valor true.
-6.	Os serviços de inclusão e atualização de solicitações contam com o atributo synchronize. Quando este atributo for true, o cadastro de usuário e o catálogo serviços serão automaticamente criados ou atualizados no CITSmart a partir das informações enviadas na solicitação do Web Service.  
+4.	A operação login retorna um valor alfanumérico no atributo **SessionID**. Este mesmo **SessionID** deve ser utilizado nas outras chamadas REST. O objeto retornado contém o código e descrição do erro em caso de problemas na execução da operação login.
+5.	O usuário autenticado compõe a chave para sincronização dos dados, quando o atributo **synchronize** tiver o valor **true**.
+6.	Os serviços de inclusão e atualização de solicitações contam com o atributo **synchronize**. Quando este atributo for **true**, o cadastro de usuário e o catálogo serviços serão automaticamente criados ou atualizados no CITSmart a partir das informações enviadas na solicitação do Web Service.  
 
+    !!!Abstract"REGRA"
 
-**REGRA: todos os serviços REST criados no CITSmart recebem um objeto de entrada e retornam um objeto. Em caso de erro, o objeto de retorno contém o código e a descrição do erro. Quando não houver erro, além dos atributos definidos para cada serviço, o objeto de retorno contém a data e hora de execução e o id da operação. O CITSmart garante que toda solicitação é registrada na sua base de dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.**
+       Todos os serviços REST criados no CITSmart recebem um objeto de entrada e retornam um objeto. Em caso de erro, o objeto de              retorno contém o código e a descrição do erro. Quando não houver erro, além dos atributos definidos para cada serviço, o objeto          de retorno contém a data e hora de execução e o id da operação. O CITSmart garante que toda solicitação é registrada na sua base        de dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.
 
 ##Ações
 
