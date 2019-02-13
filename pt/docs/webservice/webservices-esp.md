@@ -19,9 +19,15 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
 5.	O usuário autenticado compõe a chave para sincronização dos dados, quando o atributo **synchronize** tiver o valor **true**.
 6.	Os serviços de inclusão e atualização de solicitações contam com o atributo **synchronize**. Quando este atributo for **true**, o cadastro de usuário e o catálogo serviços serão automaticamente criados ou atualizados no CITSmart a partir das informações enviadas na solicitação do Web Service.  
 
-   !!! Abstract "REGRA"
+!!! Abstract "REGRA"
 
-       Todos os serviços REST criados no CITSmart recebem um objeto de entrada e retornam um objeto. Em caso de erro, o objeto de              retorno contém o código e a descrição do erro. Quando não houver erro, além dos atributos definidos para cada serviço, o objeto          de retorno contém a data e hora de execução e o id da operação. O CITSmart garante que toda solicitação é registrada na sua base        de dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.
+    Todos os serviços REST criados no CITSmart recebem um objeto de entrada e
+    retornam um objeto. Em caso de erro, o objeto de retorno contém o código e a
+    descrição do erro. Quando não houver erro, além dos atributos definidos para
+    cada serviço, o objeto de retorno contém a data e hora de execução e o id da
+    operação. O CITSmart garante que toda solicitação é registrada na sua base de
+    dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.
+  
 
 ##Ações
 
