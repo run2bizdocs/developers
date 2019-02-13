@@ -19,7 +19,7 @@ the services via Rest.
 -   request body: JSON Object with the variables for the flow
 -   request body:JSON Object with the variables for the business rule
 
-**Table 1 - Specification of APPLICATION PROGRAMMABLE INTERFACES** **(API)**
+Table 1 - Specification of APPLICATION PROGRAMMABLE INTERFACES** **(API)
 
 SPECIFIC GUIDELINES FOR REST API ACCESS
 ---------------------------------------
@@ -33,7 +33,7 @@ Authentication is done through the POST **/cit-esi-web/rest/security/token** se
 
 ![](../img/9181.png)
 
-**Figure 1 - Example using the Chrome Restart Client plugin**
+Figure 1 - Example using the Chrome Restart Client plugin
 
 ###Business Objects REST API
 
@@ -48,17 +48,17 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9182.png)
 
-**Figure 2 - Inclusion of business object**
+Figure 2 - Inclusion of business object
 
 ####Business Object Change
 
 -   **HTTP verb**: POST
--   **URL:** /cit-esi-web/rest/dynamic/{application name}/{business object name} /update.json
--   **Body:** JSON containing the attributes of the business object record to be changed
+-   **URL**: /cit-esi-web/rest/dynamic/{application name}/{business object name} /update.json
+-   **Body**: JSON containing the attributes of the business object record to be changed
 
 ![](../img/9183.png)
 
-**Figure 3 - Change of business object**
+Figure 3 - Change of business object
 
 ####Business Object Deletion
 
@@ -68,7 +68,7 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9184.png)
 
-**Figure 4 - Business Object Deletion**
+Figure 4 - Business Object Deletion
 
 ####Listing of business objects
 
@@ -77,7 +77,7 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9185.png)
 
-**Figure 5 - Listing of business objects**
+Figure 5 - Listing of business objects
 
 #### Business object recovery by primary key
 
@@ -90,7 +90,7 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9186.png)
 
-**Figure 6 - Recovery of business object by primary key**
+Figure 6 - Recovery of business object by primary key
 
 #### Retrieving the structure of the business object
 
@@ -99,13 +99,13 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9187.png)
 
-**Figure 7 - Recovery of the structure of the business object**
+Figure 7 - Recovery of the structure of the business object
 
 #### SQL Execution of the Business Object
 
 -   **HTTP verb**: POST
--   **URL:** / cit-esi-web / rest / dynamic / {application name} / {business object name} /list.son
--   **Body:** JSON containing:
+-   **URL**: / cit-esi-web / rest / dynamic / {application name} / {business object name} /list.son
+-   **Body**: JSON containing:
     -   SQLName attribute with the name of the SQL to be executed
     -   JSON dynamicModel attribute containing the expected parameter values in SQL
     -   Attribute boolean findManyToOne (optional), indicating whether the system should retrieve many relationships for one of the object
@@ -113,7 +113,7 @@ Following are examples using the hotel business object of the hotels application
 
 ![](../img/9188.png)
 
-**Figure 8 - SQL execution of the business object**
+Figure 8 - SQL execution of the business object
 
 ### Execution of ESI streams
 
@@ -124,7 +124,7 @@ The stream returns the "employee" JSON object.
 
 ![](../img/9189.png)
 
-**Figure 9 - Example of running ESI streams**
+Figure 9 - Example of running ESI streams
 
 <hr>
 <font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
