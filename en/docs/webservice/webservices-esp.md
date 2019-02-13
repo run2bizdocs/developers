@@ -19,7 +19,15 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
 5.  The authenticated user composes the key for data synchronization, when the **synchronize** attribute is set to **true**.
 6.  Request inclusion and update services rely on the **synchronize** attribute. When this attribute is **true**, the user registration and catalog services are automatically created or updated in CITSmart from the information sent in the Web Service request.
 
->   **RULE: all REST services created in CITSmart receive an input object and return an object. In case of error, the return object contains the code and description of the error. When there is no error, in addition to the attributes defined for each service, the return object contains the date and time of execution and the id of the operation. CITSmart ensures that every request is recorded in its database and an operation ID is returned to the requester, even in case of error.**
+!!! Abstract "RULE"
+
+    All REST services created in CITSmart receive an input object and return an
+    object. In case of error, the return object contains the code and
+    description of the error. When there is no error, in addition to the
+    attributes defined for each service, the return object contains the date and
+    time of execution and the id of the operation. CITSmart ensures that every
+    request is recorded in its database and an operation ID is returned to the
+    requester, even in case of error.
 
 
 ##Actions
