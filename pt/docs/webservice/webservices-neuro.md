@@ -26,7 +26,7 @@ Nas seções seguintes, está detalhado cada tipo de uso previsto para os servi�
 
 ###Autenticação
 
-Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST /cit-esi-web/rest/security/token, passando um objeto JSON com os atributos username e password no body.
+Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST **/cit-esi-web/rest/security/token**, passando um objeto JSON com os atributos username e password no body.
 
 ![](../img/9181.png)
 
@@ -34,7 +34,7 @@ Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter 
 
 ###API REST de objetos de negócio
 
-Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser consumido a partir da URL /cit-esi-web/dynamic/{nome da aplicação}/{nome do objeto de negócio}. São serviços básicos de criação, atualização, listagem e exclusão do objeto de negócio, além de um método getStructure que retorna o metadado do objeto de negócio. Cada SQL criado no objeto de negócio também pode ser chamado na forma de método. Seguem exemplos utilizando o objeto de negócio hotel da aplicação hotéis. Para cada requisição, deve ser fornecido o authentication-token obtido no serviço de login. A url deve terminar com “.json”.
+Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser consumido a partir da URL **/cit-esi-web/dynamic/{nome da aplicação}/{nome do objeto de negócio}**. São serviços básicos de criação, atualização, listagem e exclusão do objeto de negócio, além de um método getStructure que retorna o metadado do objeto de negócio. Cada SQL criado no objeto de negócio também pode ser chamado na forma de método. Seguem exemplos utilizando o objeto de negócio hotel da aplicação hotéis. Para cada requisição, deve ser fornecido o authentication-token obtido no serviço de login. A url deve terminar com “.json”.
 
 ####Inclusão de objeto de negócio
 
@@ -44,7 +44,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9182.png)
 
-**Figura 2 - Inclusão de objeto de negócio**
+Figura 2 - Inclusão de objeto de negócio
 
 ####Alteração de objeto de negócio
 
@@ -54,7 +54,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9183.png)
 
-**Figure 3 - Mudança de objeto de negócio**
+Figure 3 - Mudança de objeto de negócio
 
 ####Exclusão de objeto de negócio
 
@@ -64,7 +64,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9184.png)
 
-**Figura 4 - Exclusão de objeto de negócio**
+Figura 4 - Exclusão de objeto de negócio
 
 ####Listagem de objetos de negócio
 
@@ -73,7 +73,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9185.png)
 
-**Figura 5 - Listagem de objetos de negócio**
+Figura 5 - Listagem de objetos de negócio
 
 ####Recuperação de objeto de negócio pela chave primária
 
@@ -87,7 +87,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9186.png)
 
-**Figura 6 - Recuperação de objeto de negócio pela chave primária**
+Figura 6 - Recuperação de objeto de negócio pela chave primária
 
 ####Recuperação da estrutura do objeto de negócio
 
@@ -96,7 +96,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9187.png)
 
-**Figura 7 - Recuperação da estrutura do objeto de negócio**
+Figura 7 - Recuperação da estrutura do objeto de negócio
 
 ####SQL Execução de objeto de negócio
 
@@ -110,7 +110,7 @@ Cada objeto de negócio disponibiliza um conjunto de serviços REST que pode ser
 
 ![](../img/9188.png)
 
-**Figura 8 - Execução de SQL do objeto de negócio**
+Figura 8 - Execução de SQL do objeto de negócio
 
 ###Execução de fluxos ESI
 
@@ -118,7 +118,7 @@ Qualquer fluxo ESI pode ser executado via REST utilizando o serviço POST /cit-e
 
 ![](../img/9189.png)
 
-**Figura 9 - Exemplo de execução de fluxos ESI**
+Figura 9 - Exemplo de execução de fluxos ESI
 
 <hr>
 <font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
