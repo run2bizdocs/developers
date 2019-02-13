@@ -13,8 +13,8 @@ Configurando acesso no CITSmart Webservices
 ##Procedimento
 
 1.	Acesse a funcionalidade através do menu principal Sistema > Configurações > Mobile > Webservices CITSmart Mobile;  
-2.	Para visualizar/editar as informações dos Webservices, clique na guia Listar Web Services;  
-3.	Para configurar um grupo de Web Services, clique na guia Vincular Grupos e, em seguida, no campo disponível;  
+2.	Para visualizar/editar as informações dos Webservices, clique na guia **Listar Web Services**;  
+3.	Para configurar um grupo de Web Services, clique na guia **Vincular Grupos** e, em seguida, no campo disponível;  
 4.	Clique em "Pesquisar" para listar todos os grupos e, depois, escolha o grupo.  
 
 
