@@ -1171,6 +1171,6 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		dateTime: timestamp não vazio nem nulo;
 		operationID: numérico não vazio nem nulo;
 		error: valor alfanumérico que pode ser nulo mas não pode ser vazio;
-		number: alfanumérico não vazio nem nulo;
+		number: alfanumérico não vazio nem nulo; 
 	```
 
