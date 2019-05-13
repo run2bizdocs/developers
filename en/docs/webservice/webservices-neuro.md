@@ -127,7 +127,7 @@ The stream returns the "employee" JSON object.
 Figure 9 - Example of running ESI streams
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>12/12/2018 - Andre Luiz de Oliveira Fernandes</font>
 	
 
