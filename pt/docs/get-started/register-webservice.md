@@ -22,7 +22,7 @@ Para inserir as operações padrões de webservice no sistema, é necessário ex
 6.	Clique em “Gravar”.  
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>03/01/2010 - João Pelles Junior</font>
 	
 
