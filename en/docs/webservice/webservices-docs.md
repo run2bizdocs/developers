@@ -831,5 +831,5 @@ This section is intended to describe the communication structure REST, establish
 	     name: alphanumeric not empty and not null  
 	```
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>13/12/2018 - Andre Luiz de Oliveira Fernandes</font>
