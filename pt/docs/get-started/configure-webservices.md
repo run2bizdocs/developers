@@ -19,6 +19,6 @@ Configurando acesso no CITSmart Webservices
 
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart ESP | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>03/01/2019 - João Pelles Junior</font>
 	
