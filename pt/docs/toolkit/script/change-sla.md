@@ -14,7 +14,7 @@ Procedimento
 
 3. Preencher os campos disponibilizados, sendo:
 
-       - tipo: RhinoScript;
+    - tipo: RhinoScript;
     
 
     !!! Abstract "NOTA"
