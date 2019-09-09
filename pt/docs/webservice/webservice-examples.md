@@ -20,7 +20,7 @@ Pré-condições
 Como acessar
 -----------------
 
-1. Acessar URL: /citsmart/services/request/create
+1. Acessar a URL: /citsmart/services/request/create
 
 Procedimento
 ------------------
