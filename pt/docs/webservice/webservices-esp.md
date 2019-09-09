@@ -32,7 +32,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
 ## Ações
 
 
-### Criação de Incidente/Requisição
+### Criação de Ticket
 
 !!! example "Criando uma Requisição/Incidente"
     ```tab="URL"
@@ -103,7 +103,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
       - Incluir a solicitação com número de origem 9999;
       - Registrar o DE-PARA da solicitação de origem 9999 para o cliente.
     ```
-### Alteração de Informações de Incidente/Requisição
+### Alteração de Informações de um Ticket
 
 !!! example "Alterando informação de Requisição/Incidente"
     ```tab="URL"
@@ -153,7 +153,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
         Alterar o solicitante e serviço da solicitação com número de origem 9999.
     ```
 
-### Alteração da situação de um Incidente/Requisição
+### Alteração da situação de um Ticket
 
 
 !!! example "Alteração da situação de um Incidente/Requisição"
@@ -179,7 +179,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
        "details": "Integration Testing"}}
     ```
 
-### Consultar Incidentes e Requisições do Solicitante
+### Consultar Tickets do Solicitante
 
 !!! example "Consultando Incidentes e Requisições do Solicitante"
     ```tab="URL"
@@ -257,7 +257,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
     ```
 
 
-### Incluir Ocorrência na Solicitação
+### Incluir Ocorrência no Ticket
     
 !!! example "Inclui uma ocorrência em uma solicitação"
     ```tab="URL"
@@ -306,7 +306,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
         "hour": "2219"}}
     ```
 
-### Consultar ocorrências da solicitação
+### Consultar ocorrências do Ticket
 
 !!! example "Consultar informações das solicitações/incidentes"
     ```tab="URL"
