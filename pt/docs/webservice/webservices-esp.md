@@ -1,15 +1,15 @@
-﻿Title: Webservices - ESP
-Description: CITSmart - ESP Webservices
+Title: Webservices para uso no CITSmart
+Description: Webservices para uso no CITSmart
 
-Webservices ESP -Enterprise Service Platform
-==============
+# Webservices para uso no CITSmart
 
-Este documento tem o propósito de fornecer orientações a respeito dos Web Services disponibilizados para integração com o Gerenciamento de Serviço do Citsmart ITSM.
-<br>
+Este documento tem o propósito de fornecer orientações a respeito dos Web Services disponibilizados para integração com o Gerenciamento de Serviço do CITSmart.
+
+
 Os Web Services foram criados no CTSmart ESP para inclusão, atualização, consulta e cancelamento de solicitações de serviço (incidentes e requisições).
 
 
-##Antes de começar
+## Antes de começar
 
 
 1.	Antes de se utilizar qualquer operação REST do CITSmart, é necessário que o usuário esteja autenticado.
@@ -29,10 +29,10 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
     dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.
   
 
-##Ações
+## Ações
 
 
-###Criação de Incidente/Requisição
+### Criação de Incidente/Requisição
 
 !!! example "Criando uma Requisição/Incidente"
     ```tab="URL"
@@ -103,7 +103,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
       - Incluir a solicitação com número de origem 9999;
       - Registrar o DE-PARA da solicitação de origem 9999 para o cliente.
     ```
-###Alteração de Informações de Incidente/Requisição
+### Alteração de Informações de Incidente/Requisição
 
 !!! example "Alterando informação de Requisição/Incidente"
     ```tab="URL"
@@ -153,7 +153,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
         Alterar o solicitante e serviço da solicitação com número de origem 9999.
     ```
 
-###Alteração da situação de um Incidente/Requisição
+### Alteração da situação de um Incidente/Requisição
 
 
 !!! example "Alteração da situação de um Incidente/Requisição"
@@ -179,7 +179,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
        "details": "Integration Testing"}}
     ```
 
-###Consultar Incidentes e Requisições do Solicitante
+### Consultar Incidentes e Requisições do Solicitante
 
 !!! example "Consultando Incidentes e Requisições do Solicitante"
     ```tab="URL"
@@ -221,7 +221,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
     "startDate": "2015-09-16T03:00:00.000Z",
     "endDate": "2015-09-19T03:00:00.000Z"}
     ```
-###Detalhe de Incidente/Requisição do Solicitante  
+### Detalhe de Incidente/Requisição do Solicitante  
 
 !!! example "Detalhes da Requisição/Incidente"
     ```tab="URL"
@@ -257,7 +257,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
     ```
 
 
-###Incluir Ocorrência na Solicitação
+### Incluir Ocorrência na Solicitação
     
 !!! example "Inclui uma ocorrência em uma solicitação"
     ```tab="URL"
@@ -306,7 +306,7 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
         "hour": "2219"}}
     ```
 
-###Consultar ocorrências da solicitação
+### Consultar ocorrências da solicitação
 
 !!! example "Consultar informações das solicitações/incidentes"
     ```tab="URL"
