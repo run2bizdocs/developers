@@ -31,8 +31,10 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
 
 ## Ações
 
-### Criar um ticket
+### Criar um ticket (request_create)
 
+- Pré-condições: **configurar os contratos, grupos, fluxos e permissões**.
+    
 !!! example "Criando uma Requisição/Incidente"
     ```tab="URL"
     /services/request/create
