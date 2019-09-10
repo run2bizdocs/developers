@@ -1,15 +1,14 @@
-﻿Title: Webservices - ESP
-Description: CITSmart - ESP Webservices
+Title: Webservices for use on CITSmart
+Description: CITSmart Webservices
 
-Webservices ESP -Enterprise Service Platform
-==============
+# Webservices for use on CITSmart
 
 This document is intended to provide guidance regarding the Web Services made available for integration with CTSmart ITSM Service Management.
-<br>
+
 Web Services have been created in CTSmart ESP for inclusion, updating, consultation and cancellation of service requests (incidents and requisitions).
 
 
-##Before getting started
+## Before getting started
 
 
 1.  Before any CITSmart REST operation is used, the user must be authenticated.
@@ -30,10 +29,10 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
     requester, even in case of error.
 
 
-##Actions
+## Actions
 
 
-###INCIDENT/REQUEST CREATION
+### Create a Ticket
 
 !!! example "Creating a Request /Incident"
     ```tab="URL"
@@ -104,7 +103,7 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
       - Include request with source number 9999;
       - Register the DEPUT from the 9999 source request to the client.
     ```
-###CHANGE INCIDENT/REQUEST INFORMATION
+### Change ticket information
 
 !!! example "Changing Information from Requests/Incidents"
     ```tab="URL"
@@ -154,7 +153,7 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
         Change the requestor and service from the request with source number 9999.
     ```
 
-###CHANGING THE STATUS OF AN INCIDENT/REQUEST
+### Change ticket status
 
 
 !!! example "Changing the Status of an Incidents/Requests"
@@ -223,7 +222,7 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
     "startDate": "2015-09-16T03:00:00.000Z",
     "endDate": "2015-09-19T03:00:00.000Z"}
     ```
-###INCIDENT DETAIL / REQUEST OF APPLICANT
+### Datails of ticket applicant
 
 !!! example "Details of The Request/Incident"
     ```tab="URL"
@@ -259,7 +258,7 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
     ```
 
 
-###INCLUDES OCCURENCE ON REQUEST
+### Include occurrence in ticket
     
 !!! example "Include an occourrence on a Request"
     ```tab="URL"
@@ -308,7 +307,7 @@ Web Services have been created in CTSmart ESP for inclusion, updating, consultat
         "hour": "2219"}}
     ```
 
-###QUERY REQUEST OCCURENCES
+### Query ticket occurences
 
 !!! example "Querying Information from Requests/Incidents"
     ```tab="URL"
