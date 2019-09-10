@@ -31,6 +31,8 @@ Os Web Services foram criados no CTSmart ESP para inclusão, atualização, cons
 
 ## Ações
 
+### Criar um ticket
+
 !!! example "Criando uma Requisição/Incidente"
     ```tab="URL"
     /services/request/create
