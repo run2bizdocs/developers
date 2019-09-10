@@ -2,8 +2,6 @@ title: Exemplos de utilização de webservices
 Description: Exemplos de utilização de webservices
 # Exemplos de utilização de webservices 
 
-##Ticket##
-
 Validar se o solicitante possui permissão para registrar uma solicitação com a atividade escolhida
 ----------------------------------------------------------------------------------------------------
 
