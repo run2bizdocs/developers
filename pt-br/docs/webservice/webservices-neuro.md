@@ -1,7 +1,7 @@
-﻿Title: Webservices - NEURO
+Title: Webservices - CITSmart Neuro
 Description: Webservices Neuro
 
-#Webservices Neuro
+# Webservices - CITSmart Neuro
 
 Este documento reúne os conhecimentos mínimos necessários para o adequado uso dos serviços via Rest.
 
