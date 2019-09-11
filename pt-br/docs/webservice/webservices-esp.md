@@ -1,7 +1,7 @@
-Title: Webservices para uso no CITSmart
+Title: Webservices - CITSmart
 Description: Webservices para uso no CITSmart
 
-# Webservices para uso no CITSmart
+# Webservices para uso na plataforma CITSmart
 
 Este documento tem o propósito de fornecer orientações a respeito dos Web Services disponibilizados para integração com o Gerenciamento de Serviço do CITSmart.
 
