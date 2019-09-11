@@ -5,7 +5,7 @@ Description: CITSmart Webservices
 
 This document is intended to provide guidance regarding the Web Services made available for integration with CTSmart ITSM Service Management.
 
-Web Services have been created in CTSmart ESP for inclusion, updating, consultation and cancellation of service requests (incidents and requisitions).
+Web Services have been created in CTSmart for inclusion, updating, consultation and cancellation of service requests (incidents and requisitions).
 
 
 ## Before getting started
