@@ -223,7 +223,7 @@ Os Web Services foram criados no CTSmart para inclusão, atualização, consulta
     "startDate": "2015-09-16T03:00:00.000Z",
     "endDate": "2015-09-19T03:00:00.000Z"}
     ```
-### Detalhe de Incidente/Requisição do Solicitante (getById)
+### Detalhes do Ticket de um Solicitante (getById)
 
 !!! example "Detalhes da Requisição/Incidente"
     ```tab="URL"
