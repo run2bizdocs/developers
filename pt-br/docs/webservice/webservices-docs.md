@@ -1,7 +1,7 @@
-﻿Title: Webservices - Docs
+Title: Webservices - CITSmart Docs
 Description: CITSmart - Docs Webservices
 
-#Webservices CITSmart Docs
+# Webservices CITSmart Docs
 
 Esta seção destina-se a descrever a estrutura de comunicação REST, estabelecida entre aplicativos e o servidor back-end.
 
