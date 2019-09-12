@@ -54,20 +54,20 @@ Procedure
     "sessionID":"61ec91e9-5397-466c-a342-08bbcd0e76a8",
     "synchronize":true,
     "sourceRequest":{
-      "userID":"UsuarioCadastrado",
+      "userID":"UserRegistered",
       "type":"I",
-      "description": "Falha - Ger. Eventos",
+      "description": "Failure - Event Mgmt.",
       "contact":{
-         "name":"Usuario Cadastrado",
+         "name":"User Registered",
          "phoneNumber":"000000000000",
-         "email":"usuario@citsmart.com",
-         "department":"CR 07.014/13.027 - Equipe SM: Desenvolvimento e Inovação (HSM)"
+         "email":"user@citsmart.com",
+         "department":"CR 07.014/13.027 - SM Team: Development and Innovation (HSM)"
       },
       "service":{
          "code":"170",
-         "name": "Falha - Ger. Eventos",
+         "name": "Failure - Event Mgmt.",
         "category":{
-          "name":"[CITSmart] Produtos"
+          "name":"[CITSmart] Products"
         }
       },
       "contractID":"2",
