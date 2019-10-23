@@ -7,7 +7,7 @@ Este documento reúne os conhecimentos mínimos necessários para o adequado uso
 
 | **URL**                                      | **Descrição**                           | **Parâmetros**                                | **Retorna**                                        |
 |----------------------------------------------|-------------------------------------------|-----------------------------------------------|---------------------------------------------------|
-| **/startWithMap/{name}**                     | Inicia um fluxo ESI a partir do nome                | name: Nome do fluxo cadastrado             | Objeto representativo do fluxo cadastrado      |
+| **/execute/{name}**                     | Inicia um fluxo ESI a partir do nome                | name: Nome do fluxo cadastrado             | Objeto representativo do fluxo cadastrado      |
 | **/instance/initialize/{processInstanceId}** | Recupera os valores de uma instância de processo | processInstanceid: ID da instância de processo | Objeto representativo da instância de processo cadastrada |
 | **/instance/suspend/{processInstanceId}**    | Suspende uma instância de processo               | processInstanceid: ID da instância de processo | Objeto representativo da instância de processo cadastrada |
 | **/instance/restart/{processInstanceId}**    | Reinicia uma instância de processo               | processInstanceid: ID da instância de processo | Objeto representativo da instância de processo cadastrada |
@@ -26,7 +26,7 @@ Nas seções seguintes, está detalhado cada tipo de uso previsto para os servi�
 
 ###Autenticação
 
-Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST **/cit-esi-web/rest/security/token**, passando um objeto JSON com os atributos username e password no body.
+Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST **/cit-esi-web/token**, passando um objeto JSON com os atributos username e password no body.
 
 ![](../img/9181.png)
 
