@@ -1,7 +1,7 @@
 ﻿Title: Exportação de Dados
 Description:  Webservices no CITSmart para Exportação de Dados
 
-#Webservice – Exportação de Dados
+# Webservice – Exportação de Dados
 Por meio dessa funcionalidade, é possível, por solicitação ao WebService, obter dados das tabelas do Banco de Dados do CITSmart para um arquivo XML.
 As condições de consulta para os registros que serão retornados são passadas como parâmetros via URL, conforme o exemplo abaixo:
 
@@ -18,7 +18,7 @@ Essa solicitação retorna os registros da tabela de posições em que o idcargo
 
 Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para recuperação de dados usando esta funcionalidade:  
 
-##Consulta PK
+## Consulta PK
 
 !!! example "É possível obter um registro de acordo com o campo Chave Primária da tabela relatada."
 	```HTML tab="URL"
@@ -34,7 +34,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	   Ele irá procurar na tabela PROCESS com a chave PK igual a 19.
 	```
 
-##Consulta por PK e Where
+## Consulta por PK e Where
 
 !!! example "É possível obter um registro de acordo com um campo de Chave Primária da tabela fornecida e que atenda às condições de uma cláusula where."
 	```HTML tab="URL"
@@ -49,7 +49,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
         http://localhost/citsmart/services/data/cargos/22?cond=nomecargo like "Diretor"
 	```
 
-##Where e Consulta Ordenada
+## Where e Consulta Ordenada
 
 !!! example "É possível obter registros ordenados de uma tabela de acordo com as condições de uma cláusula where e campo para ordenação."
 	```HTML tab="URL"
@@ -66,7 +66,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 
 
 
-##Consulta com vínculos ao Where e Ordenação
+## Consulta com vínculos ao Where e Ordenação
 
 !!! example "É possível obter registros ordenados de uma tabela, juntamente com os registros com os quais eles estão vinculados, de acordo com as condições de uma cláusula where e de um campo para ordenação."
 
