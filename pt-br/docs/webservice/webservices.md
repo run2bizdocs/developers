@@ -1,7 +1,7 @@
-﻿Title: Informações Webservice
+Title: Informações Webservice
 Description:  Webservices no Informações Gerais do CITSmart
 
-#Webservices no CITSmart
+# Webservices no CITSmart
 
 <table width='100%'>
 	<tr>
@@ -17,7 +17,7 @@ Description:  Webservices no Informações Gerais do CITSmart
 
 Este documento descreve a implementação do WebService no CITSmart ESP. Chamado Citrest, o serviço da Web usa a implementação RESTEasy do padrão RESTFul. Através de exemplos práticos, os conceitos básicos, estruturas de dados e padrões a serem seguidos na implementação de novos serviços serão apresentados.
 
-##O padrão RestEasy  
+## O padrão RestEasy  
 
 Representational State Transfer (REST) descreve as arquiteturas que usam o protocolo HTTP ou protocolos semelhantes, restringindo a interface a um conjunto de operações HTTP conhecidas: GET, POST, PUT e DELETE.
 
@@ -49,7 +49,7 @@ A Classe de Recurso que intercepta a chamada http para o webservice deve ser map
 
 Uma nova instância da Classe de Recurso é criada para cada solicitação do recurso. Cada método de recurso recebe como um parâmetro uma instância filho da classe CtMessage.java e retorna um objeto do tipo CtMessageResp. Nesta instância é atribuído o valor do atributo MessageID. Essa instância é passada como um parâmetro para o método Execute da classe de utilitário RestOperationUtil.java.
 
-##Classes de Utilidade
+## Classes de Utilidade
 
 A classe RestOperationUtil.java é responsável por realizar as validações e o direcionamento da solicitação de recurso para a classe responsável pela Operação.
 
@@ -72,7 +72,7 @@ Para cada messageID, é feita uma chamada para um método específico para trata
 
 Cada um desses métodos pode fazer chamadas para o CITSmart Services Layer para reutilização de serviços.
 
-##Regras Específicas
+## Regras Específicas
 
 Todas as classes responsáveis pela operação do serviço da web devem ser registradas na tabela Rest_Operation.
 
@@ -120,7 +120,7 @@ Para a criação de um novo recurso, o desenvolvedor deve seguir as seguintes et
 -   Registre os parâmetros na tabela Rest_Parameter.
 -   Associe os domínios do parâmetro de operação na tabela Rest_Domain.
 
-##Estrutura de Classe
+## Estrutura de Classe
 
 Todas as classes usadas pelo Citrest devem ser definidas por .XSD específico. A partir de .XSD, as classes podem ser geradas automaticamente pelo plug-in do eclipse ou pelo xjc.jar, disponível na iniciativa 0015 no SharePoint. Para gerar as classes do xjc, você deve usar a seguinte linha de comando:
 
@@ -129,17 +129,17 @@ D:\\Ambiente\\jboss\\server\\default\\deploy\\CitCorpore.war\\WEB-INF\\src}" -p 
 
 O .XSD deve estar no pacote br.com.centralit.citsmart.rest.xsd e as classes geradas devem estar no pacote br.com.centralit.citsmart.rest.schema. Nesses pacotes já existem várias classes .XSD e várias usadas pelo Mobile que podem ser usadas como exemplo.
 
-##Classe CtError
+## Classe CtError
 
 A classe CtError é referenciada pelas outras classes usadas para executar as operações do Citrest.
 
-##Classe CtLogin E CtLoginResp
+## Classe CtLogin E CtLoginResp
 
 Toda operação em execução no Citrest requer um SessionID retornado pelo login. O login é implementado na classe br.com.centralit.citsmart.rest.resource.RestOperationResources e tem como entrada um objeto da classe CtLogin.
 
 Como resultado do login, o objeto SessionID ou CtError é retornado pelo login por meio da classe CtLoginResp.
 
-##Tratamento de Erro
+## Tratamento de Erro
 
 O tratamento de erros de qualquer método de execução deve obedecer ao padrão de encapsulamento do objeto CtError implementado na classe RestOperationUtil.
 
@@ -157,7 +157,7 @@ O tratamento de erros de qualquer método de execução deve obedecer ao padrão
     **return** resp;  
     }
 
-##Exemplo Prático
+## Exemplo Prático
 
 Para facilitar a compreensão, esta seção detalha a implementação e a operação do serviço GetByUser usado no Mobile. É responsável por retornar a lista de requisições e incidentes no portfólio de trabalho de um determinado usuário.
 
