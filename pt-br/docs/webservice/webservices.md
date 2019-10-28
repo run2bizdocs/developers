@@ -25,13 +25,13 @@ O Citrest usa o RESTEasy, que é uma implementação da especificação JAX-RS q
 
 Este documento não tem a intenção de apresentar detalhes sobre a implementação RESTful ou RESTEasy, já que existe extensa documentação na Internet sobre o assunto, como no site http://www.jboss.org/resteasy.
 
-##Modelo de dados 
+## Modelo de dados 
 
 Uma estrutura foi criada no banco de dados para armazenar os dados necessários para o funcionamento do Citrest. O modelo de dados rest_v2.pdm está localizado no diretório **CitCorporeWeb/Model** .
 
 Todas as tabelas mantidas no Citrest possuem o prefixo Rest_ e possuem relacionamento com outras tabelas no modelo CITSmart: ObjetoNegocio, Grupo, Usuário e ProcessamentoBatch.
 
-##Classes de Recursos  
+## Classes de Recursos  
 
 As Classes de Recursos são classes simples, POJO, contendo anotações JAX-RS para indicar mapeamentos e operações existentes.
 
