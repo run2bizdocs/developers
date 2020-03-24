@@ -89,7 +89,7 @@ nav:
       - get-started/load-webservice-script.md
       - get-started/register-webservice.md
     - APIs 4biz:
-      - API: api/apis.md
+      - api/apis.md
     - Webservice:
       - webservice/data-export.md
       - webservice/webservices-docs.md
