@@ -1,35 +1,35 @@
-﻿Title: API´s - ESP
-Description: CITSmart - ESP API´s
+Title: API´s 4biz
+Description: 4biz - API´s
 
-#API´s ESP -Enterprise Service Platform
+#API´s 4biz Platform
 
 This section is intended to describe the communication structure REST, established between applications and the back-end server.
 
-!!! warning 
-    "**CITSMART_URL**": URL unalterable prefix, so that you can access the services made available to the mobile applications.</br>
+!!! warning
+    "**4biz_URL**": URL unalterable prefix, so that you can access the services made available to the mobile applications.</br>
     _ALL API THAT REQUIRES A “**sessionID**” WILL NEED TO BE IN A SESSION PROVIDED BY THE “Login” API._
 
 --------
 
 ### Login 
 
-!!! example "Login the user to use CITSmart Services."
+!!! example "Login the user to use 4biz Services."
 	```tab="Method"
  	POST
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/login
+ 	<4biz_URL>/services/v2/login
 	```
 
 	```JSON tab="Request"
-	Request { 
-	"userName": "mobile", 
-	"password": "123456", 
-	"token": "API132654ASFE32132121Â­5412", 
-	"platform": "android" 
+	Request {
+	"userName": "mobile",
+	"password": "123456",
+	"token": "API132654ASFE32132121Â­5412",
+	"platform": "android"
 	}
-	
+
 	```
 
 	```JSON tab="Response"
@@ -51,7 +51,7 @@ This section is intended to describe the communication structure REST, establish
 		rangeAction: is integer, not null and can be zero. It represents the action radius of a field user in KM.
 		locationInterval: is integer, not null, and greater than zero. Represents, in minutes, the time interval that the App must send the positioning of the attendant.
 	```
-                
+
 
 
 
@@ -64,7 +64,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/contracts
+ 	<4biz_URL>/services/v2/contracts
 	```
 
 	```JSON tab="Request"
@@ -96,7 +96,7 @@ This section is intended to describe the communication structure REST, establish
 		error: alphanumeric value that can be null but not empty;
 		contracts: not empty and not null;
 		id: numeric not empty and not null;
-		description: alphanumeric not empty and not null	
+		description: alphanumeric not empty and not null
 	```
 
 ### ListDeniedReasons
@@ -107,7 +107,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/deniedReasons
+ 	<4biz_URL>/services/v2/deniedReasons
 	```
 
 	```JSON tab="Request"
@@ -154,7 +154,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/status
+ 	<4biz_URL>/services/v2/status
 	```
 
 	```JSON tab="Request"
@@ -232,7 +232,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/units
+ 	<4biz_URL>/services/v2/units
 	```
 
 	```JSON tab="Request"
@@ -262,7 +262,7 @@ This section is intended to describe the communication structure REST, establish
 
 	```tab="Fields"
 	Request :
-		sessionID: alphanumeric not null and not empty; 
+		sessionID: alphanumeric not null and not empty;
 		contractID: numeric not null
 	Response :
 		dateTime: timestamp not empty and not null;
@@ -270,7 +270,7 @@ This section is intended to describe the communication structure REST, establish
 		error: alphanumeric value that can be null but not empty;
 		units: not empty and not null;
 		id: numeric not empty and not null;
-		description: alphanumeric not empty and not null;	
+		description: alphanumeric not empty and not null;
 	```
 ### SendCoordinates
 
@@ -280,7 +280,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/coordinates
+ 	<4biz_URL>/services/v2/coordinates
 	```
 
 	```JSON tab="Request"
@@ -321,12 +321,12 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/disassociate
+ 	<4biz_URL>/services/v2/disassociate
 	```
 
 	```JSON tab="Request"
 	{
-	"connection": "http://citsmart.centralit.com.br&quot;,
+	"connection": "http://4biz.centralit.com.br&quot;,
 	"sessionID": "2355A68BF75281B73607EEC1A7191645",
 	"token": "API132654ASFE32132121¬5412"
 	}
@@ -361,7 +361,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getNewest
+ 	<4biz_URL>/services/v2/getNewest
 	```
 
 	```JSON tab="Request"
@@ -449,7 +449,7 @@ This section is intended to describe the communication structure REST, establish
 			1 - Execution available
 		contract: numeric not null;
 		unit: numeric not null;
-		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the attendance;	
+		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the attendance;
 	```
 
 ### GetOldest
@@ -460,7 +460,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getOldest
+ 	<4biz_URL>/services/v2/getOldest
 	```
 
 	```JSON tab="Request"
@@ -548,7 +548,7 @@ This section is intended to describe the communication structure REST, establish
 			1 - Execution available
 		contract: numeric not null;
 		unit: numeric not null;
-		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the service;	
+		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the service;
 	```
 
 ### GetByCoordinates
@@ -559,7 +559,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getByCoordinates
+ 	<4biz_URL>/services/v2/getByCoordinates
 	```
 
 	```JSON tab="Request"
@@ -677,7 +677,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/update
+ 	<4biz_URL>/services/v2/update
 	```
 
 	```JSON tab="Request"
@@ -763,7 +763,7 @@ This section is intended to describe the communication structure REST, establish
 			1 - Execution available
 		contract: numeric not null;
 		unit: numeric not null;
-		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the service;	
+		priorityorder: numeric value that can present null value, sequence number that identifies if the manager ordered the service;
 	```
 
 ### GetById
@@ -774,7 +774,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getById
+ 	<4biz_URL>/services/v2/getById
 	```
 
 	```JSON tab="Request"
@@ -798,7 +798,7 @@ This section is intended to describe the communication structure REST, establish
 	"taskStatus": "Available",
 	"timeSLA": 12
 	}
-	}	
+	}
 	```
 
 	```tab="Fields"
@@ -827,7 +827,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getReasons
+ 	<4biz_URL>/services/v2/getReasons
 	```
 
 	```JSON tab="Request"
@@ -886,7 +886,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/attendRequest
+ 	<4biz_URL>/services/v2/attendRequest
 	```
 
 	```JSON tab="Request"
@@ -930,7 +930,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/ location 
+ 	<4biz_URL>/services/v2/ location
 	```
 
 	```JSON tab="Request"
@@ -955,7 +955,7 @@ This section is intended to describe the communication structure REST, establish
 	N/A
 	```
 
-### Feedback 
+### Feedback
 
 !!! example "Register an approval or denial of a service request."
 	```tab="Method"
@@ -963,7 +963,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/feedback
+ 	<4biz_URL>/services/v2/feedback
 	```
 
 	```JSON tab="Request"
@@ -1005,7 +1005,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/new
+ 	<4biz_URL>/services/v2/new
 	```
 
 	```JSON tab="Request"
@@ -1046,7 +1046,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/checkin 
+ 	<4biz_URL>/services/v2/checkin
 	```
 
 	```JSON tab="Request"
@@ -1089,7 +1089,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/checkout
+ 	<4biz_URL>/services/v2/checkout
 	```
 
 	```JSON tab="Request"
@@ -1137,7 +1137,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/denied
+ 	<4biz_URL>/services/v2/denied
 	```
 
 	```JSON tab="Request"
@@ -1172,4 +1172,3 @@ This section is intended to describe the communication structure REST, establish
 		error: alphanumeric value that can be null but not empty;
 		number: alphanumeric not empty and not null;
 	```
-

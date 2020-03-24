@@ -24,7 +24,7 @@ Table 1 - Specification of APPLICATION PROGRAMMABLE INTERFACES** **(API)
 SPECIFIC GUIDELINES FOR REST API ACCESS
 ---------------------------------------
 
-In the following sections, each type of intended use for the services available via Rest is detailed in the CITSMart Enteprise Neuro product.
+In the following sections, each type of intended use for the services available via Rest is detailed in the 4biz Enteprise Neuro product.
 
 ###Authentication
 
@@ -127,12 +127,5 @@ The stream returns the "employee" JSON object.
 Figure 9 - Example of running ESI streams
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>12/12/2018 - Andre Luiz de Oliveira Fernandes</font>
-	
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ﻿Title: Webservices Information
-Description:  Webservices in CITSmart General Information
+Description:  Webservices in 4biz General Information
 
-#Webservices in CITSmart
+#Webservices in 4biz
 
 <table width='100%'>
 	<tr>
@@ -15,7 +15,7 @@ Description:  Webservices in CITSmart General Information
 </table>
 
 
-This document describes the implementation of WebService in CITSmart ESP. Called Citrest, the web service uses the RESTEasy implementation of the RESTFul standard.
+This document describes the implementation of WebService in 4biz ESP. Called Citrest, the web service uses the RESTEasy implementation of the RESTFul standard.
 Through practical examples, the basic concepts, data structures, and patterns to be followed in the implementation of new services will be presented.
 
 ##The Standard RestEasy
@@ -30,21 +30,21 @@ This document is not intended to present details about the RESTful or RESTEasy i
 
 A structure has been created in the database to store data required for Citrest to function. The rest_v2.pdm data model is located in the**CitCorporeWeb/Model **directory.
 
-All tables maintained in Citrest have the prefix Rest\_ and have relationships with other tables in the CITSmart model: ObjetoNegocio, Grupo, Usuário, and ProcessamentoBatch.
+All tables maintained in Citrest have the prefix Rest\_ and have relationships with other tables in the 4biz model: ObjetoNegocio, Grupo, Usuário, and ProcessamentoBatch.
 
 ##Classes Resources
 
 The Resources classes are simple classes, POJO, containing JAX-RS annotations to indicate existing mappings and operations.
 
-The Resources classes should be in the package br.com.centralit.citsmart.rest.resource and follow the naming pattern used in the other classes Resources, Rest \<NomeDoUC\> Resources.java.
+The Resources classes should be in the package br.com.centralit.4biz.rest.resource and follow the naming pattern used in the other classes Resources, Rest \<NomeDoUC\> Resources.java.
 
 The resource class that intercepts the http call to the webservice must be mapped to the web.xml file. For example:
 
-!!! Example 
+!!! Example
     \<context-param\>  
     \<param-name\>resteasy-resources2\</param-name\>  
     \<param-value\>  
-      br.com.centralit.citsmart.rest.resource.RestOperationResources  
+      br.com.centralit.4biz.rest.resource.RestOperationResources  
     ​\</param-value\>  
     \</context-param\>  
 
@@ -73,7 +73,7 @@ The execute method is a condition of the IRestOperation Interface contract. The 
 
 For each messageID a call is made to a specific method for treatment.
 
-Each of these methods can make calls to the CITSmart Services Layer for reuse of services.
+Each of these methods can make calls to the 4biz Services Layer for reuse of services.
 
 ##Specific Rules
 
@@ -129,9 +129,9 @@ parameterization steps:
 All classes used by Citrest must be defined by specific .XSD. From .XSD, classes can be generated automatically through the eclipse plugin or by xjc.jar, available at initiative 0015 in SharePoint. To generate the classes from xjc, you must use the following command line:
 
 xjc "{path and name of xsd}" -d "{absolute path to src} eg:
-D:\\Ambiente\\jboss\\server\\default\\deploy\\CitCorpore.war\\WEB-INF\\src}" -p {pakage name} eg: {br.com.centralit.citsmart.rest.schema}
+D:\\Ambiente\\jboss\\server\\default\\deploy\\CitCorpore.war\\WEB-INF\\src}" -p {pakage name} eg: {br.com.centralit.4biz.rest.schema}
 
-The .XSD should be in the br.com.centralit.citsmart.rest.xsd package and thegenerated classes should be in the br.com.centralit.citsmart.rest.schema package. In these packages there are already several .XSD and several classes used by Mobile that can be used as an example.
+The .XSD should be in the br.com.centralit.4biz.rest.xsd package and thegenerated classes should be in the br.com.centralit.4biz.rest.schema package. In these packages there are already several .XSD and several classes used by Mobile that can be used as an example.
 
 ##Class CtError
 
@@ -140,7 +140,7 @@ The CtError class is referenced by the other classes used to execute the Citrest
 ##Classe CtLogin E CtLoginResp
 
 Every running operation on Citrest requires a SessionID returned by login. The login is implemented in class
-br.com.centralit.citsmart.rest.resource.RestOperationResources and has as input an object of class CtLogin.
+br.com.centralit.4biz.rest.resource.RestOperationResources and has as input an object of class CtLogin.
 
 As a result of the login, the SessionID or a CtError object is returned by login through the CtLoginResp class.
 
@@ -168,15 +168,15 @@ For ease of understanding, this section details the implementation and operation
 
 The following steps were followed for its implementation:
 
-1.  The XSD of the CtNotificationGetByUser and CtNotificationGetByUserResp classes were defined in the file br.com.centralit.citsmart.rest.xsd.MobileNotification.XSD
-2.  The classes were generated in the package br.com.centralit.citsmart.rest.schema by xjc.jar
-3.  The following entries have been added in the Web.xml file of the CITSmart project:
+1.  The XSD of the CtNotificationGetByUser and CtNotificationGetByUserResp classes were defined in the file br.com.centralit.4biz.rest.xsd.MobileNotification.XSD
+2.  The classes were generated in the package br.com.centralit.4biz.rest.schema by xjc.jar
+3.  The following entries have been added in the Web.xml file of the 4biz project:
 
 !!! example ""
     \<context-param\>  
     \<param-name\>resteasy-resources3\</param-name\>  
     \<param-value\>  
-      br.com.centralit.citsmart.rest.resource.RestMobileResources  
+      br.com.centralit.4biz.rest.resource.RestMobileResources  
     \</param-value\>  
     \</context-param\>  
     \<servlet-mapping\>  
@@ -207,13 +207,5 @@ RestMobileResources class.
 
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>13/12/2018 - Andre Luiz de Oliveira Fernandes</font>
-	
-
-
-
-
-
-
-

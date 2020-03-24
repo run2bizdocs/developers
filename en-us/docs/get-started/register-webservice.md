@@ -1,5 +1,5 @@
 ﻿Title: Register Operation
-Description: CITSmart - ESP Register Webservices Operations
+Description: 4biz - ESP Register Webservices Operations
 
 Register Webservice operation
 =============================
@@ -30,7 +30,5 @@ Procedure
 
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>12/12/2018 - Andre Luiz de Oliveira Fernandes</font>
-	
-

@@ -1,18 +1,18 @@
 ﻿Title: Webservices - Docs
-Description: CITSmart - Docs Webservices
+Description: 4biz - Docs Webservices
 
-#Webservices CITSmart Docs
+#Webservices 4biz Docs
 
 This section is intended to describe the communication structure REST, established between applications and the back-end server.
 
-!!! warning 
-    "**CITSMART_URL**": URL unalterable prefix, so that you can access the services made available to the mobile applications.</br>
+!!! warning
+    "**4biz_URL**": URL unalterable prefix, so that you can access the services made available to the mobile applications.</br>
     _ALL API THAT REQUIRES A “**sessionID**” WILL NEED TO BE IN A SESSION PROVIDED BY THE “Login” API._
 
 --------
 
 ### Login
- 
+
 !!! example "User Authentication Service"
 	```tab="Method"
  	GET
@@ -54,7 +54,7 @@ This section is intended to describe the communication structure REST, establish
 	   name: alphanumeric not empty and not null;
 	   version: numeric not empty and not null;
 	```
-            
+
 
 ###LIST DEPARTMENT
 
@@ -75,7 +75,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```JSON tab="Response"
-	 	
+
 	{
 	"units":[
 	{
@@ -97,7 +97,7 @@ This section is intended to describe the communication structure REST, establish
 	   name: alphanumeric not empty and not null
 	   code: alphanumeric not empty and not null
 	```
-    
+
 ###LIST PROCESS TYPE
 
 !!! example "Service of listing the process type of a process, to be used"
@@ -147,7 +147,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listNivelAcessoTipoProcesso
+	<4biz_URL>/cit-ecm-web/integracao/listNivelAcessoTipoProcesso
 	```
 
 	```JSON tab="Request"
@@ -192,7 +192,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listNivelAcessoTipoDocumento
+ 	<4biz_URL>/cit-ecm-web/integracao/listNivelAcessoTipoDocumento
 
 	```
 
@@ -239,7 +239,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
-  	<CITSMART_URL>/cit-ecm-web/integracao/listAssunto
+  	<4biz_URL>/cit-ecm-web/integracao/listAssunto
 
 	```
 
@@ -284,7 +284,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listHipoteseLegal
+	<4biz_URL>/cit-ecm-web/integracao/listHipoteseLegal
 
 	```
 
@@ -328,7 +328,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listPessoas
+	<4biz_URL>/cit-ecm-web/integracao/listPessoas
 
 	```
 
@@ -347,7 +347,7 @@ This section is intended to describe the communication structure REST, establish
 	"name":"Maycon"
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Fields"
@@ -363,11 +363,11 @@ This section is intended to describe the communication structure REST, establish
 
 !!! example "List of the conference forms of a process and / or document, to be used"
 	```tab="Method"
-	GET	
+	GET
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listFormaConferencia
+	<4biz_URL>/cit-ecm-web/integracao/listFormaConferencia
 
 	```
 
@@ -406,7 +406,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listTipoSuporte
+	<4biz_URL>/cit-ecm-web/integracao/listTipoSuporte
 
 	```
 
@@ -414,7 +414,7 @@ This section is intended to describe the communication structure REST, establish
 	{
 	"name":"Name type media",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Response"
@@ -426,7 +426,7 @@ This section is intended to describe the communication structure REST, establish
 	}
 	]
 	}
-	 
+
 	```
 
 	```tab="Fields"
@@ -446,7 +446,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listTipoDocumento
+ 	<4biz_URL>/cit-ecm-web/integracao/listTipoDocumento
 
 	```
 
@@ -465,7 +465,7 @@ This section is intended to describe the communication structure REST, establish
 	"name":"Document type name"
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Fields"
@@ -485,7 +485,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/processo
+ 	<4biz_URL>/cit-ecm-web/integracao/processo
 
 	```
 
@@ -513,7 +513,7 @@ This section is intended to describe the communication structure REST, establish
 	}
 	],
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Response"
@@ -542,7 +542,7 @@ This section is intended to describe the communication structure REST, establish
 	  token: alphanumeric not empty and not null
 	Response:
 	  id: numeric not empty and not null
-	  nup: alphanumérico not empty and not null; 
+	  nup: alphanumérico not empty and not null;
 	```
 ###CREATE DOCUMENT
 
@@ -552,7 +552,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/documento
+ 	<4biz_URL>/cit-ecm-web/integracao/documento
 
 	```
 
@@ -597,14 +597,14 @@ This section is intended to describe the communication structure REST, establish
 	},
 	"localizacao":"Physical location",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Response"		
 	{
 	"id":"25353",
 	"numero":"00001.00002/2016-58"
-	} 
+	}
 	```
 
 	```tab="Fields"
@@ -639,7 +639,7 @@ This section is intended to describe the communication structure REST, establish
 	  token: alfanumeric not empty and not null
 	Response:
 	  id: numeric not empty and not null
-	  numero: not empty and not null 
+	  numero: not empty and not null
 	```
 ###UPLOAD DOCUMENT
 
@@ -649,7 +649,7 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/uploadAnexo
+ 	<4biz_URL>/cit-ecm-web/integracao/uploadAnexo
 
 	```
 
@@ -667,20 +667,20 @@ This section is intended to describe the communication structure REST, establish
 	Request:
  	  idDocumento: numeric not empty and not null
 	  file: not empty and not null
-	  token: alphanumeric not empty and not null 
+	  token: alphanumeric not empty and not null
 	```
 
 
 
 ###GET BY ID PROCESS
- 
+
 !!! example "Service that retrieves details of a process, according to its identifier."
 	```tab="Method"
  	GET
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/getByIdProcesso
+ 	<4biz_URL>/cit-ecm-web/integracao/getByIdProcesso
 
 	```
 
@@ -723,7 +723,7 @@ This section is intended to describe the communication structure REST, establish
 	}
 	],
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```tab="Fields"
@@ -762,14 +762,14 @@ This section is intended to describe the communication structure REST, establish
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listProcesso
+ 	<4biz_URL>/cit-ecm-web/integracao/listProcesso
 	```
 
 	```JSON tab="Request"
 	{
 	"nup":"00010.000012/2016-94",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Response"
@@ -798,7 +798,7 @@ This section is intended to describe the communication structure REST, establish
 	}
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Fields"
@@ -831,5 +831,5 @@ This section is intended to describe the communication structure REST, establish
 	     name: alphanumeric not empty and not null  
 	```
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>13/12/2018 - Andre Luiz de Oliveira Fernandes</font>
