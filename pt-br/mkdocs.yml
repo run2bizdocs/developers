@@ -1,0 +1,104 @@
+# Project information
+site_name: 'Run2biz Developers'
+site_description: 'Documentation for 4biz Software'
+site_author: 'Run2biz'
+site_url: 'https://developers.run2biz.com'
+
+# Repository
+#repo_name: 'run2bizdocs/developers'
+#repo_url: 'https://github.com/run2bizdocs/developers'
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Run2biz'
+
+# Configuration
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  static_templates:
+        - home.html
+  include_sidebar: false
+  language: 'pt'
+  palette:
+    primary: 'blue grey'
+    accent: 'deep orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'assets/images/run2biz-logo.png'
+  favicon: 'assets/images/favicon.ico'
+  feature:
+    tabs: true
+
+extra_css:
+  - 'assets/stylesheets/extra.css'
+  - 'assets/stylesheets/home.css'
+
+# Customization
+extra:
+  social:
+    - type: 'twitter'
+      link: 'https://twitter.com/run2biz'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/Run2biz-Brasil-100181464932640'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/run2biz-brasil'
+
+# Google Analytics
+# # Habilitar após a criação da política de privacidade
+
+#google_analytics:
+#  - 'UA-131806581-1'
+#  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Generate page .html
+use_directory_urls: false
+
+nav:
+  - Home:
+    - 'https://developers.run2biz.com/pt-br/index.html'
+  - DEV:
+    - Iniciar:
+      - index.md
+      - get-started/configure-webservices.md
+      - get-started/load-webservice-script.md
+      - get-started/register-webservice.md
+    - APIs 4biz:
+      - api/apis.md
+    - Webservice:
+      - webservice/data-export.md
+      - webservice/webservices-docs.md
+      - webservice/webservices-esp.md
+      - webservice/webservices-neuro.md
+    - Toolkit:
+      - Scripts:
+        - toolkit/script/change-sla.md
+  - Run2biz Corporation:
+    - 'https://www.run2biz.com/'
+#  - Blog:
+#    - 'http://blog.run2biz.com'
