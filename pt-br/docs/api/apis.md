@@ -327,7 +327,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 
 	```JSON tab="Solicitação"
 	{
-	"connection": "http://4biz.centralit.com.br&quot;,
+	"connection": "http://4biz.example.com.br&quot;,
 	"sessionID": "2355A68BF75281B73607EEC1A7191645",
 	"token": "API132654ASFE32132121¬5412"
 	}

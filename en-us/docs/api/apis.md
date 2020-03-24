@@ -11,7 +11,7 @@ This section is intended to describe the communication structure REST, establish
 
 --------
 
-### Login 
+### Login
 
 !!! example "Login the user to use 4biz Services."
 	```tab="Method"
@@ -326,7 +326,7 @@ This section is intended to describe the communication structure REST, establish
 
 	```JSON tab="Request"
 	{
-	"connection": "http://4biz.centralit.com.br&quot;,
+	"connection": "http://4biz.example.com.br&quot;,
 	"sessionID": "2355A68BF75281B73607EEC1A7191645",
 	"token": "API132654ASFE32132121¬5412"
 	}
