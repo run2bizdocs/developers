@@ -1,7 +1,7 @@
-Title: Webservices - CITSmart Neuro
+Title: Webservices - 4biz Neuro
 Description: Webservices Neuro
 
-# Webservices - CITSmart Neuro
+# Webservices - 4biz Neuro
 
 Este documento reúne os conhecimentos mínimos necessários para o adequado uso dos serviços via Rest.
 
@@ -22,7 +22,7 @@ Este documento reúne os conhecimentos mínimos necessários para o adequado uso
 
 ## ORIENTAÇÕES ESPECÍFICAS PARA ACESSO À API REST
 
-Nas seções seguintes, está detalhado cada tipo de uso previsto para os serviços disponíveis via Rest no produto CITSmart Enteprise Neuro.
+Nas seções seguintes, está detalhado cada tipo de uso previsto para os serviços disponíveis via Rest no produto 4biz Enteprise Neuro.
 
 ### Autenticação
 
@@ -121,12 +121,5 @@ Qualquer fluxo ESI pode ser executado via REST utilizando o serviço POST /cit-e
 Figura 9 - Exemplo de execução de fluxos ESI
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>07/01/2019 - João Pelles Junior</font>
-	
-
-
-
-
-
-

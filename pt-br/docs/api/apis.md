@@ -6,31 +6,31 @@ Description: descrever a estrutura de comunicação REST, estabelecida entre apl
 Esta seção destina-se a descrever a estrutura de comunicação REST, estabelecida entre aplicativos e o servidor de back-end.
 
 !!! warning "Atenção"
-    **"CITSMART_URL"**: prefixo de URL inalterável, para que você possa acessar os serviços disponibilizados para os aplicativos móveis.
+    **"4biz_URL"**: prefixo de URL inalterável, para que você possa acessar os serviços disponibilizados para os aplicativos móveis.
     TODO API QUE NECESSITA UM **“sessionID”** PRECISARÁ ESTAR EM UMA SESSÃO FORNECIDA PELO “Login” DA API.
 
 
 --------
 
-### Login 
+### Login
 
-!!! example "Login do usuário para usar os Serviços CITSmart"
+!!! example "Login do usuário para usar os Serviços 4biz"
 	```tab="Método"
  	POST
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/login
+ 	<4biz_URL>/services/v2/login
 	```
 
 	```JSON tab="Solicitação"
-	Solicitação { 
-	"userName": "mobile", 
-	"password": "123456", 
-	"token": "API132654ASFE32132121Â­5412", 
-	"platform": "android" 
+	Solicitação {
+	"userName": "mobile",
+	"password": "123456",
+	"token": "API132654ASFE32132121Â­5412",
+	"platform": "android"
 	}
-	
+
 	```
 
 	```JSON tab="Resposta"
@@ -52,7 +52,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		rangeAction: é inteiro, não nulo e não pode ser zero. Representa o raio de ação de um usuário de campo em KM.
 		locationInterval: é inteiro, não nulo e maior que zero. Representa, em minutos, o intervalo de tempo que o aplicativo deve enviar o posicionamento do atendente.
 	```
-                
+
 
 
 
@@ -65,7 +65,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/contracts
+ 	<4biz_URL>/services/v2/contracts
 	```
 
 	```JSON tab="Solicitação"
@@ -97,7 +97,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		error: valor alfanumérico que pode ser nulo mas não pode ser vazio;
 		contracts: não vazio nem nulo;
 		id: numérico não vazio nem nulo;
-		description: alfanumérico não vazio nem nulo.	
+		description: alfanumérico não vazio nem nulo.
 	```
 
 ### ListDeniedReasons
@@ -108,7 +108,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/deniedReasons
+ 	<4biz_URL>/services/v2/deniedReasons
 	```
 
 	```JSON tab="Solicitação"
@@ -155,7 +155,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/status
+ 	<4biz_URL>/services/v2/status
 	```
 
 	```JSON tab="Solicitação"
@@ -233,7 +233,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/units
+ 	<4biz_URL>/services/v2/units
 	```
 
 	```JSON tab="Solicitação"
@@ -263,7 +263,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 
 	```tab="Campos"
 	Solicitação:
-		sessionID: alfanumérico não vazio nem nulo; 
+		sessionID: alfanumérico não vazio nem nulo;
 		contractID: numérico não nulo.
 	Resposta:
 		dateTime: timestamp não vazio nem nulo;
@@ -281,7 +281,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/coordinates
+ 	<4biz_URL>/services/v2/coordinates
 	```
 
 	```JSON tab="Solicitação"
@@ -322,12 +322,12 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/disassociate
+ 	<4biz_URL>/services/v2/disassociate
 	```
 
 	```JSON tab="Solicitação"
 	{
-	"connection": "http://citsmart.centralit.com.br&quot;,
+	"connection": "http://4biz.centralit.com.br&quot;,
 	"sessionID": "2355A68BF75281B73607EEC1A7191645",
 	"token": "API132654ASFE32132121¬5412"
 	}
@@ -362,7 +362,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getNewest
+ 	<4biz_URL>/services/v2/getNewest
 	```
 
 	```JSON tab="Solicitação"
@@ -461,7 +461,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getOldest
+ 	<4biz_URL>/services/v2/getOldest
 	```
 
 	```JSON tab="Solicitação"
@@ -549,7 +549,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 			1 - Execução disponível
 		contract: numérico não nulo;
 		unit: numérico não nulo;
-		priorityorder: valor numérico que pode apresentar valor nulo, número de sequência que identifica se o gerente solicitou o serviço;	
+		priorityorder: valor numérico que pode apresentar valor nulo, número de sequência que identifica se o gerente solicitou o serviço;
 	```
 
 ### GetByCoordinates
@@ -560,7 +560,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getByCoordinates
+ 	<4biz_URL>/services/v2/getByCoordinates
 	```
 
 	```JSON tab="Solicitação"
@@ -678,7 +678,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/update
+ 	<4biz_URL>/services/v2/update
 	```
 
 	```JSON tab="Solicitação"
@@ -764,7 +764,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 			1 - Execução disponível
 		contract: numérico não nulo;
 		unit: numérico não nulo;
-		priorityorder: valor numérico que pode apresentar valor nulo, número de sequência que identifica se o gerente solicitou o serviço;	
+		priorityorder: valor numérico que pode apresentar valor nulo, número de sequência que identifica se o gerente solicitou o serviço;
 	```
 
 ### GetById
@@ -775,7 +775,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getById
+ 	<4biz_URL>/services/v2/getById
 	```
 
 	```JSON tab="Solicitação"
@@ -799,7 +799,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	"taskStatus": "Available",
 	"timeSLA": 12
 	}
-	}	
+	}
 	```
 
 	```tab="Campos"
@@ -828,7 +828,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/getReasons
+ 	<4biz_URL>/services/v2/getReasons
 	```
 
 	```JSON tab="Solicitação"
@@ -887,7 +887,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/attendRequest
+ 	<4biz_URL>/services/v2/attendRequest
 	```
 
 	```JSON tab="Solicitação"
@@ -931,7 +931,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/ location 
+ 	<4biz_URL>/services/v2/ location
 	```
 
 	```JSON tab="Solicitação"
@@ -956,7 +956,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	N/A
 	```
 
-### Feedback 
+### Feedback
 
 !!! example "Registra uma aprovação ou negação de uma solicitação de serviço."
 	```tab="Método"
@@ -964,7 +964,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/feedback
+ 	<4biz_URL>/services/v2/feedback
 	```
 
 	```JSON tab="Solicitação"
@@ -1006,7 +1006,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/new
+ 	<4biz_URL>/services/v2/new
 	```
 
 	```JSON tab="Solicitação"
@@ -1047,7 +1047,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/checkin 
+ 	<4biz_URL>/services/v2/checkin
 	```
 
 	```JSON tab="Solicitação"
@@ -1090,7 +1090,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/checkout
+ 	<4biz_URL>/services/v2/checkout
 	```
 
 	```JSON tab="Solicitação"
@@ -1138,7 +1138,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/services/v2/denied
+ 	<4biz_URL>/services/v2/denied
 	```
 
 	```JSON tab="Solicitação"
@@ -1171,6 +1171,5 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		dateTime: timestamp não vazio nem nulo;
 		operationID: numérico não vazio nem nulo;
 		error: valor alfanumérico que pode ser nulo mas não pode ser vazio;
-		number: alfanumérico não vazio nem nulo; 
+		number: alfanumérico não vazio nem nulo;
 	```
-

@@ -1,7 +1,7 @@
 Title: Informações Webservice
-Description:  Webservices no Informações Gerais do CITSmart
+Description:  Webservices no Informações Gerais do 4biz
 
-# Webservices no CITSmart
+# Webservices no 4biz
 
 <table width='100%'>
 	<tr>
@@ -15,7 +15,7 @@ Description:  Webservices no Informações Gerais do CITSmart
 </table>
 
 
-Este documento descreve a implementação do WebService no CITSmart ESP. Chamado Citrest, o serviço da Web usa a implementação RESTEasy do padrão RESTFul. Através de exemplos práticos, os conceitos básicos, estruturas de dados e padrões a serem seguidos na implementação de novos serviços serão apresentados.
+Este documento descreve a implementação do WebService no 4biz ESP. Chamado Citrest, o serviço da Web usa a implementação RESTEasy do padrão RESTFul. Através de exemplos práticos, os conceitos básicos, estruturas de dados e padrões a serem seguidos na implementação de novos serviços serão apresentados.
 
 ## O padrão RestEasy  
 
@@ -25,25 +25,25 @@ O Citrest usa o RESTEasy, que é uma implementação da especificação JAX-RS q
 
 Este documento não tem a intenção de apresentar detalhes sobre a implementação RESTful ou RESTEasy, já que existe extensa documentação na Internet sobre o assunto, como no site http://www.jboss.org/resteasy.
 
-## Modelo de dados 
+## Modelo de dados
 
 Uma estrutura foi criada no banco de dados para armazenar os dados necessários para o funcionamento do Citrest. O modelo de dados rest_v2.pdm está localizado no diretório **CitCorporeWeb/Model** .
 
-Todas as tabelas mantidas no Citrest possuem o prefixo Rest_ e possuem relacionamento com outras tabelas no modelo CITSmart: ObjetoNegocio, Grupo, Usuário e ProcessamentoBatch.
+Todas as tabelas mantidas no Citrest possuem o prefixo Rest_ e possuem relacionamento com outras tabelas no modelo 4biz: ObjetoNegocio, Grupo, Usuário e ProcessamentoBatch.
 
 ## Classes de Recursos  
 
 As Classes de Recursos são classes simples, POJO, contendo anotações JAX-RS para indicar mapeamentos e operações existentes.
 
-As classes Resources devem estar no pacote br.com.centralit.citsmart.rest.resource e seguir o padrão de nomenclatura usado nas outras classes Resources, Rest \ <NomeDoUC \> Resources.java.  
+As classes Resources devem estar no pacote br.com.centralit.4biz.rest.resource e seguir o padrão de nomenclatura usado nas outras classes Resources, Rest \ <NomeDoUC \> Resources.java.  
 
 A Classe de Recurso que intercepta a chamada http para o webservice deve ser mapeada para o arquivo web.xml. Por exemplo:
 
-!!! Example "Exemplo" 
+!!! Example "Exemplo"
     \<context-param\>  
     \<param-name\>resteasy-resources2\</param-name\>  
     \<param-value\>  
-      br.com.centralit.citsmart.rest.resource.RestOperationResources  
+      br.com.centralit.4biz.rest.resource.RestOperationResources  
     ​\</param-value\>  
     \</context-param\>  
 
@@ -70,7 +70,7 @@ O método Execute é uma condição do contrato da Interface IRestOperation. As 
 
 Para cada messageID, é feita uma chamada para um método específico para tratamento.
 
-Cada um desses métodos pode fazer chamadas para o CITSmart Services Layer para reutilização de serviços.
+Cada um desses métodos pode fazer chamadas para o 4biz Services Layer para reutilização de serviços.
 
 ## Regras Específicas
 
@@ -125,9 +125,9 @@ Para a criação de um novo recurso, o desenvolvedor deve seguir as seguintes et
 Todas as classes usadas pelo Citrest devem ser definidas por .XSD específico. A partir de .XSD, as classes podem ser geradas automaticamente pelo plug-in do eclipse ou pelo xjc.jar, disponível na iniciativa 0015 no SharePoint. Para gerar as classes do xjc, você deve usar a seguinte linha de comando:
 
 xjc "{path and name of xsd}" -d "{absolute path to src} eg:
-D:\\Ambiente\\jboss\\server\\default\\deploy\\CitCorpore.war\\WEB-INF\\src}" -p {pakage name} eg: {br.com.centralit.citsmart.rest.schema}
+D:\\Ambiente\\jboss\\server\\default\\deploy\\CitCorpore.war\\WEB-INF\\src}" -p {pakage name} eg: {br.com.centralit.4biz.rest.schema}
 
-O .XSD deve estar no pacote br.com.centralit.citsmart.rest.xsd e as classes geradas devem estar no pacote br.com.centralit.citsmart.rest.schema. Nesses pacotes já existem várias classes .XSD e várias usadas pelo Mobile que podem ser usadas como exemplo.
+O .XSD deve estar no pacote br.com.centralit.4biz.rest.xsd e as classes geradas devem estar no pacote br.com.centralit.4biz.rest.schema. Nesses pacotes já existem várias classes .XSD e várias usadas pelo Mobile que podem ser usadas como exemplo.
 
 ## Classe CtError
 
@@ -135,7 +135,7 @@ A classe CtError é referenciada pelas outras classes usadas para executar as op
 
 ## Classe CtLogin E CtLoginResp
 
-Toda operação em execução no Citrest requer um SessionID retornado pelo login. O login é implementado na classe br.com.centralit.citsmart.rest.resource.RestOperationResources e tem como entrada um objeto da classe CtLogin.
+Toda operação em execução no Citrest requer um SessionID retornado pelo login. O login é implementado na classe br.com.centralit.4biz.rest.resource.RestOperationResources e tem como entrada um objeto da classe CtLogin.
 
 Como resultado do login, o objeto SessionID ou CtError é retornado pelo login por meio da classe CtLoginResp.
 
@@ -163,15 +163,15 @@ Para facilitar a compreensão, esta seção detalha a implementação e a opera�
 
 As seguintes etapas foram seguidas para sua implementação:
 
-1.  O XSD das classes CtNotificationGetByUser e CtNotificationGetByUserResp foi definido no arquivo br.com.centralit.citsmart.rest.xsd.MobileNotification.XSD
-2.  As classes foram geradas no pacote br.com.centralit.citsmart.rest.schema por xjc.jar
-3.  As entradas a seguir foram incluídas no arquivo Web.xml do projeto CITSmart:
+1.  O XSD das classes CtNotificationGetByUser e CtNotificationGetByUserResp foi definido no arquivo br.com.centralit.4biz.rest.xsd.MobileNotification.XSD
+2.  As classes foram geradas no pacote br.com.centralit.4biz.rest.schema por xjc.jar
+3.  As entradas a seguir foram incluídas no arquivo Web.xml do projeto 4biz:
 
 !!! example "Exemplo"
     \<context-param\>  
     \<param-name\>resteasy-resources3\</param-name\>  
     \<param-value\>  
-      br.com.centralit.citsmart.rest.resource.RestMobileResources  
+      br.com.centralit.4biz.rest.resource.RestMobileResources  
     \</param-value\>  
     \</context-param\>  
     \<servlet-mapping\>  
@@ -202,13 +202,5 @@ As chamadas http: //.../mobile/notification/getByUser serão interceptadas pela 
 
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>07/01/2019 - João Pelles Junior</font>
-	
-
-
-
-
-
-
-

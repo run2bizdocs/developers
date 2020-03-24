@@ -1,5 +1,5 @@
 ﻿Title: Registrar operações
-Description: CITSmart - ESP Register Webservices Operations
+Description: 4biz - ESP Register Webservices Operations
 
 #Registrar operação webservice
 
@@ -22,7 +22,5 @@ Para inserir as operações padrões de webservice no sistema, é necessário ex
 6.	Clique em “Gravar”.  
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>03/01/2010 - João Pelles Junior</font>
-	
-

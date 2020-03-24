@@ -1,18 +1,18 @@
-Title: Webservices - CITSmart Docs
-Description: CITSmart - Docs Webservices
+Title: Webservices - 4biz Docs
+Description: 4biz - Docs Webservices
 
-# Webservices CITSmart Docs
+# Webservices 4biz Docs
 
 Esta seção destina-se a descrever a estrutura de comunicação REST, estabelecida entre aplicativos e o servidor back-end.
 
-!!! warning "Atenção" 
-    "CITSMART_URL": prefixo de URL inalterável, para que você possa acessar os serviços disponibilizados para os aplicativos de mobile</br>
+!!! warning "Atenção"
+    "4biz_URL": prefixo de URL inalterável, para que você possa acessar os serviços disponibilizados para os aplicativos de mobile</br>
     TODO API QUE NECESSITA DE “sessionID” PRECISARÁ ESTAR NA SEÇÃO FORNECIDA PELO “Login” DA API.
 
 --------
 
 ### LOGIN
- 
+
 !!! example "Serviço de autentificação do usuário"
 	```tab="Método"
  	GET
@@ -54,7 +54,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	   name: alfanumérico não vazio nem nulo;
 	   version: numérico não vazio nem nulo;
 	```
-            
+
 
 ###LISTA DEPARTMENTO
 
@@ -75,7 +75,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```JSON tab="Resposta"
-	 	
+
 	{
 	"units":[
 	{
@@ -97,7 +97,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	   name: alfanumérico não vazio nem nulo
 	   code: alfanumérico não vazio nem nulo
 	```
-    
+
 ###LISTA TIPO DE PROCESSO
 
 !!! example "Serviço de listagem do tipo de processo de um processo, a ser usado"
@@ -147,7 +147,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listNivelAcessoTipoProcesso
+	<4biz_URL>/cit-ecm-web/integracao/listNivelAcessoTipoProcesso
 	```
 
 	```JSON tab="Solicitação"
@@ -192,7 +192,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listNivelAcessoTipoDocumento
+ 	<4biz_URL>/cit-ecm-web/integracao/listNivelAcessoTipoDocumento
 
 	```
 
@@ -239,7 +239,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
-  	<CITSMART_URL>/cit-ecm-web/integracao/listAssunto
+  	<4biz_URL>/cit-ecm-web/integracao/listAssunto
 
 	```
 
@@ -284,7 +284,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listHipoteseLegal
+	<4biz_URL>/cit-ecm-web/integracao/listHipoteseLegal
 
 	```
 
@@ -328,7 +328,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listPessoas
+	<4biz_URL>/cit-ecm-web/integracao/listPessoas
 
 	```
 
@@ -347,7 +347,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	"name":"Maycon"
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Campos"
@@ -363,11 +363,11 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 
 !!! example "Lista dos formulários de conferência de um processo e / ou documento, a ser usado"
 	```tab="Método"
-	GET	
+	GET
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listFormaConferencia
+	<4biz_URL>/cit-ecm-web/integracao/listFormaConferencia
 
 	```
 
@@ -406,7 +406,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
-	<CITSMART_URL>/cit-ecm-web/integracao/listTipoSuporte
+	<4biz_URL>/cit-ecm-web/integracao/listTipoSuporte
 
 	```
 
@@ -414,7 +414,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	{
 	"name":"Name type media",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Resposta"
@@ -426,7 +426,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	}
 	]
 	}
-	 
+
 	```
 
 	```tab="Campos"
@@ -436,7 +436,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	Resposta:
 	  typeSupport: Lista vazia e não nula;
 	  id: numérico não vazio nem nulo
-	  name: alfanumérico não vazio nem nulo 
+	  name: alfanumérico não vazio nem nulo
 	```
 ###LISTA TIPOS DE DOCUMENTO
 
@@ -446,7 +446,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listTipoDocumento
+ 	<4biz_URL>/cit-ecm-web/integracao/listTipoDocumento
 
 	```
 
@@ -465,13 +465,13 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	"name":"Document type name"
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Campos"
 	Solicitação:
-	  name: alfanumérico não vazio nem nulo 
-	  token: alfanumérico não vazio nem nulo 
+	  name: alfanumérico não vazio nem nulo
+	  token: alfanumérico não vazio nem nulo
 	Resposta:
 	  typeDocument: Lista vazia e não nula;
 	  id: numérico não vazio nem nulo
@@ -485,7 +485,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/processo
+ 	<4biz_URL>/cit-ecm-web/integracao/processo
 
 	```
 
@@ -513,7 +513,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	}
 	],
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Resposta"
@@ -542,7 +542,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	  token: alfanumérico não vazio nem nulo
 	Resposta:
 	  id: numérico não vazio nem nulo
-	  nup: alfanumérico não vazio nem nulo 
+	  nup: alfanumérico não vazio nem nulo
 	```
 ###CRIAR DOCUMENTO
 
@@ -552,7 +552,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/documento
+ 	<4biz_URL>/cit-ecm-web/integracao/documento
 
 	```
 
@@ -597,14 +597,14 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	},
 	"localizacao":"Physical location",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Resposta"		
 	{
 	"id":"25353",
 	"numero":"00001.00002/2016-58"
-	} 
+	}
 	```
 
 	```tab="Campos"
@@ -649,7 +649,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/uploadAnexo
+ 	<4biz_URL>/cit-ecm-web/integracao/uploadAnexo
 
 	```
 
@@ -673,14 +673,14 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 
 
 ###GET BY ID PROCESS
- 
+
 !!! example "Serviço que recupera detalhes de um processo, de acordo com seu identificador."
 	```tab="Método"
  	GET
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/getByIdProcesso
+ 	<4biz_URL>/cit-ecm-web/integracao/getByIdProcesso
 
 	```
 
@@ -723,7 +723,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	}
 	],
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```tab="Campos"
@@ -752,7 +752,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	interessados: pode ser vazio e nulo;
 	     pessoa: não vazio nem nulo;
 	        id: numérico não vazio nem nulo
-	        nome: : alfanumérico não vazio nem nulo 
+	        nome: : alfanumérico não vazio nem nulo
 	```
 ### LISTA DE PROCESSO
 
@@ -762,14 +762,14 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	```
 
 	```HTML tab="URL"
- 	<CITSMART_URL>/cit-ecm-web/integracao/listProcesso
+ 	<4biz_URL>/cit-ecm-web/integracao/listProcesso
 	```
 
 	```JSON tab="Solicitação"
 	{
 	"nup":"00010.000012/2016-94",
 	"token":"TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074"
-	} 
+	}
 	```
 
 	```JSON tab="Resposta"
@@ -798,7 +798,7 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	}
 	}
 	]
-	} 
+	}
 	```
 
 	```tab="Campos"
@@ -828,8 +828,8 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	     assunto: alfanumérico podendo ser vazio ou nulo
 	  hipoteseLegal: não vazio nem nulo, se o nível de acesso for diferente de Público.
 	     id: numérico não vazio nem nulo
-	     name: alfanumérico podendo ser vazio ou nulo 
+	     name: alfanumérico podendo ser vazio ou nulo
 	```
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>07/01/2019 - João Pelles Junior</font>

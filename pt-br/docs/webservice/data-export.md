@@ -1,12 +1,12 @@
 ﻿Title: Exportação de Dados
-Description:  Webservices no CITSmart para Exportação de Dados
+Description:  Webservices no 4biz para Exportação de Dados
 
 # Webservice – Exportação de Dados
-Por meio dessa funcionalidade, é possível, por solicitação ao WebService, obter dados das tabelas do Banco de Dados do CITSmart para um arquivo XML.
+Por meio dessa funcionalidade, é possível, por solicitação ao WebService, obter dados das tabelas do Banco de Dados do 4biz para um arquivo XML.
 As condições de consulta para os registros que serão retornados são passadas como parâmetros via URL, conforme o exemplo abaixo:
 
 !!! example ""
-    http://localhost/citsmart/services/data/cargos/19  
+    http://localhost/4biz/services/data/cargos/19  
 
 Essa solicitação retorna os registros da tabela de posições em que o idcargo, ou seja, a chave primária da tabela de cobranças, é igual a 19. A consulta gerada com essa solicitação é esta:  
 
@@ -22,7 +22,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 
 !!! example "É possível obter um registro de acordo com o campo Chave Primária da tabela relatada."
 	```HTML tab="URL"
- 	http://<SERVER ADDRESS>/citsmart/services/data/<TABLE>/<PK VALUE>
+ 	http://<SERVER ADDRESS>/4biz/services/data/<TABLE>/<PK VALUE>
 	```
 
 	```MYSQL tab="SQL"
@@ -30,7 +30,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	```
 
 	```tab="Exemplo"
-	http://localhost/citsmart/services/data/process/19
+	http://localhost/4biz/services/data/process/19
 	   Ele irá procurar na tabela PROCESS com a chave PK igual a 19.
 	```
 
@@ -38,7 +38,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 
 !!! example "É possível obter um registro de acordo com um campo de Chave Primária da tabela fornecida e que atenda às condições de uma cláusula where."
 	```HTML tab="URL"
- 	http://<SERVER ADDRESS*>/citsmart/services/data/<TABLE>/<PK_VALUE>?cond=<ADDITIONAL_CLAUSES>
+ 	http://<SERVER ADDRESS*>/4biz/services/data/<TABLE>/<PK_VALUE>?cond=<ADDITIONAL_CLAUSES>
 	```
 
 	```MYSQL tab="SQL"
@@ -46,14 +46,14 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	```
 
 	```tab="Exemplo"
-        http://localhost/citsmart/services/data/cargos/22?cond=nomecargo like "Diretor"
+        http://localhost/4biz/services/data/cargos/22?cond=nomecargo like "Diretor"
 	```
 
 ## Where e Consulta Ordenada
 
 !!! example "É possível obter registros ordenados de uma tabela de acordo com as condições de uma cláusula where e campo para ordenação."
 	```HTML tab="URL"
- 	http://<SERVER ADDRESS*>/citsmart/services/data/<TABLE>?cond=<WHERE_CRITERIA>&order=<ORDERING FIELD>
+ 	http://<SERVER ADDRESS*>/4biz/services/data/<TABLE>?cond=<WHERE_CRITERIA>&order=<ORDERING FIELD>
 	```
 
 	```MYSQL tab="SQL"
@@ -61,7 +61,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	```
 
 	```tab="Exemplo"
-	http://localhost/citsmart/services/data/cargos?cond=idcargo<15 and idcargo > 10&order=nomecargo
+	http://localhost/4biz/services/data/cargos?cond=idcargo<15 and idcargo > 10&order=nomecargo
 	```
 
 
@@ -71,7 +71,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 !!! example "É possível obter registros ordenados de uma tabela, juntamente com os registros com os quais eles estão vinculados, de acordo com as condições de uma cláusula where e de um campo para ordenação."
 
 	```HTML tab="URL"
-	http://<SERVER ADDRESS*>/citsmart/services/data/<TABLE>?cond=<WHERE_CRITERIA>&order=<ORDERING FIELD>&links=<s_ou_n>
+	http://<SERVER ADDRESS*>/4biz/services/data/<TABLE>?cond=<WHERE_CRITERIA>&order=<ORDERING FIELD>&links=<s_ou_n>
 	```
 
 	```MYSQL tab="SQL"
@@ -79,7 +79,7 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	```
 
 	```tab="Exemplo"
-   	http://localhost/citsmart/services/data/localidade?cond=idlocalidade=1&order=idlocalidade&links=s
+   	http://localhost/4biz/services/data/localidade?cond=idlocalidade=1&order=idlocalidade&links=s
 	```
 
 	```tab="Fields"
@@ -89,15 +89,5 @@ Abaixo estão listadas as possibilidades e parâmetros que podem ser usados para
 	```
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> CITSmart | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
 <font  Size=2><b>Atualização:</b>03/01/2019 - João Pelles Junior</font>
-	
-
-
-
-
-
-
-
-
-
