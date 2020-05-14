@@ -1,7 +1,7 @@
-Title: Webservices - 4biz Neuro
-Description: Webservices Neuro
+Title: Webservices - 4biz Builder
+Description: Webservices Builder
 
-# Webservices - 4biz Neuro
+# Webservices - 4biz Builder
 
 Este documento reúne os conhecimentos mínimos necessários para o adequado uso dos serviços via Rest.
 
@@ -22,11 +22,11 @@ Este documento reúne os conhecimentos mínimos necessários para o adequado uso
 
 ## ORIENTAÇÕES ESPECÍFICAS PARA ACESSO À API REST
 
-Nas seções seguintes, está detalhado cada tipo de uso previsto para os serviços disponíveis via Rest no produto 4biz Enteprise Neuro.
+Nas seções seguintes, está detalhado cada tipo de uso previsto para os serviços disponíveis via Rest no produto 4biz Enteprise Builder.
 
 ### Autenticação
 
-Para usar as APIs, o cliente deve estar logado no Neuro. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST **/cit-esi-web/token**, passando um objeto JSON com os atributos username e password no body.
+Para usar as APIs, o cliente deve estar logado no Builder. Para isso, basta obter um token a partir do serviço de autenticação e injetar esse token no header de cada requisição REST com o identificador authentication-token. A autenticação é feita através do serviço POST **/cit-esi-web/token**, passando um objeto JSON com os atributos username e password no body.
 
 ![](../img/9181.png)
 
