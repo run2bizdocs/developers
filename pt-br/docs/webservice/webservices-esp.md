@@ -6,7 +6,7 @@ Description: Webservices para uso no 4biz
 Este documento tem o propósito de fornecer orientações a respeito dos Web Services disponibilizados para integração com o Gerenciamento de Serviço do 4biz.
 
 
-Os Web Services foram criados no CTSmart para inclusão, atualização, consulta e cancelamento de solicitações de serviço (incidentes e requisições).
+Os Web Services foram criados no 4biz para inclusão, atualização, consulta e cancelamento de solicitações de serviço (incidentes e requisições).
 
 
 ## Antes de começar
