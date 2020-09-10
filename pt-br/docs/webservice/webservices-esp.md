@@ -346,6 +346,89 @@ Os Web Services foram criados no 4biz para inclusão, atualização, consulta e 
     ```JSON tab="Exemplo JSON"
     {"requestNumberOrigin":"9999"}
     ```
+    
+### Listar tickets para atendimento
+
+Esse webservice deve ser utilizado para listar os usuários que podem ser solicitantes na abertura de um ticket.
+
+- Pré-condições: O solicitante deve estar vinculado à um grupo que tenha permissão de criar em um fluxo de trabalho.
+
+!!! example "Listar requisições/incidentes para atendimento"
+    ```tab="URL"
+    /services/request/createOccurrence
+    ```
+    
+    ```tab="Possíveis códigos de retorno"
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    ```
+    
+    ```tab="Atributos de entrada"
+    sessionID: Atributo obrigatório que recebe o código da sessão;
+    name: Atributo não obrigatório que recebe o nome do solicitante, parte do nome;
+	    Se o usuário passar a informação %%%, o sistema retornará todos os solicitantes do sistema.
+
+    ```tab="Exemplo JSON"
+    { 
+    "sessionID": "39738a39-836d-4940-94d5-c9235035bb29",
+
+    "name" : "poll" 
+    }  
+    Exemplo de entrada no webservice com atributos não obrigatórios
+    {
+    "userId": 4,
+    "selectedPage": 1,
+    "attendantId": 0,
+    "groupId": 0,
+    "orderBy": "TICKET_ID",
+    "orderDirection": "ASC",
+    "requesterId": 0,
+    "selectedPage": 0,
+    "status": "IN_PROGRESS",
+    "ticketId": 0,
+    "unitId": 0
+    }
+    ```
+    
+    ```tab="Atributos de saída"
+	" id " – Resposta que retorna o código do solicitante encontrado pela pesquisa;
+	“name” - Resposta que retorna o nome do solicitante;
+	"email" – Resposta que retorna o endereço de e-mail do solicitante;
+	“Unit” – Resposta que retorna
+    	Id: Código da unidade;
+        Name: Nome da Unidade;
+    “places” – Resposta que retorna:
+    	Id: Código da localidade;
+    	Name: Nome da localidade;
+    “phone” – Resposta que retorna o número do telefone do solicitante;
+    ```
+
+    ```tab="Exemplo JSON"
+    {
+    "status": "SUCCESS",
+    "code": "200",
+    "message": "Request processed successfully",
+    "payload": [
+        {
+            "id": 904,
+            "name": "Lucas Novais",
+            "email": "lucas@rogalabs.com",
+            "unit": {
+                "id": 1,
+                "name": "Default",
+                "places": [
+                    {
+                        "id": 1,
+                        "name": "Brasilia"
+                    }
+                ]
+            },
+            "phone": "(676) 76868-7687"
+        }
+    ]
+}
+
+
 
 <hr>
 <font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
