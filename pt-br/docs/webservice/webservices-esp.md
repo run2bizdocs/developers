@@ -405,28 +405,28 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
 
     ```tab="Exemplo JSON"
     {
-    "status": "SUCCESS",
-    "code": "200",
-    "message": "Request processed successfully",
-    "payload": [
-        {
-            "id": 904,
-            "name": "Lucas Novais",
-            "email": "lucas@rogalabs.com",
-            "unit": {
-                "id": 1,
-                "name": "Default",
-                "places": [
-                    {
-                        "id": 1,
-                        "name": "Brasilia"
-                    }
-                ]
-            },
-            "phone": "(676) 76868-7687"
-        }
-    ]
-}
+	    "status": "SUCCESS",
+	    "code": "200",
+	    "message": "Request processed successfully",
+	    "payload": [
+	        {
+	            "id": 904,
+	            "name": "Lucas Novais",
+	            "email": "lucas@rogalabs.com",
+	            "unit": {
+	                "id": 1,
+	                "name": "Default",
+	                "places": [
+	                    {
+	                        "id": 1,
+	                        "name": "Brasilia"
+	                    }
+	                ]
+	            },
+	            "phone": "(676) 76868-7687"
+	        }
+	    ]
+	}
     ```
 
 
