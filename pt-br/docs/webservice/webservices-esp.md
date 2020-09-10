@@ -431,5 +431,4 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
 
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
-<font  Size=2><b>Atualização:</b>07/01/2019 - João Pelles Junior</font>
+<font  Size=2><b>Atualização:</b>09/10/2020</font>
