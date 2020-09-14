@@ -429,6 +429,121 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
 	}
     ```
 
+### Gravar ticket em atendimento
+
+Esse webservice deve ser utilizado para retornar os tickets para atendimento dos analistas.  
+- Pré-condições: Possuir acesso ao sistema e permissão de execução no fluxo de trabalho.
+
+    ```tab="URL"
+    Para apenas gravar o ticket: webmvc/servicerequestincident/save  
+    Para gravar e avançar o ticket: webmvc/servicerequestincident/next
+    ```  
+    
+    ```tab="Possíveis códigos de retorno"
+    200 – Requisição efetuada com sucesso  
+    401 - Invalid authentication token or user without access to the resource  
+    406 - Not Acceptable - Business Exception
+    ```      
+    
+    ```tab="Atributos de entrada"    
+    authentication-token: Atributo obrigatório que recebe o token de autenticação
+    	Passar o authentication-token no Header;
+    serviceRequestId: Atributo obrigatório que recebe o número do ticket; 
+    taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+    contactEmail: Atributo obrigatório que recebe o endereço de e-mail do solicitante;  
+    contactExtension: Atributo não obrigatório que recebe o número do ramal do telefone do solicitante;  
+    contactPhone: Atributo não obrigatório que recebe o número do telefone do solicitante;  
+    goupId: Atributo não obrigatório que recebe o número do código do grupo que poderá receber o ticket;  
+    statusId: Atributo obrigatório que recebe o número do código da situação que o ticket receberá após a gravação do ticket, sendo esses status:  
+	In progress (1), Canceled (3) or Resolved (4)  
+    originId: Atributo não obrigatório que recebe o número do código de origem que o ticket receberá após a gravação do ticket;  
+    causeId: Atributo não obrigatório que recebe o número do código de causa de solução que o ticket receberá após a gravação do ticket;  
+    idSolutionCategory: Atributo não obrigatório que recebe o número do código de categoria de solução que o ticket receberá após a gravação do ticket;  
+    response: Atributo não obrigatório que recebe a descrição da solução resposta que o ticket receberá após a gravação do ticket;     builderObjects: Atributo não obrigatório que recebe as respostas capturadas caso, o ticket possua um formulário no ticket;  
+    quiz: Atributo não obrigatório que recebe as respostas capturadas caso, o ticket possua um questionário no ticket;  
+    flowAction: Atributo que recebe a ação de usuário desenhada no fluxo e respondida pelo atendente para solução do ticket;  
+    reasonFlowAction: Atributo que recebe a resposta dada ao campo Motivo, quando essa é desenhada no fluxo como obrigatória;  
+      
+    Exemplo de entrada no webservice:  
+    { 
+    	"serviceRequestId": 5409, 
+	"taskId": 8342, 
+	"contactEmail": "teste@teste.com", 
+	"contactExtension": "4979",
+	"contactPhone": "(64)999177012", 
+	"goupId": 21, 
+	"statusId": 1, 
+	"originId": 59, 
+	"causeId": 7, 
+	"idSolutionCategory": 13, 
+	"response": "Teste de Gravação via webservice", 
+    }  
+    ```
+    
+    ```tab="Atributos de saída"  
+    " idGrupoAtual " – Resposta que retorna o código do grupo atual do ticket;  
+    “idTarefa” - Resposta que retorna o código da tarefa do ticket;  
+    " idStatus" – Resposta que retorna o código da atual situação do ticket;  
+    “status” – Resposta que retorna a descrição do status do ticket;  
+    “dataHoraInicio” – Resposta que retorna a data e hora de criação do ticket;  
+    “dataHoraInicioSLA” – Resposta que retorna a data e hora de início do SLA do ticket;
+    “dataHoraLimite” – Resposta que retorna a data e hora de encerramento do SLA do ticket;  
+    “dataHoraSolicitacao” - Resposta que retorna a data e hora de criação do ticket;  
+    Descrição: Resposta que retorna a descrição do ticket;  
+    idCategoriaSolucao: Resposta que retorna o código da categoria de solução do ticket;  
+    idCausaIncidente: Resposta que retorna o código da causa de solução do ticket;  
+    idContrato: Resposta que retorna o código do contrato do ticket;  
+    idServico: Resposta que retorna o código do serviço de negócio ou apoio do ticket;  
+    idSolicitacaoServico: Resposta que retorna o número do ticket;  
+    idSolicitante: Resposta que retorna o código do solicitante do ticket;  
+    idUnidade: Resposta que retorna o código da unidade do ticket,  
+    impacto: Resposta que retorna a sigla do impacto;  
+    resposta: Resposta que retorna dos dizeres da solução resposta;  
+    siglaGrupo: Resposta que retorna a sigla do grupo;  
+    tarefa: Resposta que retorna a descrição da tarefa;  
+    urgencia: Resposta que retorna a sigla da urgência do ticket;  
+    idUsuarioResponsavelAtual: Resposta que retorna o código do responsável do ticket;  
+    nomeGrupoAtual: Resposta que retorna a descrição do grupo atual do ticket;  
+    solicitanteVip: Resposta que retorna se o solicitante é vip ou não, respostas possíveis:  
+    	false ou true
+    ```  
+
+    ```tab="Exemplo JSON"
+    {
+    	"status": "SUCCESS", 
+	"code": "200", 
+	"message": "Request processed successfully", 
+	"payload": {
+		"idGrupoAtual": 171, 
+		"idTarefa": 8809, 
+		"idStatus": 1, 
+		"status": "In Progress", 
+		"dataHoraInicio": "2020-09-10 11:58:28 AM BRT", 
+		"dataHoraInicioSLA": "2020-09-10 11:58:29 AM BRT", 
+		"dataHoraLimite": "2020-09-10 17:08:00 PM BRT", 
+		"dataHoraSolicitacao": "2020-09-10 11:58:28 AM BRT", 
+		"descricao": "<div>test</div>", 
+		"idCategoriaSolucao": 13, 
+		"idCausaIncidente": 7, 
+		"idContrato": 52, 
+		"idServico": 670, 
+		"idSolicitacaoServico": 5712, 
+		"idSolicitante": 456, 
+		"idUnidade": 2, 
+		"impacto": "A", 
+		"resposta": "Teste de Gravação via webservice", 
+		"siglaGrupo": "LEVEL1", 
+		"tarefa": "Answer Ticket", 
+		"urgencia": "A", 
+		"idUsuarioResponsavelAtual": 254,
+		"nomeGrupoAtual": "Level 1", 
+		"solicitanteVip": false
+	}  
+    }
+    ``` 
+    
+
+
 
 <hr>
 <font  Size=2><b>Atualização:</b>09/10/2020</font>
