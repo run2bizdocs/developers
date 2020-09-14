@@ -355,18 +355,63 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
 
 !!! example "Listar requisições/incidentes para atendimento"
     ```tab="URL"
-    /services/request/createOccurrence
+    /services/request/createOccurrence 
+    /webmvc/servicerequestincident/searchTickets
     ```
     
     ```tab="Possíveis códigos de retorno"
     200 – Requisição efetuada com sucesso
     401 - Invalid authentication token or user without access to the resource
+    406 - Not Acceptable - Business Exception
     ```
     
     ```tab="Atributos de entrada"
     sessionID: Atributo obrigatório que recebe o código da sessão;
     name: Atributo não obrigatório que recebe o nome do solicitante, parte do nome;
 	    Se o usuário passar a informação %%%, o sistema retornará todos os solicitantes do sistema.
+        •	userId: Atributo obrigatório que recebe o código do usuário logado;
+        •	selectedPage: Atributo obrigatório que passa a página a ser traga;
+        •	Passar o sessionID no Header;
+        •	Filtros permitidos nesse webservice, os atributos descritos abaixo não são obrigatórios:
+            o	attendantId: Atributo que permite filtrar pelo nome do atendente;
+            o	groupId: Atributo que permite filtrar pelo nome do grupo;
+            o	orderBy: Atributo que permite ordenar os registros pelos seguintes parâmetros:
+                	TICKET_ID: Número do ticket, 
+                	CREATE_DATE: Data de criação, 
+                	LIMIT_DATE: Data limite para atendimento do ticket,
+            o	orderDirection: Atributo que permite direcionar os tickets de duas formas:
+                	ASC: Direciona pelo número do ticket de forma crescente, 
+                	DESC: Direciona pelo número do ticket de forma decrescente
+            o	requesterId: Atributo que permite filtrar pelo nome do solicitante;
+            o	status: Atributo que permite filtrar pelas situações dos tickets:
+                	IN_PROGRESS,
+                	SUSPENDED, 
+                	CANCELED, 
+                	SOLVED, 
+                	CLOSED 
+            o	ticketId: Atributo que permite filtrar pelo número do ticket;
+            o	unitId: Atributo que permite filtrar pelo nome da unidade;
+    Exemplo de entrada no webservice
+    {
+        "userId": 4,
+        "selectedPage": 1
+    }
+
+    Exemplo de entrada no webservice com os atributos não obrigatórios
+    {
+        "userId": 4,
+        "selectedPage": 1,
+        "attendantId": 0,
+        "groupId": 0,
+        "orderBy": "TICKET_ID",
+        "orderDirection": "ASC",
+        "requesterId": 0,
+        "selectedPage": 0,
+        "status": "IN_PROGRESS",
+        "ticketId": 0,
+        "unitId": 0
+    }
+
 
     ```tab="Exemplo JSON"
     { 
@@ -401,6 +446,33 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
     	Id: Código da localidade;
     	Name: Nome da localidade;
     “phone” – Resposta que retorna o número do telefone do solicitante;
+    •	"id" – Resposta que retorna o número do ticket;
+    •	“tipo” - Resposta que retorna o tipo de demanda, ou seja, se é uma Requisição (R), Incidente (I) ou Procedimento(P);
+    •	"nomePrioridade" – Resposta que retorna o nome da Prioridade dada ao ticket;
+    •	“solicitacao” – Resposta que retorna a descrição da atividade solicitada;
+    •	“tarefa” – Resposta que retorna a tarefa do fluxo que se encontra o ticket;
+    •	“status” – Resposta que retorna a situação da tarefa do ticket listado;
+    •	“dataLimite” – Resposta que retorna a data e a hora de encerramento da solicitação de serviço conforme o SLA e calendário vinculado a atividadexcontrato
+    •	“statusFluxoNome” - Resposta que retorna a situação do SLA, podendo ser: Normal, A Vencer, Vencido, Suspenso.
+    Exemplo de resposta válida do webservice
+    "code": "200",
+    "message": "Request processed successfully",
+    "payload":{
+    "initialNumber": 1,
+    "lastPage": 1.0,
+    "finalNumber": 20,
+    "totalRequests": 168,
+    "result":
+    [
+    "id": 1251,
+    "tipo": "Incidente",
+    "nomePrioridade": "Medium",
+    "solicitacao": "Serviço de Incidente",
+    "tarefa": "Atender solicitacao",
+    "status": "NORMAL",
+    "dataLimite": "2020-06-09 09:18:00 AM UTC"
+    ]
+    }
     ```
 
     ```tab="Exemplo JSON"
