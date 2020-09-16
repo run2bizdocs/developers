@@ -3,9 +3,9 @@ Description: 4biz Webservices
 
 # Webservices for use on 4biz
 
-This document is intended to provide guidance regarding the Web Services made available for integration with CTSmart ITSM Service Management.
+This document is intended to provide guidance regarding the Web Services made available for integration with 4biz Service Management.
 
-Web Services have been created in CTSmart for inclusion, updating, consultation and cancellation of service requests (incidents and requisitions).
+Web Services have been created in 4biz for inclusion, updating, consultation and cancellation of service requests (incidents and requisitions).
 
 
 ## Before getting started
