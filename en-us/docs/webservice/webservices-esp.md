@@ -345,7 +345,279 @@ Web Services have been created in CTSmart for inclusion, updating, consultation 
     ```JSON tab="JSON Example"
     {"requestNumberOrigin":"9999"}
     ```
+    
+### Listing tickets to be attended
+
+This webservice should be used to list the users who can be requesters when opening a ticket.
+
+- Prerequisites: The requester must be linked to a group that is allowed to create in a workflow.
+
+!!! example "Listing requests/incidents to be attended"
+    ```tab="URL"
+    /services/request/createOccurrence 
+    /webmvc/servicerequestincident/searchTickets
+    ```
+    
+    ```tab="Possible return codes"
+    200 – Request was successful
+    401 - Invalid authentication token or user without access to the resource
+    406 - Not Acceptable - Business Exception
+    ```
+    
+    ```tab="Input attributes"
+    sessionID: Mandatory attribute that receives the session code;
+    name: Non-mandatory attribute that receives the name of the requester, part of the name;
+	    If the user gives the %%% information, the system will return all requesters in the system.
+        •	userId: Mandatory attribute that receives the logged user code;
+        •	selectedPage: Mandatory attribute that passes the page to be returned;
+        •	Put the sessionID in the Header;
+        •	Filters allowed in this webservice. The attributes described below are not mandatory:
+            o	attendantId: Attribute that allows filtering by the name of the attendant;
+            o	groupId: Attribute that allows filtering by group name;
+            o	orderBy: Attribute that allows ordering the records by the following parameters:
+                	TICKET_ID: Ticket number, 
+                	CREATE_DATE: Creation date, 
+                	LIMIT_DATE: Deadline for attending the ticket,
+            o	orderDirection: Attribute that allows directing tickets in two ways:
+                	ASC: Directs by the number of the ticket in an ascending way, 
+                	DESC: Directs by the number of the ticket in a descending way
+            o	requesterId: Attribute that allows filtering by the name of the requester;
+            o	status: Attribute that allows filtering by ticket status:
+                	IN_PROGRESS,
+                	SUSPENDED, 
+                	CANCELED, 
+                	SOLVED, 
+                	CLOSED 
+            o	ticketId: Attribute that allows filtering by ticket number;
+            o	unitId: Attribute that allows filtering by unit name;
+    Example of inputs in the webservice
+    {
+        "userId": 4,
+        "selectedPage": 1
+    }
+
+    Example of a webservice input with non-mandatory attributes
+    {
+        "userId": 4,
+        "selectedPage": 1,
+        "attendantId": 0,
+        "groupId": 0,
+        "orderBy": "TICKET_ID",
+        "orderDirection": "ASC",
+        "requesterId": 0,
+        "selectedPage": 0,
+        "status": "IN_PROGRESS",
+        "ticketId": 0,
+        "unitId": 0
+    }
+
+
+    ```tab="JSON Example"
+    { 
+    "sessionID": "39738a39-836d-4940-94d5-c9235035bb29",
+
+    "name" : "poll" 
+    }  
+    Example of webservice input with non-mandatory attributes
+    {
+    "userId": 4,
+    "selectedPage": 1,
+    "attendantId": 0,
+    "groupId": 0,
+    "orderBy": "TICKET_ID",
+    "orderDirection": "ASC",
+    "requesterId": 0,
+    "selectedPage": 0,
+    "status": "IN_PROGRESS",
+    "ticketId": 0,
+    "unitId": 0
+    }
+    ```
+    
+    ```tab="Output attributes"
+	" id " – Response that returns the requester code found by the search;
+	“name” - Response that returns the requester's name;
+	"email" – Response that returns the requester's email address;
+	“Unit” – Response that returns
+    	Id: Unit code;
+        Name: Unit name;
+    “places” – Response that returns:
+    	Id: Location code;
+    	Name: Location name;
+    “phone” – Response that returns the requester's phone number;
+    •	"id" – Response that returns the ticket number;
+    •	“tipo” - Response that returns the type of demand, that is, if it is a Request (R), Incident (I) or Procedure (P);
+    •	"nomePrioridade" – Response that returns the Priority name given to the ticket;
+    •	“solicitacao” – Response that returns the description of the requested activity;
+    •	“tarefa” – Response that returns the task of the flow that is the ticket;
+    •	“status” – Response that returns the status of the listed ticket task;
+    •	“dataLimite” – Response that returns the service request closing date and time according to the SLA and calendar linked to the activityxcontract
+    •	“statusFluxoNome” - Response that returns the status of the SLA, which can be: Normal, To be expired, Expired, Suspended.
+    Example of valid response of the webservice
+    "code": "200",
+    "message": "Request processed successfully",
+    "payload":{
+    "initialNumber": 1,
+    "lastPage": 1.0,
+    "finalNumber": 20,
+    "totalRequests": 168,
+    "result":
+    [
+    "id": 1251,
+    "tipo": "Incident",
+    "nomePrioridade": "Medium",
+    "solicitacao": "Incident",
+    "tarefa": "Attend request",
+    "status": "NORMAL",
+    "dataLimite": "2020-06-09 09:18:00 AM UTC"
+    ]
+    }
+    ```
+
+    ```tab="JSON Example"
+    {
+	    "status": "SUCCESS",
+	    "code": "200",
+	    "message": "Request processed successfully",
+	    "payload": [
+	        {
+	            "id": 904,
+	            "name": "Lucas Novais",
+	            "email": "lucas@rogalabs.com",
+	            "unit": {
+	                "id": 1,
+	                "name": "Default",
+	                "places": [
+	                    {
+	                        "id": 1,
+	                        "name": "Brasilia"
+	                    }
+	                ]
+	            },
+	            "phone": "(676) 76868-7687"
+	        }
+	    ]
+	}
+    ```
+
+### Saving ticket in progress
+
+This webservice should be used to return tickets to the be attended by the analysts.  
+- Prerequests: Have access to the system and permission of execution in the workflow.
+
+    ```tab="URL"
+    To only save the ticket: webmvc/servicerequestincident/save  
+    To save and advance the ticket: webmvc/servicerequestincident/next
+    ```  
+    
+    ```tab="Possible return codes"
+    200 – Request was successful  
+    401 - Invalid authentication token or user without access to the resource  
+    406 - Not Acceptable - Business Exception
+    ```      
+    
+    ```tab="Input attributes"    
+    authentication-token: Mandatory attribute that receives the authentication token
+    	Put the authentication-token in the Header;
+    serviceRequestId: Mandatory attribute that receives the ticket number; 
+    taskId: Mandatory attribute that receives the ticket task number;
+    contactEmail: Mandatory attribute that receives the requester's email address;  
+    contactExtension: Non-mandatory attribute that receives the requester's phone extension number;  
+    contactPhone: Non-mandatory attribute that receives the requester's phone number;  
+    goupId: Non-mandatory attribute that receives the group code number that can receive the ticket;  
+    statusId: Mandatory attribute that receives the status code number that the ticket will receive after recording the ticket. The status are:  
+	In progress (1), Canceled (3) or Resolved (4)  
+    originId: Non-mandatory attribute that receives the source code number that the ticket will receive after recording the ticket;  
+    causeId: Non-mandatory attribute that receives the solution cause code number that the ticket will receive after recording the ticket;  
+    idSolutionCategory: Non-mandatory attribute that receives the solution category code number that the ticket will receive after recording the ticket;  
+    response: Non-mandatory attribute that receives the description of the response solution that the ticket will receive after recording the ticket;  
+    builderObjects: Non-mandatory attribute that receives the captured responses if the ticket has a form;  
+    quiz: Non-mandatory attribute that receives the captured responses if the ticket has a questionnaire;  
+    flowAction: Attribute that receives the user action designed in the flow and answered by the attendant to solve the ticket;  
+    reasonFlowAction: Attribute that receives the answer given to the Reason field, when it is designed in the flow as mandatory;  
+      
+    Example of input in the webservice:  
+    { 
+    	"serviceRequestId": 5409, 
+	"taskId": 8342, 
+	"contactEmail": "test@test.com", 
+	"contactExtension": "4979",
+	"contactPhone": "(64)999177012", 
+	"goupId": 21, 
+	"statusId": 1, 
+	"originId": 59, 
+	"causeId": 7, 
+	"idSolutionCategory": 13, 
+	"response": "Recording test via webservice", 
+    }  
+    ```
+    
+    ```tab="Output attribut"  
+    " idGrupoAtual " – Response that returns the current ticket group code;  
+    “idTarefa” - Response that returns the ticket task code;  
+    " idStatus" – Response that returns the current ticket status code;  
+    “status” – Response that returns the ticket status description;  
+    “dataHoraInicio” – Response that returns the date and time the ticket was created;  
+    “dataHoraInicioSLA” – Response that returns the ticket SLA start date and time;
+    “dataHoraLimite” – Response that returns the closing date and time of the ticket SLA;  
+    “dataHoraSolicitacao” - Response that returns the date and time the ticket was created;  
+    Descrição: Response that returns the ticket description;  
+    idCategoriaSolucao: Response that returns the ticket solution category code;  
+    idCausaIncidente: Response that returns the ticket solution cause code;  
+    idContrato: Response that returns the ticket contract code;  
+    idServico: Response that returns the business service code or ticket support;  
+    idSolicitacaoServico: Response that returns the ticket number;  
+    idSolicitante: Response that returns the ticket requester code;  
+    idUnidade: Response that returns the ticket unit code,  
+    impacto: Response that returns the acronym of the impact;  
+    resposta: Response that returns from the words of the answer solution;  
+    siglaGrupo: Response that returns the group's acronym;  
+    tarefa: Response that returns the task description;  
+    urgencia: Response that returns the urgency of the ticket;  
+    idUsuarioResponsavelAtual: Response that returns the code of the person responsible for the ticket;  
+    nomeGrupoAtual: Response that returns the description of the current ticket group;  
+    solicitanteVip: Response that returns whether the applicant is a VIP or not. Possible responses:  
+    	false ou true
+    ```  
+
+    ```tab="JSON Example"
+    {
+    	"status": "SUCCESS", 
+	"code": "200", 
+	"message": "Request processed successfully", 
+	"payload": {
+		"idGrupoAtual": 171, 
+		"idTarefa": 8809, 
+		"idStatus": 1, 
+		"status": "In Progress", 
+		"dataHoraInicio": "2020-09-10 11:58:28 AM BRT", 
+		"dataHoraInicioSLA": "2020-09-10 11:58:29 AM BRT", 
+		"dataHoraLimite": "2020-09-10 17:08:00 PM BRT", 
+		"dataHoraSolicitacao": "2020-09-10 11:58:28 AM BRT", 
+		"descricao": "<div>test</div>", 
+		"idCategoriaSolucao": 13, 
+		"idCausaIncidente": 7, 
+		"idContrato": 52, 
+		"idServico": 670, 
+		"idSolicitacaoServico": 5712, 
+		"idSolicitante": 456, 
+		"idUnidade": 2, 
+		"impacto": "A", 
+		"resposta": "Recording test via webservice", 
+		"siglaGrupo": "LEVEL1", 
+		"tarefa": "Answer Ticket", 
+		"urgencia": "A", 
+		"idUsuarioResponsavelAtual": 254,
+		"nomeGrupoAtual": "Level 1", 
+		"solicitanteVip": false
+	}  
+    }
+    ```    
+    
+    
+    
+    
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
-<font  Size=2><b>Atualização:</b>12/12/2018 - Andre Luiz de Oliveira Fernandes</font>
+
+<font  Size=2><b>Atualização:</b>09/16/2018 </font>
