@@ -76,7 +76,5 @@ Procedimento
     }
   ```
 
-!!! tip "About"
-
-    <b>Product/Version:</b> 4biz | 8.00 &nbsp;&nbsp;
-    <b>Updated:</b>09/09/2019 – Larissa Lourenço
+<hr>
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;

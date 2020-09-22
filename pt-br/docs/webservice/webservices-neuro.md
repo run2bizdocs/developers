@@ -121,5 +121,4 @@ Qualquer fluxo ESI pode ser executado via REST utilizando o serviço POST /cit-e
 Figura 9 - Exemplo de execução de fluxos ESI
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
-<font  Size=2><b>Atualização:</b>07/01/2019 - João Pelles Junior</font>
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;

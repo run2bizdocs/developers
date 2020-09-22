@@ -22,5 +22,4 @@ Para inserir as operações padrões de webservice no sistema, é necessário ex
 6.	Clique em “Gravar”.  
 
 <hr>
-<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
-<font  Size=2><b>Atualização:</b>03/01/2010 - João Pelles Junior</font>
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;

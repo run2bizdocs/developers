@@ -59,7 +59,5 @@ execucaoFluxo.getTransacao());
 ```
 
 
-!!! tip "About"
-
-    <b>Product/Version:</b> CITSmart | 8.00 &nbsp;&nbsp;
-    <b>Updated:</b>01/30/2019 - Anna Martins
+<hr>
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;
