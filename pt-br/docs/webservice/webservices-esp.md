@@ -503,9 +503,11 @@ Esse webservice deve ser utilizado para listar os usuários que podem ser solici
 
 ### Gravar ticket em atendimento
 
-Esse webservice deve ser utilizado para retornar os tickets para atendimento dos analistas.  
+Esse webservice deve ser utilizado para retornar os tickets para atendimento dos analistas. 
+
 - Pré-condições: Possuir acesso ao sistema e permissão de execução no fluxo de trabalho.
 
+!!! example "Gravar ticket em atendiment"
     ```tab="URL"
     Para apenas gravar o ticket: webmvc/servicerequestincident/save  
     Para gravar e avançar o ticket: webmvc/servicerequestincident/next
@@ -613,9 +615,60 @@ Esse webservice deve ser utilizado para retornar os tickets para atendimento dos
 	}  
     }
     ``` 
+
+### Receber Unidades
+
+Esse webservice deve ser utilizado para retornar as unidades ativas existentes no sistema para seleção na criação de um ticket.
+
+- Pré-condições: Esse webservice sofre alteração de resultados caso o parâmetro 61 - Vincula contratos a unidade (Ex.: S ou N) esteja ativo.
+
+A documentação de desenvolvimento está no Swagger
+
+Exemplo: https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/
     
+Para ler essa documentação, é preciso estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.
 
+!!! example "Receber Unidades"
+    ```tab="URL"
+    webmvc/ v1/unit
+    Método: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 – Justificativa não encontrada
+    ```
 
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo obrigatório que recebe o token de autenticação
+        o	Passar o authentication-token no Header;
+    •	employeeId: Atributo obrigatório que recebe o código do usuário solicitante do ticket:
+        o	Passar o atributo como parâmetro;
+    •	Limit: Atributo que retorna a quantidade de unidades a serem retornadas na pesquisa;
+        o	Passar o atributo como parâmetro;
+    •	unitQuery: Atributo não obrigatório que permite pesquisar por parte do nome da unidade;
+        o	Passar o atributo como parâmetro;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica uma vez que a URL passará todos os atributos necessários
+    }
+    ```
 
+    ```tab="Atributos de Saída"
+    •	id:  Retorna o código da unidade;
+    •	name: Retorna a descrição da unidade;
+    Exemplo de saída no webservice
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 52,
+                "name": "---Human Resourcer"
+            }
+        ]
+    }
+    ```
+    
 <hr>
 <font  Size=2><b>Atualização:</b>09/10/2020</font>
