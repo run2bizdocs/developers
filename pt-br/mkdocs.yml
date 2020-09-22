@@ -85,7 +85,6 @@ nav:
   - DEV:
     - Iniciar:
       - index.md
-      - get-started/configure-webservices.md
       - get-started/load-webservice-script.md
       - get-started/register-webservice.md
     - APIs 4biz:
