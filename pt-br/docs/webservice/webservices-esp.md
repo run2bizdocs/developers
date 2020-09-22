@@ -669,6 +669,380 @@ Para ler essa documentação, é preciso estar logado na aplicação, e essa apl
         ]
     }
     ```
+
+### Receber justificativa de suspensão
+
+Esse webservice deve ser utilizado para retornar as justificativas de suspensão cadastradas e ativas no sistema.
+
+- Pré-condições: O usuário que é passado no webservice deve possuir permissão de suspender no fluxo de trabalho;
+
+A documentação de desenvolvimento está no Swagger
+
+Exemplo: https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/
     
-<hr>
-<font  Size=2><b>Atualização:</b>09/10/2020</font>
+Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.
+
+!!! example "Receber justificativa de suspensão"
+    ```tab="URL"
+    webmvc/v1/ticket/justification
+    Método: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 – Justificativa não encontrada
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo obrigatório que recebe o token de autenticação
+        o	Passar o authentication-token no Header;
+    •	type: Atributo obrigatório que recebe uma das siglas abaixo:
+        o	Passar o type como parâmetro;
+        o	Type (S = Suspension, A = Approval)
+            Available values : S, A
+            Default value : S
+    Exemplo de entrada no webservice
+    {
+        Não se aplica uma vez que a URL passará todos os atributos necessários
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    •	id:  Retorna o código da Justificativa de suspensão;
+    •	description: Retorna a descrição da Justificativa de suspensão
+    Exemplo de saída no webservice
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 1,
+                "description": "Default"
+            }
+        ]
+    }
+    ```
+### Listar tickets para atendimento
+
+Esse webservice deve ser utilizado para retornar as opções permitidas no fluxo em um determinado grupo.
+
+- Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.
+O usuário que é passado no webservice deve possuir permissão no fluxo de trabalho;
+
+A documentação de desenvolvimento está no Swagger
+
+Exemplo: https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/
+    
+Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.
+
+!!! example "Listar tickets para atendimento"
+    ```tab="URL"
+    /webmvc/v1/ticket/{ticketId}/permissions
+    Método: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 – Ticket not found
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo obrigatório que recebe o token de autenticação
+        o	Passar o authentication-token no Header;
+    •	taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+        o	Passar o taskId como parâmetro na url;
+    •	ticketId: Atributo obrigatório que recebe o número do ticket;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica uma vez que a URL passará todos os atributos necessários 
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    •	"id" – Resposta que retorna o número do ticket;
+    •	“tipo” - Resposta que retorna o tipo de demanda, ou seja, se é uma Requisição (R), Incidente (I) ou Procedimento(P);
+    •	"nomePrioridade" – Resposta que retorna o nome da Prioridade dada ao ticket;
+    •	“solicitacao” – Resposta que retorna a descrição da atividade solicitada;
+    •	“tarefa” – Resposta que retorna a tarefa do fluxo que se encontra o ticket;
+    •	“status” – Resposta que retorna a situação da tarefa do ticket listado;
+    •	“dataLimite” – Resposta que retorna a data e a hora de encerramento da solicitação de serviço conforme o SLA e calendário vinculado a atividadexcontrato
+    •	“statusFluxoNome” - Resposta que retorna a situação do SLA, podendo ser: Normal, A Vencer, Vencido, Suspenso.
+    Exemplo de resposta válida do webservice
+    "code": "200",
+    "message": "Request processed successfully",
+    "payload":{
+    "initialNumber": 1,
+    "lastPage": 1.0,
+    "finalNumber": 20,
+    "totalRequests": 168,
+    "result":
+    [
+    "id": 1251,
+    "tipo": "Incidente",
+    "nomePrioridade": "Medium",
+    "solicitacao": "Serviço de Incidente",
+    "tarefa": "Atender solicitacao",
+    "status": "NORMAL",
+    "dataLimite": "2020-06-09 09:18:00 AM UTC"
+    ]
+    }
+    ```
+### Receber ações de usuário em um ticket
+
+Esse webservice deve ser utilizado para retornar as ações de usuário desenhadas em um fluxo de trabalho.
+
+- Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.
+O usuário que é passado no webservice deve possuir permissão de execução no fluxo de trabalho;
+
+A documentação de desenvolvimento está no Swagger
+
+Exemplo: https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/
+    
+Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.
+
+!!! example "Receber ações de usuário em um ticket"
+    ```tab="URL"
+    webmvc/v1/ticket/{ticketId}/flow-actions
+    Método: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 – Ticket não encontrado
+    Pós condição:
+    Para enviar a resposta selecionada na ação de usuário, utilize o webservice de Gravar e Avançar (webmvc/servicerequestincident/next)
+    Atributos:
+    "flowAction": 
+    "reasonFlowAction":
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo obrigatório que recebe o token de autenticação
+        o	Passar o authentication-token no Header;
+    •	taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+        o	Passar o taskId como parâmetro na url;
+    •	ticketId: Atributo obrigatório que recebe o número do ticket;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica uma vez que a URL passará todos os atributos necessários
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    •	"id:  Código da ação de fluxo cadastrada no desenho de fluxo;
+    •	Name: Nome da ação de fluxo;
+    •	Description: Descrição da ação de fluxo;
+    •	requiresReason: Informa se o motivo é obrigatório, existe duas respostas para esse atributo:
+        o	True: Quando o motivo for obrigatório;
+        o	False: Quando o motivo não for obrigatório;
+    •	approvalActionId: Retorna o código da resposta de aprovação;
+    •	ticketStatusId: Retorna o código da situação do ticket;
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 1302,
+                "name": "ApproveTicket",
+                "description": "Approve Ticket",
+                "requiresReason": false,
+                "approvalActionId": 1,
+                "ticketStatusId": 1
+            },
+            {
+                "id": 1304,
+                "name": "DenyTicket",
+                "description": "Deny Ticket",
+                "requiresReason": false,
+                "approvalActionId": 2,
+                "ticketStatusId": 3
+            }
+        ]
+    }
+    ```
+### Listar anexos dos tickets
+
+Esse webservice deve ser utilizado para retornar a lista dos anexos de um  tickets para atendimento dos analistas.
+
+- Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.
+
+A documentação de desenvolvimento está no Swagger
+
+Exemplo: https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/
+    
+Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.
+
+Observação: Esse documento contém todos os webservices necessários para anexo que inclui:
+- Listar anexos de um ticket;
+- Realizar download do anexo;
+- Anexar documento ao ticket (upload);
+- Deletar anexo do ticket
+
+
+!!! example "Listar anexos dos tickets"
+    ```tab="URL"
+    /webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments
+    Método tipo: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 - Ticket not found
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo que recebe o token de acesso à aplicação:
+        o	O token deve ser passado no header;
+    •	serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+        o	O número do ticket deve ser passado no path, junto à URL;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    •	"id" – Resposta que retorna o código do anexo contido no ticket;
+    •	“name” - Resposta que retorna a descrição do anexo;
+    •	"extension" – Resposta que retorna a extensão do anexo;
+    Exemplo de resposta válida do webservice
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 2253,
+                "name": "ei_1598697802049.png.png",
+                "extension": "png"
+            },
+            {
+                "id": 2252,
+                "name": "ei_1598697788434.jpg.jpg",
+                "extension": "jpg"
+            },
+            {
+                "id": 2251,
+                "name": "ei_1598697777801.jpg.jpg",
+                "extension": "jpg"
+            }
+    ]
+    }
+    ``` 
+### Realizar download de anexos de um ticket
+
+!!! example "Realizar download de anexos de um ticket"
+    ```tab="URL"
+    webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments/{documentId} 
+    Método tipo: GET
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 - Document or ticket not found
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo que recebe o token de acesso à aplicação:
+        o	O token deve ser passado no header;
+    •	serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+        o	O número do ticket deve ser passado no path, junto à URL;
+    •	documentId: Atributo obrigatório que recebe o código do anexo contido no ticket;
+        o	O id do anexo deve ser passado no path, junto à URL;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    O próprio anexo
+    Exemplo de resposta válida do webservice
+    {
+        Não se aplica   
+    }
+    ```
+### Upload anexos dos tickets
+
+!!! example "Upload anexos dos tickets"
+    ```tab="URL"
+    /webmvc/services/request/addAttachments Método tipo: POST
+    Pré Condição:
+    1.	Verificar os parâmetros:
+    2.	44 - Diretório Upload repositório path (Ex.: Windows - C:/temp)
+    3.	278 - Tamanho máximo de arquivo, em bytes, para upload. Default[1073741824] = 1GB
+    4.	318 - Lista de extensões de arquivos que não poderão ser anexados (Para mais de uma extensão separar por ponto e vírgula)
+    5.	446 - Enviar anexos no e-mail de notificação do Ticket? (Ex.: S ou N - Default: 'N')
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    500 – Campos obrigatórios não informados
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	mediaType: Atributo obrigatório que indica o formato da conversa
+        o	Importante deixar fixo em application/json
+    •	requestNumber: Atributo obrigatório que recebe o número da requisição que receberá o anexo;
+    •	attachments: Lista de arquivo;
+    •	name: Atributo obrigatório que recebe o nome do arquivo;
+    •	content: Atributo obrigatório que deverá estar codificado em base64 que recebe o conteúdo do arquivo;
+        o	O content é o conteúdo do arquivo codificado em base64;
+    •	extension: Atributo obrigatório que recebe a extensão do arquivo: txt, jpg, jpeg,
+    Exemplo de entrada no webservice 
+    {
+	    "sessionID": "b7f24d64-5e23-4331-ab89-63403cb00d40",
+	    "mediaType": "application/json",
+	    "requestNumber": "1351",
+	    "attachments": [{
+		    "name": "arquivo teste",
+		    "content": "VGVzdGU=",
+		    "extension": "txt"
+	    }]
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+    •	dateTime: Atributo obrigatório que indica data e hora de execução;
+    •	dateTimeMilliseconds: Hora em milissegundos;
+    •	operationID: Número da operação que foi realizada;
+    •	error: Atributo obrigatório que indica se houve erro durante a execução do webservice;
+    Exemplo de resposta válida do webservice
+    {
+        "dateTime": "2020-05-19 14:56:00",
+        "dateTimeMilliseconds": 1589910960717,
+        "operationID": 603,
+        "error": null
+    }
+    ```
+### Deleta anexos dos tickets
+
+!!! example "Deleta anexos dos tickets"
+    ```tab="URL"
+    /webmvc/v1/ticket/{ticketId}/attachments/{documentId}
+    Método tipo: DELETE
+    Possíveis Códigos de retorno
+    200 – Requisição efetuada com sucesso
+    401 - Invalid authentication token or user without access to the resource
+    404 - Ticket not found
+    ```
+
+    ```tab="Atributos de Entrada"
+    •	authentication-token: Atributo que recebe o token de acesso à aplicação:
+        o	O token deve ser passado no header;
+    •	serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+        o	O número do ticket deve ser passado no path, junto à URL;
+    •	documentId: Atributo obrigatório que recebe o código do anexo contido no ticket;
+        o	O id do anexo deve ser passado no path, junto à URL;
+    Exemplo de entrada no webservice
+    {
+        Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+    }
+    ```
+
+    ```tab="Atributos de Saída"
+        {
+    Não se aplica
+    }
+    Exemplo de resposta válida do webservice
+    {
+        "status": "SUCCESS",
+        "code": "200",
+    }
+    ```
+
