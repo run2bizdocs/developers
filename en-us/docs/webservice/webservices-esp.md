@@ -613,7 +613,408 @@ This webservice should be used to return tickets to the be attended by the analy
 	}  
     }
     ```    
+
+### Receive Units
+
+This webservice must be used to return the existing active units in the system for selection when creating a ticket.
+
+- Preconditions: This webservice changes results if parameter 61 - Link contracts to the unit (Eg.: Y or N) is active.
+
+!!! example "Receive Units"
+    ```tab="URL"
+    webmvc/ v1/unit
+    Method: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 – Justification not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Mandatory attribute that receives the authentication token
+        o	Pass the authentication-token on the Header;
+    •	employeeId: Mandatory attribute that receives the user code requesting the ticket:
+        o	Pass the attribute as a parameter;
+    •	Limit: Attribute that returns the number of units to be returned in the search;
+        o	Pass the attribute as a parameter;
+    •	unitQuery: Non-mandatory attribute that allows searching by part of the name;
+        o	Pass the attribute as a parameter;
+    Example of webservice input
+    {
+        It doesn't apply since the URL will pass all necessary attributes
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	id:  Returns the unit code;
+    •	name: Returns the unit description;
+    Example of webservice output
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 52,
+                "name": "---Human Resourcer"
+            }
+        ]
+    }
+    ```
+
+### Receive justification for suspension
+
+This webservice must be used to return the justification for suspension registered and active in the system.
+
+- Preconditions: The user who is passed on the webservice must have permission to suspend in the workflow.
+
+!!! example "
+Receive justification for suspension"
+    ```tab="URL"
+    webmvc/v1/ticket/justification
+    Method: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 – Justification not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Mandatory attribute that receives the authentication token
+        o	Put the authentication-token on the Header;
+    •	type: Mandatory attribute that receives one of the acronyms below:
+        o	Put the type as parameter;
+        o	Type (S = Suspension, A = Approval)
+            Available values : S, A
+            Default value : S
+    Example of webservice input
+    {
+        It doesn't apply since the URL will give all necessary attributes
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	id:  Returns the code of Justification for suspension;
+    •	description: Returns the description of the Justification for suspension
+    Example of webservice output
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 1,
+                "description": "Default"
+            }
+        ]
+    }
+    ```
+### List tickets to be attended
+
+This webservice must be used to return the options allowed in the flow in a given group.
+
+- Preconditions: The user who is passed on the webservice must have access to the system.
+The user who is passed on the webservice must have permission in the workflow.
+
+!!! example "List tickets to be attended"
+    ```tab="URL"
+    /webmvc/v1/ticket/{ticketId}/permissions
+    Method: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 – Ticket not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Mandatory attribute that receives the authentication token
+        o	Put the authentication-token on the Header;
+    •	taskId: Mandatory attribute that receives the ticket task number;
+        o	Put the taskId as parameter in the url;
+    •	ticketId: Mandatory attribute that receives the ticket number;
+    Example of webservice input
+    {
+        It doesn't apply since the URL will give all necessary attributes 
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	"id" – Response that returns the ticket number;
+    •	“type” - Response that returns the type of demand, that is, if it's a Request (R), Incident (I) or Procedure (P);
+    •	"namePriority" – Response that returns the Priority name given to the ticket;
+    •	“request” – Response that returns the description of the requested activity;
+    •	“task” – Response that returns the task of the flow that is the ticket;
+    •	“status” – Response that returns the status of the listed ticket task;
+    •	“dataLimite” – Response that returns the service request closing date and time according to the SLA and calendar linked to the activityxcontract
+    •	“statusFlowName” - Response that returns the status of the SLA, which can be: Normal, To Be Expired, Expired, Suspended.
+    Example of a valid webservice response
+    "code": "200",
+    "message": "Request processed successfully",
+    "payload":{
+    "initialNumber": 1,
+    "lastPage": 1.0,
+    "finalNumber": 20,
+    "totalRequests": 168,
+    "result":
+    [
+    "id": 1251,
+    "type": "Incident",
+    "namePriority": "Medium",
+    "request": "Service of Incident",
+    "task": "Attend request",
+    "status": "NORMAL",
+    "dataLimite": "2020-06-09 09:18:00 AM UTC"
+    ]
+    }
+    ```
+### Receive user actions on a ticket
+
+This webservice must be used to return user actions designed in a workflow.
+
+- Preconditions: The user who is passed on the webservice must have access to the system.
+The user who is passed on the webservice must have permission to run in the workflow.
+
+!!! example "Receive user actions on a ticket"
+    ```tab="URL"
+    webmvc/v1/ticket/{ticketId}/flow-actions
+    Method: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 – Ticket not found
+    Post condition:
     
+To send the selected response in the user action, use the Save and Advance webservice (webmvc/servicerequestincident/next)
+    Attributes:
+    "flowAction": 
+    "reasonFlowAction":
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Mandatory attribute that receives the authentication token
+        o	Put the authentication-token on the Header;
+    •	taskId: Mandatory attribute that receives the ticket task number;
+        o	Put the taskId as a parameter in the url;
+    •	ticketId: Mandatory attribute that receives the ticket number;
+    Example of webservice input
+    {
+        It doesn't apply since the URL will pass all necessary attributes
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	"id:  Flow action code registered in the flow design;
+    •	Name: Flow action name;
+    •	Description: Description of the flow action;
+    •	requiresReason: Inform whether the reason is mandatory, there are two responses to this attribute:
+        o	True: When the reason is mandatory;
+        o	False: When the reason is not mandatory;
+    •	approvalActionId: Returns the approval response code;
+    •	ticketStatusId: Returns the ticket status code;
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 1302,
+                "name": "ApproveTicket",
+                "description": "Approve Ticket",
+                "requiresReason": false,
+                "approvalActionId": 1,
+                "ticketStatusId": 1
+            },
+            {
+                "id": 1304,
+                "name": "DenyTicket",
+                "description": "Deny Ticket",
+                "requiresReason": false,
+                "approvalActionId": 2,
+                "ticketStatusId": 3
+            }
+        ]
+    }
+    ```
+### List ticket attachments
+
+This webservice must be used to return the list of attachments of a ticket to be assisted by the analysts.
+
+- Preconditions: The user who is passed on the webservice must have access to the system.
+
+Note: This document contains all the necessary webservices for an attachment that includes:
+- List attachments of a ticket;
+- Download the attachment;
+- Attach document to the ticket (upload);
+- Delete attachment of a ticket
+
+
+!!! example "List tickets attachment"
+    ```tab="URL"
+    /webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments
+    Method type: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 - Ticket not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Attribute that receives the application access token:
+        o	The token must be put in the header;
+    •	serviceRequestIncidentId: Mandatory attribute that receives the ticket number;
+        o	The ticket number must be passed in the path, next to the URL;
+    Example of webservice input
+    {
+        Not applicable, note that the input attributes are in the header and in the Path of the url.
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	"id" – Response that returns the attachment code contained in the ticket;
+    •	“name” - Response that returns the attachment description;
+    •	"extension" – Response that returns the attachment extension;
+    Example of a valid webservice response
+    {
+        "status": "SUCCESS",
+        "code": "200",
+        "message": "Request processed successfully",
+        "payload": [
+            {
+                "id": 2253,
+                "name": "ei_1598697802049.png.png",
+                "extension": "png"
+            },
+            {
+                "id": 2252,
+                "name": "ei_1598697788434.jpg.jpg",
+                "extension": "jpg"
+            },
+            {
+                "id": 2251,
+                "name": "ei_1598697777801.jpg.jpg",
+                "extension": "jpg"
+            }
+    ]
+    }
+    ``` 
+### Download ticket attachments
+
+!!! example "Download ticket attachments"
+    ```tab="URL"
+    webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments/{documentId} 
+    Method type: GET
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 - Document or ticket not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Attribute that receives the application access token:
+        o	The token must be passed in the header;
+    •	serviceRequestIncidentId: Mandatory attribute that receives the ticket number;
+        o	The ticket number must be passed in the path, next to the URL;
+    •	documentId: Mandatory attribute that receives the attachment code contained in the ticket;
+        o	The attachment id must be passed in the path, next to the URL;
+    Example of webservice input
+    {
+        Not applicable, note that the input attributes are in the header and in the Path of the url.
+    }
+    ```
+
+    ```tab="Output Attributes"
+    The attachment itself
+    Example of a valid webservice response
+    {
+        Not applicable   
+    }
+    ```
+### Upload ticket attachments
+
+!!! example "Upload ticket attachments"
+    ```tab="URL"
+    /webmvc/services/request/addAttachments Method type: POST
+    Preconditions:
+    1.	Check the parameters:
+    2.	44 - Upload directory repository path (Eg.: Windows - C:/temp)
+    3.	278 - Maximum file size, in bytes, to upload. Default[1073741824] = 1GB
+    4.	318 - List of file extensions that cannot be attached (For more than one extension, separate with a semicolon)
+    5.	446 - Send attachments in the Ticket notification email? (Eg.: Y or N - Default: 'N')
+    Possible return codes
+    200 – Successful request
+    500 – Mandatory fields not informed
+    ```
+
+    ```tab="Input Attributes"
+    •	mediaType: Mandatory attribute indicating the conversation format
+        o	Important to let it fixed in application/json
+    •	requestNumber: Mandatory attribute that receives the request number that will receive the attachment;
+    •	attachments: List of file;
+    •	name: Mandatory attribute that receives the file name;
+    •	content: Mandatory attribute that must be encoded in base64 that receives the contents of the file;
+        o	The content is the content of the base64 encoded file;
+    •	extension: Mandatory attribute that receives the file extension: txt, jpg, jpeg,
+    Example of webservice input 
+    {
+	    "sessionID": "b7f24d64-5e23-4331-ab89-63403cb00d40",
+	    "mediaType": "application/json",
+	    "requestNumber": "1351",
+	    "attachments": [{
+		    "name": "test file",
+		    "content": "VGVzdGU=",
+		    "extension": "txt"
+	    }]
+    }
+    ```
+
+    ```tab="Output Attributes"
+    •	dateTime: Mandatory attribute indicating date and time of execution;
+    •	dateTimeMilliseconds: Hour in milliseconds;
+    •	operationID: Number of the operation that was performed;
+    •	error: Mandatory attribute that indicates if there was an error while running the webservice;
+    Example of a valid webservice response
+    {
+        "dateTime": "2020-05-19 14:56:00",
+        "dateTimeMilliseconds": 1589910960717,
+        "operationID": 603,
+        "error": null
+    }
+    ```
+### Delete ticket attachments
+
+!!! example "Delete ticket attachments"
+    ```tab="URL"
+    /webmvc/v1/ticket/{ticketId}/attachments/{documentId}
+    Methode type: DELETE
+    Possible return codes
+    200 – Successful request
+    401 - Invalid authentication token or user without access to the resource
+    404 - Ticket not found
+    ```
+
+    ```tab="Input Attributes"
+    •	authentication-token: Attribute that receives the application access token:
+        o	The token must be passed in the header;
+    •	serviceRequestIncidentId: Mandatory attribute that receives the ticket number;
+        o	The ticket number must be passed in the path, next to the URL;
+    •	documentId: Mandatory attribute that receives the attachment code contained in the ticket;
+        o	The attachment id must be passed in the path, next to the URL;
+    Example of webservice input
+    {
+        Not applicable, note that the input attributes are in the header and in the Path of the url.
+    }
+    ```
+
+    ```tab="Output Attributes"
+        {
+    Not applicable
+    }
+    Example of a valid webservice response
+    {
+        "status": "SUCCESS",
+        "code": "200",
+    }
+    ```
     
     
     
