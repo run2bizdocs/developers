@@ -1,0 +1,12 @@
+{% if config.extra.social %}
+  <div class="md-footer-social">
+<span style="font-size: 12px ; color: #337ab7; font-weight:bold;">Linguagem: </span>
+<a href="/en-us/index.html" style="text-decoration: underline; font-size: 12px ;">en</a> 
+<a href="/pt-br/index.html" style="text-decoration: underline; font-size: 12px ;">pt</a>
+<span style="font-size: 12px ; color: #333333; font-weight:bold ; padding-left: 1.8em">Siga-nos no</span>    
+   <link rel="stylesheet" href="{{ 'assets/fonts/font-awesome.css' | url }}">
+    {% for social in config.extra.social %}
+      <a href="{{ social.link }}" class="md-footer-social__link fa fa-{{ social.type }}"></a>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,1846 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="en-us" />
+      <link rel="alternate" href="https://developers.citsmart.com/pt-br/" hreflang="pt-br" />
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="x-default" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="Documentation for citsmart developers, system integrators, flow creators, API information and Webservices." />
+     <meta name="keywords" content="Citsmart, Developers, API, Webservices, Integration, BPMN Flows, Codless."/>
+     <meta name="robots" content="index, follow">
+      
+	
+      
+      
+        <link rel="canonical" href="https://developers.run2biz.com/webservice/webservices-docs.html">
+      
+      
+        <meta name="author" content="Run2biz">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    
+    
+      
+        <title>Webservices - 4biz Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/home.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#webservices-4biz-docs" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/images/run2biz-logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Run2biz Developers
+              </span>
+              <span class="md-header-nav__topic">
+                Webservices - 4biz Docs
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xe14a;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://developers.run2biz.com/pt-br/index.html" title="Home" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../index.html" title="DEV" class="md-tabs__link">
+          DEV
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://www.run2biz.com/" title="Run2biz Corporation" class="md-tabs__link">
+          Run2biz Corporation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-nav__button md-logo">
+      
+        <img src="../assets/images/run2biz-logo.png" width="48" height="48">
+      
+    </a>
+    Run2biz Developers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://developers.run2biz.com/pt-br/index.html" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      DEV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        DEV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Iniciar
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Iniciar
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/load-webservice-script.html" title="Carregar operações" class="md-nav__link">
+      Carregar operações
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/register-webservice.html" title="Registrar operações" class="md-nav__link">
+      Registrar operações
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      APIs 4biz
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        APIs 4biz
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/apis.html" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Webservice
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Webservice
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data-export.html" title="Exportação de Dados" class="md-nav__link">
+      Exportação de Dados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Webservices - 4biz Docs
+      </label>
+    
+    <a href="webservices-docs.html" title="Webservices - 4biz Docs" class="md-nav__link md-nav__link--active">
+      Webservices - 4biz Docs
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#login" title="LOGIN" class="md-nav__link">
+    LOGIN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-departmento" title="LISTA DEPARTMENTO" class="md-nav__link">
+    LISTA DEPARTMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-tipo-de-processo" title="LISTA TIPO DE PROCESSO" class="md-nav__link">
+    LISTA TIPO DE PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-nivel-de-acesso-do-tipo-de-processo" title="LISTA NÍVEL DE ACESSO DO TIPO DE PROCESSO" class="md-nav__link">
+    LISTA NÍVEL DE ACESSO DO TIPO DE PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-nivel-de-acesso-do-tipo-de-documento" title="LISTA NÍVEL DE ACESSO DO TIPO DE DOCUMENTO" class="md-nav__link">
+    LISTA NÍVEL DE ACESSO DO TIPO DE DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-assunto" title="LISTA DE ASSUNTO" class="md-nav__link">
+    LISTA DE ASSUNTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-hipoteses-legais" title="LISTA DE HIPÓTESES LEGAIS" class="md-nav__link">
+    LISTA DE HIPÓTESES LEGAIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-pessoas" title="LISTA DE PESSOAS" class="md-nav__link">
+    LISTA DE PESSOAS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-da-forma-de-conferencia" title="LISTA DA FORMA DE CONFERÊNCIA" class="md-nav__link">
+    LISTA DA FORMA DE CONFERÊNCIA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-tipos-de-midia" title="LISTA DE TIPOS DE MÍDIA" class="md-nav__link">
+    LISTA DE TIPOS DE MÍDIA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-tipos-de-documento" title="LISTA TIPOS DE DOCUMENTO" class="md-nav__link">
+    LISTA TIPOS DE DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-processo" title="CRIAR PROCESSO" class="md-nav__link">
+    CRIAR PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-documento" title="CRIAR DOCUMENTO" class="md-nav__link">
+    CRIAR DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documento-upload" title="DOCUMENTO UPLOAD" class="md-nav__link">
+    DOCUMENTO UPLOAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-by-id-process" title="GET BY ID PROCESS" class="md-nav__link">
+    GET BY ID PROCESS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-processo" title="LISTA DE PROCESSO" class="md-nav__link">
+    LISTA DE PROCESSO
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-esp.html" title="Webservices - 4biz" class="md-nav__link">
+      Webservices - 4biz
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-neuro.html" title="Webservices - 4biz Builder" class="md-nav__link">
+      Webservices - 4biz Builder
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Scripts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        Scripts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../toolkit/script/change-sla.html" title="Alterar SLA via script Rhino" class="md-nav__link">
+      Alterar SLA via script Rhino
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Run2biz Corporation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Run2biz Corporation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://www.run2biz.com/" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#login" title="LOGIN" class="md-nav__link">
+    LOGIN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-departmento" title="LISTA DEPARTMENTO" class="md-nav__link">
+    LISTA DEPARTMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-tipo-de-processo" title="LISTA TIPO DE PROCESSO" class="md-nav__link">
+    LISTA TIPO DE PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-nivel-de-acesso-do-tipo-de-processo" title="LISTA NÍVEL DE ACESSO DO TIPO DE PROCESSO" class="md-nav__link">
+    LISTA NÍVEL DE ACESSO DO TIPO DE PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-nivel-de-acesso-do-tipo-de-documento" title="LISTA NÍVEL DE ACESSO DO TIPO DE DOCUMENTO" class="md-nav__link">
+    LISTA NÍVEL DE ACESSO DO TIPO DE DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-assunto" title="LISTA DE ASSUNTO" class="md-nav__link">
+    LISTA DE ASSUNTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-hipoteses-legais" title="LISTA DE HIPÓTESES LEGAIS" class="md-nav__link">
+    LISTA DE HIPÓTESES LEGAIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-pessoas" title="LISTA DE PESSOAS" class="md-nav__link">
+    LISTA DE PESSOAS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-da-forma-de-conferencia" title="LISTA DA FORMA DE CONFERÊNCIA" class="md-nav__link">
+    LISTA DA FORMA DE CONFERÊNCIA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-tipos-de-midia" title="LISTA DE TIPOS DE MÍDIA" class="md-nav__link">
+    LISTA DE TIPOS DE MÍDIA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-tipos-de-documento" title="LISTA TIPOS DE DOCUMENTO" class="md-nav__link">
+    LISTA TIPOS DE DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-processo" title="CRIAR PROCESSO" class="md-nav__link">
+    CRIAR PROCESSO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criar-documento" title="CRIAR DOCUMENTO" class="md-nav__link">
+    CRIAR DOCUMENTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documento-upload" title="DOCUMENTO UPLOAD" class="md-nav__link">
+    DOCUMENTO UPLOAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-by-id-process" title="GET BY ID PROCESS" class="md-nav__link">
+    GET BY ID PROCESS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-processo" title="LISTA DE PROCESSO" class="md-nav__link">
+    LISTA DE PROCESSO
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="webservices-4biz-docs">Webservices 4biz Docs<a class="headerlink" href="#webservices-4biz-docs" title="Permanent link">&para;</a></h1>
+<p>Esta seção destina-se a descrever a estrutura de comunicação REST, estabelecida entre aplicativos e o servidor back-end.</p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p>"4biz_URL": prefixo de URL inalterável, para que você possa acessar os serviços disponibilizados para os aplicativos de mobile</br>
+TODO API QUE NECESSITA DE “sessionID” PRECISARÁ ESTAR NA SEÇÃO FORNECIDA PELO “Login” DA API.</p>
+</div>
+<hr />
+<h3 id="login">LOGIN<a class="headerlink" href="#login" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de autentificação do usuário</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">url_base</span><span class="p">&gt;</span>/cit-portal-web/rest/usuario/getToken
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_2" />
+<label for="__tab_1_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="s2">&quot;rogerio.cassimiro&quot;</span><span class="p">,</span>
+<span class="nt">&quot;password&quot;</span><span class="p">:</span><span class="s2">&quot;123456&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_3" />
+<label for="__tab_1_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">25080</span><span class="p">,</span>
+<span class="nt">&quot;dateEdition&quot;</span><span class="p">:</span><span class="s2">&quot;2017-09-12T11:06:28.907-0300&quot;</span><span class="p">,</span>
+<span class="nt">&quot;dateCreation&quot;</span><span class="p">:</span><span class="s2">&quot;2017-08-10T10:00:51.274-0300&quot;</span><span class="p">,</span>
+<span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="s2">&quot;rogerio.cassimiro&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;rogerio.cassimiro&quot;</span><span class="p">,</span>
+<span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;:59&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_4" />
+<label for="__tab_1_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+   username: alfanumérico não vazio nem nulo;
+   password: alfanumérico não vazio nem nulo;
+Resposta:
+   id: numérico não vazio nem nulo;
+   dateEdition: timestamp não vazio nem nulo;
+   dateCreation: timestamp não vazio nem nulo;
+   username: alfanumérico não vazio nem nulo;
+   token: alfanumérico não vazio nem nulo;
+   name: alfanumérico não vazio nem nulo;
+   version: numérico não vazio nem nulo;
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-departmento">LISTA DEPARTMENTO<a class="headerlink" href="#lista-departmento" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Lista de serviços dos departamentos a serem usados.</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">url_base</span><span class="p">&gt;</span>/cit-ecm-web/integracao /listUnidade
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_2" />
+<label for="__tab_2_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code> <span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Department 1&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_3" />
+<label for="__tab_2_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;units&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">93794</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Department 1&quot;</span><span class="p">,</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="s2">&quot;000001&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_4" />
+<label for="__tab_2_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+   name: alfanumérico não vazio nem nulo
+   token: alfanumérico não vazio nem nulo
+Resposta:
+   units: Lista vazia e não nula;
+   id: numérico não vazio nem nulo
+   name: alfanumérico não vazio nem nulo
+   code: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-tipo-de-processo">LISTA TIPO DE PROCESSO<a class="headerlink" href="#lista-tipo-de-processo" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de listagem do tipo de processo de um processo, a ser usado</p>
+<div class="superfences-tabs">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
+<label for="__tab_3_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_1" />
+<label for="__tab_3_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">url_base</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listTipoProcesso
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_2" />
+<label for="__tab_3_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Department 1&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_3" />
+<label for="__tab_3_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;typeProcess&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">6967</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Pattern process&quot;</span><span class="p">,</span>
+<span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Pattern process detailing&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_4" />
+<label for="__tab_3_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+   name: alfanumérico não vazio nem nulo
+   token: alfanumérico não vazio nem nulo
+Resposta:
+  typeProcess: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+  description: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-nivel-de-acesso-do-tipo-de-processo">LISTA NÍVEL DE ACESSO DO TIPO DE PROCESSO<a class="headerlink" href="#lista-nivel-de-acesso-do-tipo-de-processo" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">O serviço de listagem de assunto de um processo e / ou documento, a ser usado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
+<label for="__tab_4_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_1" />
+<label for="__tab_4_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listNivelAcessoTipoProcesso
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_2" />
+<label for="__tab_4_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;idTypeProcess&quot;</span><span class="p">:</span><span class="s2">&quot;54654&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_3" />
+<label for="__tab_4_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;levelAccessTypeProcess&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;idLevelAccessTypeProcess&quot;</span><span class="p">:</span><span class="mi">97942</span><span class="p">,</span>
+<span class="nt">&quot;idLevelAccess:&quot;</span><span class="p">:</span><span class="s2">&quot;23121&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;PUBLIC&quot;</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="nt">&quot;idLevelAccessTypeProcess&quot;</span><span class="p">:</span><span class="mi">97947</span><span class="p">,</span>
+<span class="nt">&quot; idLevelAccess&quot;</span><span class="p">:</span><span class="mi">91426</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;RESTRICT&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_4" />
+<label for="__tab_4_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+   idTypeProcess: numérico não vazio nem nulo
+   token: alfanumérico não vazio nem nulo
+Resposta:
+  levelAccessTypeProcess: lista não vazia nem nula;
+  idLevelAccess: numérico não vazio nem nulo
+  idLevelAccessTypeProcess: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-nivel-de-acesso-do-tipo-de-documento">LISTA NÍVEL DE ACESSO DO TIPO DE DOCUMENTO<a class="headerlink" href="#lista-nivel-de-acesso-do-tipo-de-documento" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">O serviço de listagem de assunto de um processo e / ou documento, a ser usado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
+<label for="__tab_5_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_1" />
+<label for="__tab_5_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listNivelAcessoTipoDocumento
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_2" />
+<label for="__tab_5_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;idTypeDocument&quot;</span><span class="p">:</span><span class="s2">&quot;54654&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_3" />
+<label for="__tab_5_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;levelAccessTypeDocument&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;idLevelAccessTypeDocument&quot;</span><span class="p">:</span><span class="mi">97942</span><span class="p">,</span>
+<span class="nt">&quot; idLevelAccess:&quot;</span><span class="p">:</span><span class="s2">&quot;23121&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;PUBLIC&quot;</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="nt">&quot;idLevelAccessTypeDocument &quot;</span><span class="p">:</span><span class="mi">97947</span><span class="p">,</span>
+<span class="nt">&quot;idLevelAccess&quot;</span><span class="p">:</span><span class="mi">91426</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;RESTRICTED&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_4" />
+<label for="__tab_5_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  idTypeDocument: numérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  levelAccesTypeDocument: lista não vazia nem nula;
+  idLevelAccess: numérico não vazio nem nulo
+  idLevelAccessTypeDocument: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-de-assunto">LISTA DE ASSUNTO<a class="headerlink" href="#lista-de-assunto" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">O serviço de listagem de assunto de um processo e / ou documento, a ser usado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_6" type="radio" id="__tab_6_0" checked="checked" />
+<label for="__tab_6_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_1" />
+<label for="__tab_6_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listAssunto
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_2" />
+<label for="__tab_6_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;HEARING.MEETINGS&quot;</span>
+<span class="s2">&quot;code&quot;</span><span class="p">:</span><span class="s2">&quot;010.3&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_3" />
+<label for="__tab_6_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;subjects&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">6982</span><span class="p">,</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="s2">&quot;010.3&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;HEARING.MEETINGS&quot;</span><span class="p">,</span>
+<span class="nt">&quot;subject&quot;</span><span class="p">:</span><span class="s2">&quot;010.3 – ADMINISTRATION.GENERAL &quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_4" />
+<label for="__tab_6_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  name: alfanumérico não vazio nem nulo
+  code: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  subjects: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  code: alfanumérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+  subject: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-de-hipoteses-legais">LISTA DE HIPÓTESES LEGAIS<a class="headerlink" href="#lista-de-hipoteses-legais" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Lista de hipóteses legais de um processo ou documento a ser utilizado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_7" type="radio" id="__tab_7_0" checked="checked" />
+<label for="__tab_7_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_1" />
+<label for="__tab_7_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listHipoteseLegal
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_2" />
+<label for="__tab_7_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;idLevelAccess&quot;</span><span class="p">:</span><span class="s2">&quot;97947&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Information name&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_3" />
+<label for="__tab_7_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;hypoteseLegal&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">7340</span><span class="p">,</span>
+<span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Law description&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Information name&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_4" />
+<label for="__tab_7_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  idLevelAccess: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  hypoteseLegal: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  description: alfanumérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-de-pessoas">LISTA DE PESSOAS<a class="headerlink" href="#lista-de-pessoas" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Lista de pessoas interessadas em um processo ou documento a ser utilizado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_8" type="radio" id="__tab_8_0" checked="checked" />
+<label for="__tab_8_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_1" />
+<label for="__tab_8_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listPessoas
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_2" />
+<label for="__tab_8_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Maycon&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>    
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_3" />
+<label for="__tab_8_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;people&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">98064</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Maycon&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_4" />
+<label for="__tab_8_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  name: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  people: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-da-forma-de-conferencia">LISTA DA FORMA DE CONFERÊNCIA<a class="headerlink" href="#lista-da-forma-de-conferencia" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Lista dos formulários de conferência de um processo e / ou documento, a ser usado</p>
+<div class="superfences-tabs">
+<input name="__tabs_9" type="radio" id="__tab_9_0" checked="checked" />
+<label for="__tab_9_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_1" />
+<label for="__tab_9_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listFormaConferencia
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_2" />
+<label for="__tab_9_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code> <span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Administrative certified copy&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_3" />
+<label for="__tab_9_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;formConference&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97484</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Administrative certified copy&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_4" />
+<label for="__tab_9_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  name: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  formaConference: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-de-tipos-de-midia">LISTA DE TIPOS DE MÍDIA<a class="headerlink" href="#lista-de-tipos-de-midia" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Lista de tipos de mídia para um documento a ser utilizado.</p>
+<div class="superfences-tabs">
+<input name="__tabs_10" type="radio" id="__tab_10_0" checked="checked" />
+<label for="__tab_10_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_1" />
+<label for="__tab_10_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listTipoSuporte
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_2" />
+<label for="__tab_10_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Name type media&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_3" />
+<label for="__tab_10_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;typeSupport&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97975</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Name type media&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_4" />
+<label for="__tab_10_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  name: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  typeSupport: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-tipos-de-documento">LISTA TIPOS DE DOCUMENTO<a class="headerlink" href="#lista-tipos-de-documento" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de listagem de tipos de documentos de um documento a ser utilizado</p>
+<div class="superfences-tabs">
+<input name="__tabs_11" type="radio" id="__tab_11_0" checked="checked" />
+<label for="__tab_11_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_1" />
+<label for="__tab_11_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listTipoDocumento
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_2" />
+<label for="__tab_11_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code> <span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Document type name&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_3" />
+<label for="__tab_11_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;typeDocument&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97949</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Document type name&quot;</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_4" />
+<label for="__tab_11_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  name: alfanumérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  typeDocument: Lista vazia e não nula;
+  id: numérico não vazio nem nulo
+  name: alfanumérico não vazio nem nulo       
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="criar-processo">CRIAR PROCESSO<a class="headerlink" href="#criar-processo" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de criação de um processo</p>
+<div class="superfences-tabs">
+<input name="__tabs_12" type="radio" id="__tab_12_0" checked="checked" />
+<label for="__tab_12_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>POST
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_1" />
+<label for="__tab_12_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/processo
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_2" />
+<label for="__tab_12_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;assuntoComplementar&quot;</span><span class="p">:</span><span class="s2">&quot;Subject Detail&quot;</span><span class="p">,</span>
+<span class="nt">&quot;observacaoGeral&quot;</span><span class="p">:</span><span class="s2">&quot;General observation&quot;</span><span class="p">,</span>
+<span class="nt">&quot;unidade&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40358</span>
+<span class="p">},</span>
+<span class="nt">&quot;tipoProcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40394</span>
+<span class="p">},</span>
+<span class="nt">&quot;nivelAcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;idNivelAcessoTipoProcesso&quot;</span><span class="p">:</span><span class="mi">40395</span>
+<span class="p">},</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40393</span>
+<span class="p">},</span>
+<span class="nt">&quot;interessados&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;interessado&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40355</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">],</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_3" />
+<label for="__tab_12_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;25353&quot;</span><span class="p">,</span>
+<span class="nt">&quot;nup&quot;</span><span class="p">:</span><span class="s2">&quot;00001.00002/2016-58&quot;</span>
+<span class="p">}</span>    
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_4" />
+<label for="__tab_12_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  subjectComplementary: alfanumérico não vazio nem nulo
+  observationGeneral: alfanumérico não vazio nem nulo
+  unit: não vazio nem nulo;
+  id: não vazio nem nulo;
+  typeProcess: não vazio nem nulo;
+     id: não vazio nem nulo;
+  levelAccess: não vazio nem nulo;
+     idLevelAccessTypeProcess: não vazio nem nulo;
+  hypoteseLegal: não vazio nem nulo se o nível de acesso difere de Público.
+     id: númerico não vazio nem nulo
+  subject: não vazio nem nulo;
+     id: não vazio nem nulo;
+  interested: pode ser vazio e nulo;
+    pessoal
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  id: numérico não vazio nem nulo
+  nup: alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="criar-documento">CRIAR DOCUMENTO<a class="headerlink" href="#criar-documento" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de ciração de documento</p>
+<div class="superfences-tabs">
+<input name="__tabs_13" type="radio" id="__tab_13_0" checked="checked" />
+<label for="__tab_13_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>POST
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_1" />
+<label for="__tab_13_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/documento
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_2" />
+<label for="__tab_13_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;numero&quot;</span><span class="p">:</span><span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+<span class="nt">&quot;assuntoComplementar&quot;</span><span class="p">:</span><span class="s2">&quot;Complementary Subject&quot;</span><span class="p">,</span>
+<span class="nt">&quot;dataReferencia&quot;</span><span class="p">:</span><span class="s2">&quot;2016-08-19T14:45:25.360-0300&quot;</span><span class="p">,</span>
+<span class="nt">&quot;unidade&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40358</span>
+<span class="p">},</span>
+<span class="nt">&quot;processo&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40503</span>
+<span class="p">},</span>
+<span class="nt">&quot;tipoDocumento&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40426</span>
+<span class="p">},</span>
+<span class="nt">&quot;nivelAcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;idNivelAcessoTipoDocumento&quot;</span><span class="p">:</span><span class="mi">40427</span>
+<span class="p">},</span>
+<span class="nt">&quot;hipoteseLegal&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">5658</span>
+<span class="p">},</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40393</span>
+<span class="p">},</span>
+<span class="nt">&quot;destinatario&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40355</span>
+<span class="p">},</span>
+<span class="nt">&quot;tipoSuporteDocumento&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40430</span>
+<span class="p">},</span>
+<span class="nt">&quot;interessados&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;interessado&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">40355</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">],</span>
+<span class="nt">&quot;tipoConferencia&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">39950</span>
+<span class="p">},</span>
+<span class="nt">&quot;localizacao&quot;</span><span class="p">:</span><span class="s2">&quot;Physical location&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_3" />
+<label for="__tab_13_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;25353&quot;</span><span class="p">,</span>
+<span class="nt">&quot;numero&quot;</span><span class="p">:</span><span class="s2">&quot;00001.00002/2016-58&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_4" />
+<label for="__tab_13_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  numero: alfanumérico não vazio nem nulo;
+  assuntoComplementar: alfanumérico não vazio nem nulo;
+  localização: alfanumérico não vazio nem nulo;
+  conteudo: não vazio nem nulo;
+     O conteúdo do documento deve ser enviado em base64
+  dataReferencia: timestamp não vazio nem nulo;
+  unidade: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  processo: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  tipoDocumento: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  nivelAcesso: não vazio nem nulo;
+     idNivelAcessoTipoProcesso: numérico não vazio nem nulo
+  hipoteseLegal: não vazio nem nulo, se o nível de acesso for diferente de Público;
+     id: numérico não vazio nem nulo
+  assunto: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  destinatario: não vazio nem nulo;
+     pessoa: não vazio nem nulo;
+        id: numérico não vazio nem nulo
+  tipoSuporteDocumento: não vazio nem nulo;
+  interessados: pode ser vazio e nulo;
+     pessoa: não vazio nem nulo;
+        id: numérico não vazio nem nulo
+  tipoConferencia: Boolean não vazio nem nulo;
+  localização: alfanumérico não vazio nem nulo, se o atributo tipoConferencia for true;
+  token: alfanumérico não vazio nem nulo;
+Resposta:
+  id: numérico não vazio nem nulo;
+  numero: não vazio nem nulo;
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="documento-upload">DOCUMENTO UPLOAD<a class="headerlink" href="#documento-upload" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço de criação de documento.</p>
+<div class="superfences-tabs">
+<input name="__tabs_14" type="radio" id="__tab_14_0" checked="checked" />
+<label for="__tab_14_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>POST
+</code></pre></div></div>
+<input name="__tabs_14" type="radio" id="__tab_14_1" />
+<label for="__tab_14_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/uploadAnexo
+</code></pre></div></div>
+<input name="__tabs_14" type="radio" id="__tab_14_2" />
+<label for="__tab_14_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+<span class="nt">&quot;idDocumento&quot;</span><span class="p">:</span><span class="s2">&quot;25353&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>    
+</code></pre></div></div>
+<input name="__tabs_14" type="radio" id="__tab_14_3" />
+<label for="__tab_14_3">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="err">N/A</span>
+<span class="err">```tab=</span><span class="s2">&quot;Resposta&quot;</span>
+<span class="err">Solicitação:</span>
+  <span class="err">idDocumento:</span> <span class="err">numérico</span> <span class="err">não</span> <span class="err">vazio</span> <span class="err">nem</span> <span class="err">nulo</span>
+  <span class="err">file:</span> <span class="err">não</span> <span class="err">vazio</span> <span class="err">nem</span> <span class="err">nulo</span>
+  <span class="err">token:</span> <span class="err">alfanumérico</span> <span class="err">não</span> <span class="err">vazio</span> <span class="err">nem</span> <span class="err">nulo</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="get-by-id-process">GET BY ID PROCESS<a class="headerlink" href="#get-by-id-process" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Serviço que recupera detalhes de um processo, de acordo com seu identificador.</p>
+<div class="superfences-tabs">
+<input name="__tabs_15" type="radio" id="__tab_15_0" checked="checked" />
+<label for="__tab_15_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_1" />
+<label for="__tab_15_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/getByIdProcesso
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_2" />
+<label for="__tab_15_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">6967</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_3" />
+<label for="__tab_15_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;5252&quot;</span><span class="p">,</span>
+<span class="nt">&quot;assuntoComplementar&quot;</span><span class="p">:</span><span class="s2">&quot;Complementary Subject&quot;</span><span class="p">,</span>
+<span class="nt">&quot;observacaoGeral&quot;</span><span class="p">:</span><span class="s2">&quot;General observation&quot;</span><span class="p">,</span>
+<span class="nt">&quot;dataReferencia&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span>
+<span class="nt">&quot;situacao&quot;</span><span class="p">:</span><span class="s2">&quot;In progress&quot;</span><span class="p">,</span>
+<span class="nt">&quot;tipoProcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97930</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;Type reserved process&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;nivelAcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot; idNivelAcessoTipoProcesso &quot;</span><span class="p">:</span><span class="mi">91428</span><span class="p">,</span>
+<span class="nt">&quot;descricao&quot;</span><span class="p">:</span><span class="s2">&quot;Public&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;hipoteseLegal&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97841</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;Information name&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97839</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;ADM&quot;</span><span class="p">,</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:</span><span class="s2">&quot;0001 - ADM &quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;interessados&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;pessoas&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">98064</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;Maycon&quot;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">],</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_4" />
+<label for="__tab_15_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  id: numérico não vazio nem nulo
+  token: alfanumérico não vazio nem nulo
+Resposta:
+  assuntoComplementar: alfanumérico não vazio nem nulo
+  observacaoGeral: alfanumérico não vazio nem nulo
+  dataReferencia:
+  unidade: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  nome: alfanumérico não vazio nem nulo
+  tipoProcesso: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+  nome: alfanumérico não vazio nem nulo
+     nivelAcesso: não vazio nem nulo;
+     idNivelAcessoTipoProcesso: numérico não vazio nem nulo
+     descricao: alfanumérico não vazio nem nulo
+  hipoteseLegal: não vazio nem nulo, se o nível de acesso for diferente de Público.
+     id: numérico não vazio nem nulo
+     nome: alfanumérico não vazio nem nulo
+assunto: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+     assunto: alfanumérico não vazio nem nulo
+interessados: pode ser vazio e nulo;
+     pessoa: não vazio nem nulo;
+        id: numérico não vazio nem nulo
+        nome: : alfanumérico não vazio nem nulo
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="lista-de-processo">LISTA DE PROCESSO<a class="headerlink" href="#lista-de-processo" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Listagem de processos a serem usados por um documento</p>
+<div class="superfences-tabs">
+<input name="__tabs_16" type="radio" id="__tab_16_0" checked="checked" />
+<label for="__tab_16_0">Método</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>GET
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_1" />
+<label for="__tab_16_1">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">4biz_URL</span><span class="p">&gt;</span>/cit-ecm-web/integracao/listProcesso
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_2" />
+<label for="__tab_16_2">Solicitação</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;nup&quot;</span><span class="p">:</span><span class="s2">&quot;00010.000012/2016-94&quot;</span><span class="p">,</span>
+<span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;TGT-17-BI06OJWapCune4uamf6zUDOcyf0GNPPxjrOSDJ66ZxtcthZGhf-CITDFSRV074&quot;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_3" />
+<label for="__tab_16_3">Resposta</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;processo&quot;</span><span class="p">:[</span>
+<span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;5252&quot;</span><span class="p">,</span>
+<span class="nt">&quot;assuntoComplementar&quot;</span><span class="p">:</span><span class="s2">&quot;Complementary Subject&quot;</span><span class="p">,</span>
+<span class="nt">&quot;nup&quot;</span><span class="p">:</span><span class="s2">&quot;00010.000012/2016-94&quot;</span><span class="p">,</span>
+<span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="s2">&quot;Complementary Subject&quot;</span><span class="p">,</span>
+<span class="nt">&quot;tipoProcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97930</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;type reserved process&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;nivelAcesso&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;descricao&quot;</span><span class="p">:</span><span class="s2">&quot;Público&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97839</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;ADM&quot;</span><span class="p">,</span>
+<span class="nt">&quot;assunto&quot;</span><span class="p">:</span><span class="s2">&quot;0001 - ADM&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;hipoteseLegal&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="mi">97841</span><span class="p">,</span>
+<span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="s2">&quot;Information name hypothesis&quot;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_4" />
+<label for="__tab_16_4">Campos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Solicitação:
+  nup: alfanumérico podendo ser vazio ou nulo;
+  token: alfanumérico podendo ser vazio ou nulo
+Resposta:
+  id: numérico não vazio nem nulo
+  assuntoComplementar: alfanumérico podendo ser vazio ou nulo
+  status: alfanumérico podendo ser vazio ou nulo
+     CONCLUIDO: &quot;Concluído&quot;;
+     EM_ANDAMENTO: &quot;Em andamento&quot;;
+     AGUARDANDO_VALIDACAO: &quot;Aguardando validação &quot;
+     VALIDADO: &quot;Válido&quot;;
+     ANEXADO: &quot;Anexado&quot;;
+  tipoProcesso: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+     nome: alfanumérico podendo ser vazio ou nulo
+  nivelAcesso: não vazio nem nulo
+     idNivelAcessoTipoProcesso: numérico não vazio nem nulo
+     descricao: alfanumérico podendo ser vazio ou nulo
+  hipoteseLegal: não vazio nem nulo, se o nível de acesso for diferente de Público.
+     id: numérico não vazio nem nulo
+     nome: alfanumérico podendo ser vazio ou nulo
+  assunto: não vazio nem nulo;
+     id: numérico não vazio nem nulo
+     assunto: alfanumérico podendo ser vazio ou nulo
+  hipoteseLegal: não vazio nem nulo, se o nível de acesso for diferente de Público.
+     id: numérico não vazio nem nulo
+     name: alfanumérico podendo ser vazio ou nulo
+</code></pre></div></div>
+</div>
+</div>
+<p><hr>
+<font  Size=2><b>Produto/Versão:</b> 4biz | Helium</font> &nbsp; &nbsp;</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="data-export.html" title="Exportação de Dados" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Exportação de Dados
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="webservices-esp.html" title="Webservices - 4biz" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Webservices - 4biz
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+          <a href="https://www.citsmart.com">Copyright © 2018 CITSmart</a> 
+	  </div>
+        
+      </div>
+      
+        
+  <div class="md-footer-social">
+<span style="font-size: 12px ; color: #337ab7; font-weight:bold;">Linguagem: </span>
+<a href="/en-us/index.html" style="text-decoration: underline; font-size: 12px ;">en</a> 
+<a href="/pt-br/index.html" style="text-decoration: underline; font-size: 12px ;">pt</a>
+<span style="font-size: 12px ; color: #333333; font-weight:bold ; padding-left: 1.8em">Siga-nos no</span>    
+   <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/run2biz" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/Run2biz-Brasil-100181464932640" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.linkedin.com/company/run2biz-brasil" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

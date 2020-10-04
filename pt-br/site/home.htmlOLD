@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>4biz Developers, API, Webservices and Toolkit.</title>
+  <meta charset="utf-8">
+  <link rel="alternate" href="../en-us/home.html" hreflang="en-us" />
+  <link rel="alternate" href="../pt-br/home.html" hreflang="pt-br" />
+  <link rel="alternate" href="../es-es/home.html" hreflang="es-es" />
+  <link rel="alternate" href="../en-us/home.html" hreflang="x-default" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+  <link rel="stylesheet" href="assets/stylesheets/application.11e41852.css">
+  <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+  <link rel="stylesheet" href="assets/fonts/material-icons.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/stylesheets/home.css">
+  <script src="assets/javascripts/jquery.min.js"></script>
+  <script src="assets/javascripts/bootstrap.min.js"></script>
+  <meta name="description"
+    content="Run2biz Enterprise Service Platform - Instalação, configuração dos processos, funcionalidades, cases e cenários, fluxos e formulários, API e Webservices" />
+  <meta name="keywords" content="4biz, Documentação, Builder, Helper, GRP" />
+  <meta name="robots" content="index, follow">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="https://www.run2biz.com"><img src="assets/images/education-logo.png" alt="Run2biz Corporation"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://training.run2biz.com">Training and Certification</a></li>
+      </ul>
+	  <ul class="nav navbar-nav navbar-right">
+        <div class="dropdown">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Language
+			<span class="caret"></span></button>
+			<ul class="dropdown-menu">
+			<li><a href="/en-us/home.html">EN-US</a></li>
+			<li><a href="/pt-br/home.html">PT-BR</a></li>
+		</div>
+	  </ul>
+    </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>4biz Developers</h1>      
+    <p>CODELESS INTEGRATION OF DATA, SOLUTIONS AND TECHNOLOGY...</p>
+  </div>
+</div>
+
+<div class="text-center">
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+         <img src='assets/images/getstarted.png' alt='run2biz API' height="60" width="60" style='display:inline;'/>
+         <h2 style='display:inline;color:#003655;'>Get Started</h2>
+        </div>
+        <div class="panel-body">
+          <p>Start here by configuring access to our APIs and our Webservice ...</p>
+        <a href="index.html" type="button" class="btn btn-info">More info ...</a>
+		</div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <img src='assets/images/api.png' alt='run2biz API' height="60" width="60" style='display:inline;'/>
+          <h2 style='display:inline;color:#003655;'>4biz API</h2>
+        </div>
+        <div class="panel-body">
+          <p>The 4biz API helps in integration between systems and our platform.</p>
+       <a href="apis.html" type="button" class="btn btn-info">More info ...</a>
+		</div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+         <img src='assets/images/webservices.png' alt='run2biz API' height="60" width="60" style='display:inline;'/>
+         <h2 style='display:inline;color:#003655;'>Webservices</h2>
+        </div>
+        <div class="panel-body">
+          <p>Our Webservices allows communication between systems and our product.</p>
+		<a href="data-export.html" type="button" class="btn btn-info">More info ...</a>
+		</div>
+      </div> 
+    </div> 
+  </div>
+</div>
+
+
+<footer class="text-center" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer-col-rt col-md-6">
+                <h4>Copyright © 2020 Run2biz</h4>
+            </div>
+            <div class="footer-col-lf col-md-6">
+               <a href="https://twitter.com/run2biz" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+               <a href="https://www.facebook.com/Run2biz-Brasil-100181464932640" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+	       <a href="https://www.linkedin.com/company/run2biz-brasil" class="btn btn-social-icon btn-linkedin "><span class="fa fa-linkedin"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

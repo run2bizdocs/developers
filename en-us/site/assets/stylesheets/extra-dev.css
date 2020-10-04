@@ -1,0 +1,122 @@
+[data-md-color-primary="indigo"] .md-header {
+    background-color: #333333;
+}
+
+[data-md-color-primary="indigo"] .md-tabs {
+  background-color: #337ab7; 
+}
+
+a.md-tabs__link {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+  color: #337ab7 !important;
+  font-weight: bold;
+}
+
+h2 {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+h3 {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+footer{
+  background-image: url("../images/bg-down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(230,230,230);
+}
+
+.md-footer-nav {
+  background-color: transparent;
+}
+
+.md-footer-meta{
+  background-color: transparent;
+}
+
+.justificar{
+  text-align: justify !important;
+}
+
+main{
+  background-image: url("../images/bg-top.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: rgb(230,230,230);
+}
+
+.md-footer-nav__link {
+    padding-top: 2.8rem;
+    padding-bottom: 0.8rem;
+    transition: opacity 0.25s;
+}
+
+[data-md-color-primary="indigo"] .md-nav__link:active, [data-md-color-primary="indigo"] .md-nav__link--active {
+    color: #337ab7;
+}
+
+.md-footer-copyright__highlight {
+    color: #337ab7;
+}
+
+html .md-footer-meta.md-typeset a {
+   color: #337ab7;
+}
+
+html .md-footer-meta.md-typeset a:hover {
+   color: #0091ea;
+}
+
+.md-footer-copyright {
+    margin: 0 1.2rem;
+    padding: 0.8rem 0;
+    font-size: 1.28rem;
+}
+
+.md-footer-nav__direction {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: -2rem;
+    padding: 0 2rem;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 1.5rem;
+}
+
+body {
+
+text-align: justify;
+}
+
+[data-md-color-primary="indigo"] .md-nav__item--nested > .md-nav__link {
+    color: #337ab7;
+}
+
+@media only screen and (max-width: 76.1875em) {
+html [data-md-color-primary="indigo"] .md-nav--primary .md-nav__title--site {
+  background-color: #333333; } }
+
+html .md-nav__item a {
+   color: #2e465a;
+}
+
+html .md-nav__link a:hover {
+   color: #0091ea;
+}
+
+footernew a:link { color: red !important; }
+footernew a:visited { color: green !important; }
+footernew a:hover { color: hotpink !important; }
+footernew a:active { color: blue !important; }

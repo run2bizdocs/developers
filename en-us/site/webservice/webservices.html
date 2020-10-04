@@ -1,0 +1,981 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="en-us" />
+      <link rel="alternate" href="https://developers.citsmart.com/pt-br/" hreflang="pt-br" />
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="x-default" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="Documentation for citsmart developers, system integrators, flow creators, API information and Webservices." />
+     <meta name="keywords" content="Citsmart, Developers, API, Webservices, Integration, BPMN Flows, Codless."/>
+     <meta name="robots" content="index, follow">
+      
+	
+      
+      
+        <link rel="canonical" href="https://developers.run2biz.com/webservice/webservices.html">
+      
+      
+        <meta name="author" content="Run2biz">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    
+    
+      
+        <title>Webservices Information</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/home.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#webservices-in-4biz" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/images/run2biz-logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Run2biz Developers
+              </span>
+              <span class="md-header-nav__topic">
+                Webservices Information
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xe14a;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://developers.run2biz.com/en-us/index.html" title="Home" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../index.html" title="DEV" class="md-tabs__link">
+          DEV
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://www.run2biz.com/" title="Run2biz Corporation" class="md-tabs__link">
+          Run2biz Corporation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-nav__button md-logo">
+      
+        <img src="../assets/images/run2biz-logo.png" width="48" height="48">
+      
+    </a>
+    Run2biz Developers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://developers.run2biz.com/en-us/index.html" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      DEV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        DEV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Get Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Get Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/configure-webservices.html" title="Configuring Access" class="md-nav__link">
+      Configuring Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/load-webservice-script.html" title="Load Operations" class="md-nav__link">
+      Load Operations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/register-webservice.html" title="Register Operation" class="md-nav__link">
+      Register Operation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      APIs 4biz
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        APIs 4biz
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/apis.html" title="API´s 4biz" class="md-nav__link">
+      API´s 4biz
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Webservice
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Webservice
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data-export.html" title="Data Export" class="md-nav__link">
+      Data Export
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-docs.html" title="Webservices - Docs" class="md-nav__link">
+      Webservices - Docs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-esp.html" title="Webservices for use on 4biz" class="md-nav__link">
+      Webservices for use on 4biz
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-neuro.html" title="Webservices - NEURO" class="md-nav__link">
+      Webservices - NEURO
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Scripts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        Scripts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../toolkit/script/change-sla.html" title="Change SLA via Rhino script" class="md-nav__link">
+      Change SLA via Rhino script
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Run2biz Corporation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Run2biz Corporation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://www.run2biz.com/" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-standard-resteasy" title="The Standard RestEasy" class="md-nav__link">
+    The Standard RestEasy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-model" title="Data Model" class="md-nav__link">
+    Data Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-resources" title="Classes Resources" class="md-nav__link">
+    Classes Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-classes" title="Utility Classes" class="md-nav__link">
+    Utility Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specific-rules" title="Specific Rules" class="md-nav__link">
+    Specific Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-structure" title="Class Structure" class="md-nav__link">
+    Class Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-cterror" title="Class CtError" class="md-nav__link">
+    Class CtError
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classe-ctlogin-e-ctloginresp" title="Classe CtLogin E CtLoginResp" class="md-nav__link">
+    Classe CtLogin E CtLoginResp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-treatment" title="Error Treatment" class="md-nav__link">
+    Error Treatment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-example" title="Practical Example" class="md-nav__link">
+    Practical Example
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="webservices-in-4biz">Webservices in 4biz<a class="headerlink" href="#webservices-in-4biz" title="Permanent link">&para;</a></h1>
+<table width='100%'>
+    <tr>
+        <td><a href='#project-layout' width="30%" ><img src='/img/bn-webservices.png'></a> </td>
+        <td class='md-typeset justificar' width="70%" > Web Service is a solution used in systems integration and communication between different applications. With this technology it is possible that new applications can interact with those that already exist and that systems developed in different platforms are compatible.</td>
+    </tr>
+    <tr>
+        <td><a href='#project-layout' width="30%" ><img </a> </td>
+        <td class='md-typeset justificar' width="70%" > Web Services are components that allow applications to send and receive data in XML format. Each application can have its own "language", which is translated into a universal language, the XML format.</td>
+    </tr>
+</table>
+
+<p>This document describes the implementation of WebService in 4biz ESP. Called Citrest, the web service uses the RESTEasy implementation of the RESTFul standard.
+Through practical examples, the basic concepts, data structures, and patterns to be followed in the implementation of new services will be presented.</p>
+<h2 id="the-standard-resteasy">The Standard RestEasy<a class="headerlink" href="#the-standard-resteasy" title="Permanent link">&para;</a></h2>
+<p>Representational State Transfer (REST) describes architectures that use the HTTP protocol or similar protocols, restricting the interface to a set of known HTTP operations: GET, POST, PUT, and DELETE.</p>
+<p>Citrest uses RESTEasy, which is an implementation of the JAX-RS specification that provides a Java API for RESTful Web Services through the HTTP protocol.</p>
+<p>This document is not intended to present details about the RESTful or RESTEasy implementation, since there is extensive documentation on the internet about the subject, such as in the site <a href="https://www.jboss.org/resteasy">http://www.jboss.org/resteasy</a>.</p>
+<h2 id="data-model">Data Model<a class="headerlink" href="#data-model" title="Permanent link">&para;</a></h2>
+<p>A structure has been created in the database to store data required for Citrest to function. The rest_v2.pdm data model is located in the**CitCorporeWeb/Model **directory.</p>
+<p>All tables maintained in Citrest have the prefix Rest_ and have relationships with other tables in the 4biz model: ObjetoNegocio, Grupo, Usuário, and ProcessamentoBatch.</p>
+<h2 id="classes-resources">Classes Resources<a class="headerlink" href="#classes-resources" title="Permanent link">&para;</a></h2>
+<p>The Resources classes are simple classes, POJO, containing JAX-RS annotations to indicate existing mappings and operations.</p>
+<p>The Resources classes should be in the package br.com.centralit.4biz.rest.resource and follow the naming pattern used in the other classes Resources, Rest \&lt;NomeDoUC> Resources.java.</p>
+<p>The resource class that intercepts the http call to the webservice must be mapped to the web.xml file. For example:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>\&lt;context-param><br />
+\&lt;param-name>resteasy-resources2\&lt;/param-name><br />
+\&lt;param-value><br />
+  br.com.centralit.4biz.rest.resource.RestOperationResources<br />
+​\&lt;/param-value><br />
+\&lt;/context-param>  </p>
+</div>
+<p>A new instance of the Resource class is created for each request to that resource. Each resource method receives as a parameter a child instance of the CtMessage.java class and returns an object of type CtMessageResp. In this instance is attributed th value of the MessageID attribute. This instance is passed as a parameter to the execute method of the RestOperationUtil.java utility class.</p>
+<h2 id="utility-classes">Utility Classes<a class="headerlink" href="#utility-classes" title="Permanent link">&para;</a></h2>
+<p>The RestOperationUtil.java class is responsible for performing the validations and targeting of the resource request for the class responsible for the Operation.</p>
+<p>The execute method (CtMessage input) is the method called by the Resources classes and receives as parameter an instance of CtMessage with the attribute MessageID assigned.</p>
+<p>The RestOperationUtil class obtains next to class RestUtil.java an instance of each Service and performs the following verifications:</p>
+<ul>
+<li>Verifies whether the SessionId exists and is not expired.</li>
+<li>Returns a RestSessionDTO object associated with the SessionId.</li>
+<li>Verifies whether the operation exists in the Rest_Operation table and
+    returns the RestOperationDTO object.</li>
+<li>Verifies whether any associated user group with the session has permission
+    on the Rest_Permission table.</li>
+</ul>
+<p>Once these validations are done, the class performs the Operation Initialization, recording in the Rest_Execution table the attributes. The RestExecution table functions as a Execution Log table. Note that the execution is created with the status NotInitiated, that is, the operation has not yet been initialized. This status will be updated later according to the result of the operation execution.</p>
+<p>After performing execution logging, the RestOperationUtil class instantiates the Operation class obtained from the JavaClass attribute of the Rest_Operation table and performs the call to the execute method.</p>
+<p>The execute method is a condition of the IRestOperation Interface contract. The classes that implement this interface need to implement the execute method.</p>
+<p>For each messageID a call is made to a specific method for treatment.</p>
+<p>Each of these methods can make calls to the 4biz Services Layer for reuse of services.</p>
+<h2 id="specific-rules">Specific Rules<a class="headerlink" href="#specific-rules" title="Permanent link">&para;</a></h2>
+<p>All classes responsible for webservice operation must be registered in the Rest_Operation table.</p>
+<p>Each operation has an associated class that obeys a standard RestOperation interface and is responsible for its execution.</p>
+<p>The class executing the operation can be of type Java or JavaScript (ClassType attribute). Currently only the Java type is supported.</p>
+<p>An operation can be synchronous or asynchronous (OperationType attribute). A synchronous operation is performed immediately when it is called. An asynchronous operation points to batch processing. <em>Currently, only synchronous operations are supported.</em></p>
+<p>For a given user to be able to perform an operation, at least one user group must be associated with the operation in the Rest_Permission table.</p>
+<p>The Rest_Parameter table stores parameters that can be used to perform operations. Examples of parameters are:</p>
+<table>
+<thead>
+<tr>
+<th><strong>idrestparameter</strong></th>
+<th><strong>Identifier</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>CONTRACT_ID</td>
+<td>Contract ID</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>ORIGIN_ID</td>
+<td>Source ID</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>REQUEST_ID</td>
+<td>Demand type ID for requests</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>INCIDENT_ID</td>
+<td>Incident demand type ID</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>DEFAULT_DEPTO_ID</td>
+<td>Unit Default ID</td>
+</tr>
+</tbody>
+</table>
+<p>Each operation can have one or more parameter domains in the Rest_Domain table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>idrestparameter</strong></th>
+<th><strong>idrestoperation</strong></th>
+<th><strong>value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>6</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>6</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Each execution of a particular operation is recorded in the Rest_Execution table. This table records the date and time of the request, the id of the user requesting the execution, the input class, the input data, and the current execution status.</p>
+<p>Each result of an execution is recorded in the Rest_Log table. This table records the execution date and time, the output class, the output data, and the execution status.</p>
+<p>For the creation of a new resource the developer must follow the following
+parameterization steps:</p>
+<ul>
+<li>Record an operation in the Rest_Operation table and tell which Java class will execute it.</li>
+<li>Give operation execution permissions to one or more groups in the Rest_Permission table.</li>
+<li>Record parameters in the Rest_Parameter table.</li>
+<li>Associate the operation parameter domains in the Rest_Domain table.</li>
+</ul>
+<h2 id="class-structure">Class Structure<a class="headerlink" href="#class-structure" title="Permanent link">&para;</a></h2>
+<p>All classes used by Citrest must be defined by specific .XSD. From .XSD, classes can be generated automatically through the eclipse plugin or by xjc.jar, available at initiative 0015 in SharePoint. To generate the classes from xjc, you must use the following command line:</p>
+<p>xjc "{path and name of xsd}" -d "{absolute path to src} eg:
+D:\Ambiente\jboss\server\default\deploy\CitCorpore.war\WEB-INF\src}" -p {pakage name} eg: {br.com.centralit.4biz.rest.schema}</p>
+<p>The .XSD should be in the br.com.centralit.4biz.rest.xsd package and thegenerated classes should be in the br.com.centralit.4biz.rest.schema package. In these packages there are already several .XSD and several classes used by Mobile that can be used as an example.</p>
+<h2 id="class-cterror">Class CtError<a class="headerlink" href="#class-cterror" title="Permanent link">&para;</a></h2>
+<p>The CtError class is referenced by the other classes used to execute the Citrest operations.</p>
+<h2 id="classe-ctlogin-e-ctloginresp">Classe CtLogin E CtLoginResp<a class="headerlink" href="#classe-ctlogin-e-ctloginresp" title="Permanent link">&para;</a></h2>
+<p>Every running operation on Citrest requires a SessionID returned by login. The login is implemented in class
+br.com.centralit.4biz.rest.resource.RestOperationResources and has as input an object of class CtLogin.</p>
+<p>As a result of the login, the SessionID or a CtError object is returned by login through the CtLoginResp class.</p>
+<h2 id="error-treatment">Error Treatment<a class="headerlink" href="#error-treatment" title="Permanent link">&para;</a></h2>
+<p>The error handling of any execute method must obey the encapsulation pattern of the CtError object implemented in the RestOperationUtil class.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>CtNotificationGetReasonsResp resp = <strong>new</strong> CtNotificationGetReasonsResp();<br />
+CtNotificationGetReasons input = (CtNotificationGetReasons) message;<br />
+<strong>if</strong> (input.getTaskId() == <strong>null</strong>) {<br />
+resp.setError(RestOperationUtil.<em>buildError</em>( RestEnum.<em>INPUT_ERROR</em>, "Id da tarefa não informado"));<br />
+<strong>return</strong> resp;<br />
+}<br />
+...<br />
+} <strong>catch</strong> (Exception e) {<br />
+e.printStackTrace();<br />
+resp.setError(RestOperationUtil.<em>buildError</em>(e));<br />
+<strong>return</strong> resp;<br />
+}</p>
+</div>
+<h2 id="practical-example">Practical Example<a class="headerlink" href="#practical-example" title="Permanent link">&para;</a></h2>
+<p>For ease of understanding, this section details the implementation and operation of the GetByUser service used in Mobile. It is responsible for returning the list of requisitions and incidents in a given user's work portfolio.</p>
+<p>The following steps were followed for its implementation:</p>
+<ol>
+<li>The XSD of the CtNotificationGetByUser and CtNotificationGetByUserResp classes were defined in the file br.com.centralit.4biz.rest.xsd.MobileNotification.XSD</li>
+<li>The classes were generated in the package br.com.centralit.4biz.rest.schema by xjc.jar</li>
+<li>The following entries have been added in the Web.xml file of the 4biz project:</li>
+</ol>
+<div class="admonition example">
+<p>\&lt;context-param><br />
+\&lt;param-name>resteasy-resources3\&lt;/param-name><br />
+\&lt;param-value><br />
+  br.com.centralit.4biz.rest.resource.RestMobileResources<br />
+\&lt;/param-value><br />
+\&lt;/context-param><br />
+\&lt;servlet-mapping><br />
+\&lt;servlet-name>resteasy-servlet\&lt;/servlet-name><br />
+\&lt;url-pattern>/mobile/*\&lt;/url-pattern><br />
+\&lt;/servlet-mapping>  </p>
+</div>
+<p>These entries specify that a new resource class exists for RESTEasy and any URL containing /mobile/ will be intercepted by the web service servlet.</p>
+<div class="admonition example">
+<p>\@Path("/mobile")<br />
+<strong>public</strong> <strong>class</strong> RestMobileResources {<br />
+\@POST<br />
+\@Path("/notification/getByUser")<br />
+<strong>public</strong> Response getnotificationByUser(CtNotificationGetByUser input) {<br />
+input.setMessageID("notification_getByUser");<br />
+<strong>return</strong> RestOperationUtil.<em>execute</em>(input);<br />
+}  </p>
+</div>
+<p>The web.xml configuration and implementation above determine that<br />
+http://.../mobile/notification/getByUser calls will be intercepted by the
+RestMobileResources class.</p>
+<div class="admonition example">
+<p>public CtMessageResp execute(RestSessionDTO restSessionDto, RestExecutionDTO restExecutionDto, RestOperationDTO restOperationDto, CtMessage message) throws AXBException</p>
+</div>
+<p><hr>
+<font  Size=2><b>Produto/Versão:</b> 4biz | 8.00</font> &nbsp; &nbsp;
+<font  Size=2><b>Atualização:</b>13/12/2018 - Andre Luiz de Oliveira Fernandes</font></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+          <a href="https://www.citsmart.com">Copyright © 2018 CITSmart</a> 
+	  </div>
+        
+      </div>
+      
+        
+  <div class="md-footer-social">
+<span style="font-size: 12px ; color: #337ab7; font-weight:bold;">Language: </span>
+<a href="/en-us/index.html" style="text-decoration: underline; font-size: 12px ;">en</a> 
+<a href="/pt-br/index.html" style="text-decoration: underline; font-size: 12px ;">pt</a>
+<span style="font-size: 12px ; color: #333333; font-weight:bold ; padding-left: 1.8em">Follow us on</span>    
+   <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/run2biz" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/run2biz" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.linkedin.com/company/run2biz" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.9e1f3b71.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

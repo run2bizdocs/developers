@@ -1,0 +1,2106 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="en-us" />
+      <link rel="alternate" href="https://developers.citsmart.com/pt-br/" hreflang="pt-br" />
+      <link rel="alternate" href="https://developers.citsmart.com/en-us/" hreflang="x-default" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="Documentation for citsmart developers, system integrators, flow creators, API information and Webservices." />
+     <meta name="keywords" content="Citsmart, Developers, API, Webservices, Integration, BPMN Flows, Codless."/>
+     <meta name="robots" content="index, follow">
+      
+	
+      
+      
+        <link rel="canonical" href="https://developers.run2biz.com/webservice/webservices-esp.html">
+      
+      
+        <meta name="author" content="Run2biz">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    
+    
+      
+        <title>Webservices - 4biz</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/home.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#webservices-para-uso-na-plataforma-4biz" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/images/run2biz-logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Run2biz Developers
+              </span>
+              <span class="md-header-nav__topic">
+                Webservices - 4biz
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xe14a;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://developers.run2biz.com/pt-br/index.html" title="Home" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../index.html" title="DEV" class="md-tabs__link">
+          DEV
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="https://www.run2biz.com/" title="Run2biz Corporation" class="md-tabs__link">
+          Run2biz Corporation
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://developers.run2biz.com" title="Run2biz Developers" class="md-nav__button md-logo">
+      
+        <img src="../assets/images/run2biz-logo.png" width="48" height="48">
+      
+    </a>
+    Run2biz Developers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://developers.run2biz.com/pt-br/index.html" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      DEV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        DEV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Iniciar
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Iniciar
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/load-webservice-script.html" title="Carregar operações" class="md-nav__link">
+      Carregar operações
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/register-webservice.html" title="Registrar operações" class="md-nav__link">
+      Registrar operações
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      APIs 4biz
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        APIs 4biz
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/apis.html" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Webservice
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Webservice
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="data-export.html" title="Exportação de Dados" class="md-nav__link">
+      Exportação de Dados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-docs.html" title="Webservices - 4biz Docs" class="md-nav__link">
+      Webservices - 4biz Docs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Webservices - 4biz
+      </label>
+    
+    <a href="webservices-esp.html" title="Webservices - 4biz" class="md-nav__link md-nav__link--active">
+      Webservices - 4biz
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" title="Antes de começar" class="md-nav__link">
+    Antes de começar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acoes" title="Ações" class="md-nav__link">
+    Ações
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criar-um-ticket-request_create" title="Criar um ticket (request_create)" class="md-nav__link">
+    Criar um ticket (request_create)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-de-informacoes-de-um-ticket-create" title="Alteração de Informações de um Ticket (create)" class="md-nav__link">
+    Alteração de Informações de um Ticket (create)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-da-situacao-de-um-ticket-updatestatus" title="Alteração da situação de um Ticket (updateStatus)" class="md-nav__link">
+    Alteração da situação de um Ticket (updateStatus)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-tickets-do-solicitante-getbyuser" title="Consultar Tickets do Solicitante (getByUser)" class="md-nav__link">
+    Consultar Tickets do Solicitante (getByUser)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detalhes-do-ticket-de-um-solicitante-getbyid" title="Detalhes do Ticket de um Solicitante (getById)" class="md-nav__link">
+    Detalhes do Ticket de um Solicitante (getById)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incluir-ocorrencia-no-ticket-createoccurrence" title="Incluir Ocorrência no Ticket (createOccurrence)" class="md-nav__link">
+    Incluir Ocorrência no Ticket (createOccurrence)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-ocorrencias-do-ticket-listoccurrences" title="Consultar ocorrências do Ticket (listOccurrences)" class="md-nav__link">
+    Consultar ocorrências do Ticket (listOccurrences)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-tickets-para-atendimento" title="Listar tickets para atendimento" class="md-nav__link">
+    Listar tickets para atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gravar-ticket-em-atendimento" title="Gravar ticket em atendimento" class="md-nav__link">
+    Gravar ticket em atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-unidades" title="Receber Unidades" class="md-nav__link">
+    Receber Unidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-justificativa-de-suspensao" title="Receber justificativa de suspensão" class="md-nav__link">
+    Receber justificativa de suspensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-tickets-para-atendimento_1" title="Listar tickets para atendimento" class="md-nav__link">
+    Listar tickets para atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-acoes-de-usuario-em-um-ticket" title="Receber ações de usuário em um ticket" class="md-nav__link">
+    Receber ações de usuário em um ticket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-anexos-dos-tickets" title="Listar anexos dos tickets" class="md-nav__link">
+    Listar anexos dos tickets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realizar-download-de-anexos-de-um-ticket" title="Realizar download de anexos de um ticket" class="md-nav__link">
+    Realizar download de anexos de um ticket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-anexos-dos-tickets" title="Upload anexos dos tickets" class="md-nav__link">
+    Upload anexos dos tickets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleta-anexos-dos-tickets" title="Deleta anexos dos tickets" class="md-nav__link">
+    Deleta anexos dos tickets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="webservices-neuro.html" title="Webservices - 4biz Builder" class="md-nav__link">
+      Webservices - 4biz Builder
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Scripts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        Scripts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../toolkit/script/change-sla.html" title="Alterar SLA via script Rhino" class="md-nav__link">
+      Alterar SLA via script Rhino
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Run2biz Corporation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Run2biz Corporation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://www.run2biz.com/" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" title="Antes de começar" class="md-nav__link">
+    Antes de começar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acoes" title="Ações" class="md-nav__link">
+    Ações
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criar-um-ticket-request_create" title="Criar um ticket (request_create)" class="md-nav__link">
+    Criar um ticket (request_create)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-de-informacoes-de-um-ticket-create" title="Alteração de Informações de um Ticket (create)" class="md-nav__link">
+    Alteração de Informações de um Ticket (create)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alteracao-da-situacao-de-um-ticket-updatestatus" title="Alteração da situação de um Ticket (updateStatus)" class="md-nav__link">
+    Alteração da situação de um Ticket (updateStatus)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-tickets-do-solicitante-getbyuser" title="Consultar Tickets do Solicitante (getByUser)" class="md-nav__link">
+    Consultar Tickets do Solicitante (getByUser)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detalhes-do-ticket-de-um-solicitante-getbyid" title="Detalhes do Ticket de um Solicitante (getById)" class="md-nav__link">
+    Detalhes do Ticket de um Solicitante (getById)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incluir-ocorrencia-no-ticket-createoccurrence" title="Incluir Ocorrência no Ticket (createOccurrence)" class="md-nav__link">
+    Incluir Ocorrência no Ticket (createOccurrence)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-ocorrencias-do-ticket-listoccurrences" title="Consultar ocorrências do Ticket (listOccurrences)" class="md-nav__link">
+    Consultar ocorrências do Ticket (listOccurrences)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-tickets-para-atendimento" title="Listar tickets para atendimento" class="md-nav__link">
+    Listar tickets para atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gravar-ticket-em-atendimento" title="Gravar ticket em atendimento" class="md-nav__link">
+    Gravar ticket em atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-unidades" title="Receber Unidades" class="md-nav__link">
+    Receber Unidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-justificativa-de-suspensao" title="Receber justificativa de suspensão" class="md-nav__link">
+    Receber justificativa de suspensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-tickets-para-atendimento_1" title="Listar tickets para atendimento" class="md-nav__link">
+    Listar tickets para atendimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receber-acoes-de-usuario-em-um-ticket" title="Receber ações de usuário em um ticket" class="md-nav__link">
+    Receber ações de usuário em um ticket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-anexos-dos-tickets" title="Listar anexos dos tickets" class="md-nav__link">
+    Listar anexos dos tickets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realizar-download-de-anexos-de-um-ticket" title="Realizar download de anexos de um ticket" class="md-nav__link">
+    Realizar download de anexos de um ticket
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-anexos-dos-tickets" title="Upload anexos dos tickets" class="md-nav__link">
+    Upload anexos dos tickets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleta-anexos-dos-tickets" title="Deleta anexos dos tickets" class="md-nav__link">
+    Deleta anexos dos tickets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="webservices-para-uso-na-plataforma-4biz">Webservices para uso na plataforma 4biz<a class="headerlink" href="#webservices-para-uso-na-plataforma-4biz" title="Permanent link">&para;</a></h1>
+<p>Este documento tem o propósito de fornecer orientações a respeito dos Web Services disponibilizados para integração com o Gerenciamento de Serviço do 4biz.</p>
+<p>Os Web Services foram criados no 4biz para inclusão, atualização, consulta e cancelamento de solicitações de serviço (incidentes e requisições).</p>
+<h2 id="antes-de-comecar">Antes de começar<a class="headerlink" href="#antes-de-comecar" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Antes de se utilizar qualquer operação REST do 4biz, é necessário que o usuário esteja autenticado.</li>
+<li>A autenticação é feita através da operação REST login na URL <strong>/services/login</strong>, que recebe um objeto <strong>CtLogin</strong> contendo os atributos <strong>userName</strong>, <strong>password</strong> e <strong>platform</strong>.</li>
+<li>O atributo platform deve conter a identificação do site que está solicitando o serviço.</li>
+<li>A operação login retorna um valor alfanumérico no atributo <strong>SessionID</strong>. Este mesmo <strong>SessionID</strong> deve ser utilizado nas outras chamadas REST. O objeto retornado contém o código e descrição do erro em caso de problemas na execução da operação login.</li>
+<li>O usuário autenticado compõe a chave para sincronização dos dados, quando o atributo <strong>synchronize</strong> tiver o valor <strong>true</strong>.</li>
+<li>Os serviços de inclusão e atualização de solicitações contam com o atributo <strong>synchronize</strong>. Quando este atributo for <strong>true</strong>, o cadastro de usuário e o catálogo serviços serão automaticamente criados ou atualizados no 4biz a partir das informações enviadas na solicitação do Web Service.  </li>
+</ol>
+<div class="admonition abstract">
+<p class="admonition-title">REGRA</p>
+<p>Todos os serviços REST criados no 4biz recebem um objeto de entrada e
+retornam um objeto. Em caso de erro, o objeto de retorno contém o código e a
+descrição do erro. Quando não houver erro, além dos atributos definidos para
+cada serviço, o objeto de retorno contém a data e hora de execução e o id da
+operação. O 4biz garante que toda solicitação é registrada na sua base de
+dados e um ID da operação é retornado para o solicitante, mesmo em caso de erro.</p>
+</div>
+<h2 id="acoes">Ações<a class="headerlink" href="#acoes" title="Permanent link">&para;</a></h2>
+<h3 id="criar-um-ticket-request_create">Criar um ticket (request_create)<a class="headerlink" href="#criar-um-ticket-request_create" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Pré-condições: <strong>configurar os contratos, grupos, fluxos e permissões</strong>.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Criando uma Requisição/Incidente</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/create
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>-synchronize - indica se as informações de usuário e/ou serviço serão sincronizadas.
+-sourceRequest - informações da solicitação origem da classe CtRequest, contendo:
+ -numberOrigin - número da solicitação no sistema de origem (obrigatório. Este atributo é necessário para que o 4biz mantenha o DE-PARA entre sua base de dados e o número original do sistema origem.
+ -type - tipo da solicitação (obrigatório). Valores possíveis: I=Incidente ou R=Requisição.
+ -description - descrição do incidente ou requisição (obrigatório).
+ -userID - identificação de usuário do solicitante (obrigatório). Será incluído se não existir na base do 4biz e o atributo synchronize for igual a true.
+ -contact - dados do solicitante. Obrigatório quando o solicitante não existir no 4biz e o atributo synchronize for igual a true).
+ -name - nome do solicitante (obrigatório).
+  -phoneNumber - telefone do solicitante (obrigatório).
+  -e-mail - e-mail do solicitante (obrigatório).
+  -contractID - número do contrato no 4biz (opcional). Se não for informado, o 4biz vai incluir a solicitação vinculada ao contrato default parametrizado no serviço.
+  -service - dados do serviço (opcional). Se não for informado, o 4biz vai incluir a solicitação vinculada ao serviço default parametrizado no cadastro de WebService.
+      -code - código do serviço. Opcional, se nome do serviço for informado).
+      -name - nome do serviço. Obrigatório quando o serviço não existir no 4biz e o atributo synchronize for igual a true.
+      -category - categoria do serviço. Obrigatório quando o serviço não existir no 4biz e o atributo synchronize for igual a true.
+         -code - código da categoria.
+         -name - nome da categoria.
+  -urgency - urgência da solicitação (opcional). Valores possíveis: H=Alta, M=Média, L=Baixa. Se não for informada, a urgência será calculada partir dos parâmetros do catálogo de serviço do 4biz.
+  -impact of request (opcional). Valores possíveis: H=Alto, M=Médio, L=Baixo. Se não for informado, o impacto será calculado a partir dos parâmetros do catálogo de serviço do 4biz.
+  -groupId - sigla do grupo executor no 4biz (opcional). Se não for informada, o grupo executor será obtido a partir dos parâmetros do catálogo de serviço do 4biz.
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_2" />
+<label for="__tab_1_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Os atributos de saída são compostos de todos os atributos de entrada da classe CtRequest, mais as seguintes informações:
+  number - número da solicitação criada no 4biz ITSM.
+  startSLA - data e hora de início do SLA.
+  endSLA - data e hora de término do SLA.
+  status - situação da solicitação, contendo:
+     code - código da situação.
+     name - nome da situação.
+  currentTask - tarefa atual, contendo:
+     number - número da tarefa
+     name - nome da tarefa.
+     startDateTime - data e hora de início
+     status - situação da tarefa, contendo:
+        code: código da situação.
+        name: nome da situação.
+  userId - login do usuário responsável pela tarefa.
+  groupId - sigla do grupo responsável pela tarefa.
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_3" />
+<label for="__tab_1_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;Synchronize&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="nt">&quot;sourceRequest&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;numberOrigin&quot;</span><span class="p">:</span> <span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+<span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span>
+<span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="s2">&quot; 61 84460708 &quot;</span><span class="p">,</span>
+<span class="nt">&quot; email &quot;</span><span class="p">:</span><span class="s2">&quot; fulano.de.tal@centralit.com.br &quot;</span><span class="p">,</span>
+<span class="nt">&quot; department &quot;</span><span class="p">:</span><span class="s2">&quot; Department of the So-and-so &quot;</span><span class="p">,</span>
+<span class="nt">&quot; name &quot;</span><span class="p">:</span><span class="s2">&quot; So-and-so &quot;</span><span class="p">},</span>
+<span class="nt">&quot; description &quot;</span><span class="p">:</span><span class="s2">&quot; REST v3 &quot;</span><span class="p">,</span>
+<span class="nt">&quot; service &quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot; name &quot;</span><span class="p">:</span><span class="s2">&quot; SERVICE.TEST.1 &quot;</span><span class="p">,</span>
+<span class="nt">&quot; category &quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot; name &quot;</span><span class="p">:</span><span class="s2">&quot; Category 1 &quot;</span><span class="p">}},</span>
+<span class="nt">&quot; contractID &quot;</span><span class="p">:</span><span class="s2">&quot; 1 &quot;</span><span class="p">,</span>
+<span class="nt">&quot; urgency &quot;</span> <span class="p">:</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span>
+<span class="nt">&quot;impact&quot;</span><span class="p">:</span> <span class="s2">&quot;H&quot;</span><span class="p">}</span>
+<span class="err">}</span>
+<span class="err">Supondo</span> <span class="err">que</span> <span class="err">no</span> <span class="err">atributo</span> <span class="err">platform</span> <span class="err">no</span> <span class="err">login</span> <span class="err">foi</span> <span class="err">informado</span> <span class="s2">&quot;usuário&quot;</span> <span class="err">e</span> <span class="err">considerando</span> <span class="err">o</span> <span class="err">atributo</span> <span class="err">synchronize</span> <span class="err">igual</span> <span class="err">a</span> <span class="kc">true</span><span class="err">,</span> <span class="err">o</span> <span class="mi">4</span><span class="err">biz</span> <span class="err">irá:</span>
+  <span class="err">-</span> <span class="err">Verificar</span> <span class="err">se</span> <span class="err">existe</span> <span class="err">um</span> <span class="err">DE-PARA</span> <span class="err">do</span> <span class="err">contrato</span> <span class="mi">1</span> <span class="err">para</span> <span class="err">o</span> <span class="s2">&quot;usuário&quot;</span><span class="err">;</span>
+  <span class="err">-</span> <span class="err">Incluir</span> <span class="err">o</span> <span class="err">solicitante</span> <span class="err">no</span> <span class="err">cadastro</span> <span class="err">de</span> <span class="err">usuários,</span> <span class="err">caso</span> <span class="err">não</span> <span class="err">exista</span> <span class="err">na</span> <span class="err">base;</span>
+  <span class="err">-</span> <span class="err">Incluir</span> <span class="err">o</span> <span class="err">serviço</span> <span class="err">no</span> <span class="err">catálogo</span> <span class="err">de</span> <span class="err">serviços</span> <span class="err">do</span> <span class="err">contrato</span> <span class="mi">1</span><span class="err">,</span> <span class="err">caso</span> <span class="err">não</span> <span class="err">exista</span> <span class="err">na</span> <span class="err">base</span> <span class="err">e</span> <span class="err">registrar</span> <span class="err">o</span> <span class="err">DE-PARA</span> <span class="err">de</span> <span class="err">serviços</span> <span class="err">para</span> <span class="err">o</span> <span class="err">cliente;</span>
+  <span class="err">-</span> <span class="err">Incluir</span> <span class="err">a</span> <span class="err">solicitação</span> <span class="err">com</span> <span class="err">número</span> <span class="err">de</span> <span class="err">origem</span> <span class="mi">9999</span><span class="err">;</span>
+  <span class="err">-</span> <span class="err">Registrar</span> <span class="err">o</span> <span class="err">DE-PARA</span> <span class="err">da</span> <span class="err">solicitação</span> <span class="err">de</span> <span class="err">origem</span> <span class="mi">9999</span> <span class="err">para</span> <span class="err">o</span> <span class="err">cliente.</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="alteracao-de-informacoes-de-um-ticket-create">Alteração de Informações de um Ticket (create)<a class="headerlink" href="#alteracao-de-informacoes-de-um-ticket-create" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Alterando informação de Requisição/Incidente</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/create
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>​​synchronize - indica se as informações de usuário e/ou serviço serão sincronizadas.
+request - informações da solicitação origem da classe CtRequest, contendo:
+    numberOrigin - número da solicitação no sistema de origem. Obrigatório quando o atributo number não for informado.
+    description - descrição do incidente ou requisição (opcional).
+    userID - identificação de usuário do solicitante (obrigatório). Será incluído se não existir na base do 4biz e o atributo synchronize for igual a true.
+    number - número da solicitação no 4biz (obrigatório).
+    contact - dados do solicitante. Obrigatório quando o solicitante não existir no 4biz e o atributo synchronize for igual a true).
+        name - nome do solicitante (obrigatório).
+        phoneNumber - telefone do solicitante (obrigatório).
+        e-mail - e-mail do solicitante (obrigatório).
+​    service - dados do serviço (opcional).
+        code - código do serviço. Opcional, se nome do serviço for informado).
+        name - nome do serviço. Obrigatório quando o serviço não existir no 4biz e o atributo synchronize for igual a true.
+        category - categoria do serviço. Obrigatório quando o serviço não existir no 4biz e o atributo synchronize for igual a true.
+            Code - código da categoria.
+            Name - nome da categoria.
+     Urgency - urgência da solicitação (opcional). Valores possíveis: H=Alta, M=Média, L=Baixa. Se não for informada, a urgência será calculada partir dos parâmetros do catálogo de serviço do 4biz ITSM.
+     impacto da solicitação (opcional). Valores possíveis: H=Alto, M=Médio, L=Baixo. Se não for informado, o impacto será calculado a partir dos parâmetros do catálogo de serviço do 4biz ITSM.
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_2" />
+<label for="__tab_2_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Os mesmos que os atributos de entrada.
+</code></pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_3" />
+<label for="__tab_2_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;Synchronize&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="nt">&quot;request&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;numberOrigin&quot;</span><span class="p">:</span> <span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+<span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="s2">&quot;ciclano.de.tal&quot;</span><span class="p">,</span>
+<span class="nt">&quot;contact&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;61 84460709&quot;</span><span class="p">,</span>
+<span class="nt">&quot;email&quot;</span> <span class="s2">&quot;Cyclone&quot;</span><span class="p">,</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Cyclone of such&quot;</span><span class="p">},</span>
+<span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Inclusion of request using REST v3 - Changed&quot;</span><span class="p">,</span>
+<span class="nt">&quot;cyclano.de.tal@centralit.com.br&quot;</span><span class="p">,</span>
+<span class="nt">&quot;department&quot;</span> <span class="s2">&quot;Service&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;SERVICO.TESTE.2&quot;</span><span class="p">,</span>
+<span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Category 2&quot;</span><span class="p">}}}}</span>
+
+<span class="err">Supondo</span> <span class="err">que</span> <span class="err">no</span> <span class="err">atributo</span> <span class="err">platform</span> <span class="err">no</span> <span class="err">login</span> <span class="err">foi</span> <span class="err">informado</span> <span class="s2">&quot;usuário&quot;</span> <span class="err">e</span> <span class="err">considerando</span> <span class="err">o</span> <span class="err">atributo</span> <span class="err">synchronize</span> <span class="err">igual</span> <span class="err">a</span> <span class="kc">true</span><span class="err">,</span> <span class="err">o</span> <span class="mi">4</span><span class="err">biz</span> <span class="err">irá:</span>
+    <span class="err">Incluir</span> <span class="err">o</span> <span class="err">solicitante</span> <span class="err">no</span> <span class="err">cadastro</span> <span class="err">de</span> <span class="err">usuários,</span> <span class="err">caso</span> <span class="err">não</span> <span class="err">exista</span> <span class="err">na</span> <span class="err">base;</span>
+    <span class="err">Incluir</span> <span class="err">o</span> <span class="err">serviço</span> <span class="err">no</span> <span class="err">catálogo</span> <span class="err">de</span> <span class="err">serviços</span> <span class="err">do</span> <span class="err">contrato</span> <span class="mi">1</span><span class="err">,</span> <span class="err">caso</span> <span class="err">não</span> <span class="err">exista</span> <span class="err">na</span> <span class="err">base</span> <span class="err">e</span> <span class="err">registrar</span> <span class="err">o</span> <span class="err">DE-PARA</span> <span class="err">de</span> <span class="err">serviços</span> <span class="err">para</span> <span class="err">o</span> <span class="err">cliente;</span>
+    <span class="err">Alterar</span> <span class="err">o</span> <span class="err">solicitante</span> <span class="err">e</span> <span class="err">serviço</span> <span class="err">da</span> <span class="err">solicitação</span> <span class="err">com</span> <span class="err">número</span> <span class="err">de</span> <span class="err">origem</span> <span class="mi">9999</span><span class="err">.</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="alteracao-da-situacao-de-um-ticket-updatestatus">Alteração da situação de um Ticket (updateStatus)<a class="headerlink" href="#alteracao-da-situacao-de-um-ticket-updatestatus" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Alteração da situação de um Incidente/Requisição</p>
+<div class="superfences-tabs">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
+<label for="__tab_3_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/updateStatus
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_1" />
+<label for="__tab_3_1">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>​​number - número da solicitação no 4biz ITSM. Obrigatório quando o atributo numberOrigin não for informado.
+numberOrigin - número da solicitação no sistema de origem. Obrigatório quando o atributo number não for informado.
+status - situação da solicitação, contendo:
+    code - código da situação (obrigatório). Valores possíveis: EmAndamento, Suspensa, Cancelada, Resolvida, Reaberta, Fechada.
+    details - complemento da justificativa para alteração da situação (opcional).
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_2" />
+<label for="__tab_3_2">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>    Os mesmos que os atributos de entrada.
+</code></pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_3" />
+<label for="__tab_3_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>   <span class="p">{</span><span class="nt">&quot;numberOrigin&quot;</span><span class="p">:</span> <span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;Suspended&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;details&quot;</span><span class="p">:</span> <span class="s2">&quot;Integration Testing&quot;</span><span class="p">}}</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="consultar-tickets-do-solicitante-getbyuser">Consultar Tickets do Solicitante (getByUser)<a class="headerlink" href="#consultar-tickets-do-solicitante-getbyuser" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Consultando Incidentes e Requisições do Solicitante</p>
+<div class="superfences-tabs">
+<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
+<label for="__tab_4_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/getByUser
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_1" />
+<label for="__tab_4_1">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>userID - identificação de usuário do solicitante (obrigatório).
+description - descrição do incidente ou requisição (opcional).
+startDate - data de início da solicitação (opcional).
+endDate - data de finalização da solicitação (opcional).
+service - dados do serviço (opcional).
+   code - código do serviço.
+   name - nome do serviço.
+contractID - número do contrato no 4biz (opcional).
+status - situação da solicitação (opcional), contendo:
+   code - código da situação. Valores possíveis: Em Andamento, Suspensa, Cancelada, Resolvida, Reaberta, Fechada, Reclassificada.
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_2" />
+<label for="__tab_4_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Coleção de objetos da classe CtRequest contendo:
+   number - número da solicitação no 4biz ITSM.
+   numberOrigin - número da solicitação no sistema de origem.
+   type - Tipo da solicitação. Valores possíveis: I=Incidente ou R=Requisição
+   description - descrição do incidente ou requisição.
+   userID - identificação de usuário do solicitante.
+   urgency - urgência da solicitação (opcional). Valores possíveis: H=Alta, M=Média, L=Baixa. Se não for informada, a urgência será calculada partir dos parâmetros do catálogo de serviço do 4biz.
+   groupId - sigla do grupo executor no 4biz (opcional). Se não for informada, o grupo executor será obtido a partir dos parâmetros do catálogo de serviço do 4biz.
+   startDateTime - data e hora de início da solicitação.
+   startSLA - data e hora de início do SLA.
+   endSLA - data e hora de término do SLA.
+   status - situação da solicitação, contendo:
+      code - código da situação.
+      name - nome da situação.
+</code></pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_3" />
+<label for="__tab_4_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="s2">&quot;john elliot &quot;</span><span class="p">,</span>
+<span class="nt">&quot;startDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-09-16T03:00:00.000Z&quot;</span><span class="p">,</span>
+<span class="nt">&quot;endDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-09-19T03:00:00.000Z&quot;</span><span class="p">}</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="detalhes-do-ticket-de-um-solicitante-getbyid">Detalhes do Ticket de um Solicitante (getById)<a class="headerlink" href="#detalhes-do-ticket-de-um-solicitante-getbyid" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Detalhes da Requisição/Incidente</p>
+<div class="superfences-tabs">
+<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
+<label for="__tab_5_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/getById
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_1" />
+<label for="__tab_5_1">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>number - número da solicitação no 4biz ITSM. Obrigatório quando o atributo numberOrigin não for informado.
+numberOrigin - número da solicitação no sistema de origem. Obrigatório quando o atributo number não for informado.
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_2" />
+<label for="__tab_5_2">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Atributos de Saída são compostos de todos os Atributos de Entrada da classe CtRequest mais as seguintes informações:
+  number - número da solicitação criada no 4biz.
+  startSLA - hora e data inicial do SLA.
+  endSLA - hora e data final do SLA.
+  status - status da solicitação, contendo:
+     code - código da situação.
+     name - nome da situação.
+  currentTask - tarefa atual, contendo:
+     number - número da tarefa
+     name - nome da tarefa.
+     startDateTime - hora e data inicial
+     status - situação da tarefa, contendo:
+        code: código da situação.
+        name: nome da situação.
+  userId - login do usuário responsável pela tarefa.
+  groupId - acrônimo do grupo responsável pela tarefa.
+</code></pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_3" />
+<label for="__tab_5_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;numberOrigin&quot;</span><span class="p">:</span><span class="s2">&quot;9999&quot;</span><span class="p">}</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="incluir-ocorrencia-no-ticket-createoccurrence">Incluir Ocorrência no Ticket (createOccurrence)<a class="headerlink" href="#incluir-ocorrencia-no-ticket-createoccurrence" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Inclui uma ocorrência em uma solicitação</p>
+<div class="superfences-tabs">
+<input name="__tabs_6" type="radio" id="__tab_6_0" checked="checked" />
+<label for="__tab_6_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/createOccurrence
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_1" />
+<label for="__tab_6_1">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>requestNumber - número da solicitação no 4biz. Obrigatório quando o atributo requestNumberOrigin não for informado.
+requestNumberOrigin - número da solicitação no sistema de origem. Obrigatório quando o atributo requestNumber não for informado.
+ocurrence - objeto da classe CtOccurrence, contendo:
+    numberOrigin - número da ocorrência no sistema de origem (opcional).
+    description - descrição da ocorrência.
+    date - data de registro da ocorrência.
+    hour - hora de registro da ocorrência no formato HH:MM.
+    category - categoria da ocorrência. Valores possíveis: Acompanhamento, Atualização, Diagnostico, Investigação, Memorando, Informação, Retorno, Sintoma, Contorno, Agendamento.
+    reason - motivo da ocorrência.
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_2" />
+<label for="__tab_6_2">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Objeto da classe CtOcurrence contendo:
+    number - número da ocorrência no 4biz.
+    numberOrigin - número da ocorrência no sistema de origem.
+    description - descrição da ocorrência.
+    date - data de registro da ocorrência.
+    Hour - hora de registro da ocorrência no formato HH:MM.
+    userID - identificação do usuário responsável pelo registro da ocorrência.
+    origin - origem da ocorrência. Valores possíveis: EMAIL, FONE_FAX, VOICE_MAIL, PESSOALMENTE, OUTROS.
+    category - categoria da ocorrência. Valores possíveis: Criacao, Acompanhamento, Atualizacao, Diagnostico, Investigacao, Memorando, Informacao, Retorno, Sintoma, Contorno, Execucao, MudancaSLA, Reclassificacao, Agendamento, Suspensao, Reabertura, Direcionamento, Compartilhamento, CancelamentoTarefa, InicioSLA, SuspensaoSLA, Aprovacao, ReativacaoSLA
+    elapsedTime - tempo decorrido (para categoria do tipo Execucao)
+    reason – motivo da ocorrência.
+    task - tarefa associada à ocorrência, contendo:
+       number - número da tarefa.
+       name - nome da tarefa.
+       startDateTime - data e hora de início.
+       endDateTime - data e hora de execução.
+       status - situação da tarefa, contendo:
+          code - código da situação.
+          name - nome da situação.
+      userId - login do usuário responsável pela execução da tarefa.
+</code></pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_3" />
+<label for="__tab_6_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>    <span class="p">{</span><span class="nt">&quot;requestNumberOrigin&quot;</span><span class="p">:</span> <span class="s2">&quot;9999&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;occurrence&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Occurrence test&quot;</span><span class="p">,</span><span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;Workaround solution&quot;</span><span class="p">},</span>
+    <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-08-20T03:00:00.000Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;2219&quot;</span><span class="p">}}</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="consultar-ocorrencias-do-ticket-listoccurrences">Consultar ocorrências do Ticket (listOccurrences)<a class="headerlink" href="#consultar-ocorrencias-do-ticket-listoccurrences" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Consultar informações das solicitações/incidentes</p>
+<div class="superfences-tabs">
+<input name="__tabs_7" type="radio" id="__tab_7_0" checked="checked" />
+<label for="__tab_7_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/listOccurrences
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_1" />
+<label for="__tab_7_1">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>requestNumber - número da solicitação no 4biz. Obrigatório quando o atributo requestNumberOrigin não for informado.
+requestNumberOrigin - número da solicitação no sistema de origem. Obrigatório quando o atributo requestNumber não for informado.
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_2" />
+<label for="__tab_7_2">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Objeto da classe CtOcurrence containing:
+    number - número do evento na 4biz.
+    numberOrigin - número da ocorrência no sistema de origem.
+    description - descrição da ocorrência.
+    date - data do registro da ocorrência.
+    Hour - hora para registrar a ocorrência no formato HH:MM.
+    userID - identificação do usuário responsável por registrar a ocorrência.
+    origin - origem da ocorrência. Valores possíveis: EMAIL, FONE_FAX, VOICE_MAIL, PERSONALLY, OTHERS.
+    category - categoria da ocorrência. Valores possibles: Creation, Monitoring, Update, Diagnosis, Investigation, Memo, Information, Return, Symptom, Outline, Executing, Exchanging, Reclaiming, Reclassification, Schedule, Suspend, Reopen, Targeting, Sharing, Cancellation Task, HomeSLA, SuspendedSLA, Approval, ReactivationSLA
+    elapsedTime - tempo gasto (para categoria do tipo de execução)
+    reason – motivo da ocorrência.
+    task - tarefa associada com a ocorrência, contendo:
+       number - número da tarefa.
+       name - nome da tarefa.
+       startDateTime - hora e data inicial.
+       endDateTime - hora e data da execução.
+       status - status da tarefa, contendo:
+          code - código da localização.
+          name - nome da situação.
+      userId - login do usuário responsável pela execução da tarefa.
+</code></pre></div></div>
+<input name="__tabs_7" type="radio" id="__tab_7_3" />
+<label for="__tab_7_3">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;requestNumberOrigin&quot;</span><span class="p">:</span><span class="s2">&quot;9999&quot;</span><span class="p">}</span>
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="listar-tickets-para-atendimento">Listar tickets para atendimento<a class="headerlink" href="#listar-tickets-para-atendimento" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para listar os usuários que podem ser solicitantes na abertura de um ticket.</p>
+<ul>
+<li>Pré-condições: O solicitante deve estar vinculado à um grupo que tenha permissão de criar em um fluxo de trabalho.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Listar requisições/incidentes para atendimento</p>
+<div class="superfences-tabs">
+<input name="__tabs_8" type="radio" id="__tab_8_0" checked="checked" />
+<label for="__tab_8_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/services/request/createOccurrence 
+/webmvc/servicerequestincident/searchTickets
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_1" />
+<label for="__tab_8_1">Possíveis códigos de retorno</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+406 - Not Acceptable - Business Exception
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_2" />
+<label for="__tab_8_2">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>sessionID: Atributo obrigatório que recebe o código da sessão;
+name: Atributo não obrigatório que recebe o nome do solicitante, parte do nome;
+    Se o usuário passar a informação %%%, o sistema retornará todos os solicitantes do sistema.
+    •   userId: Atributo obrigatório que recebe o código do usuário logado;
+    •   selectedPage: Atributo obrigatório que passa a página a ser traga;
+    •   Passar o sessionID no Header;
+    •   Filtros permitidos nesse webservice, os atributos descritos abaixo não são obrigatórios:
+        o   attendantId: Atributo que permite filtrar pelo nome do atendente;
+        o   groupId: Atributo que permite filtrar pelo nome do grupo;
+        o   orderBy: Atributo que permite ordenar os registros pelos seguintes parâmetros:
+               TICKET_ID: Número do ticket, 
+               CREATE_DATE: Data de criação, 
+               LIMIT_DATE: Data limite para atendimento do ticket,
+        o   orderDirection: Atributo que permite direcionar os tickets de duas formas:
+               ASC: Direciona pelo número do ticket de forma crescente, 
+               DESC: Direciona pelo número do ticket de forma decrescente
+        o   requesterId: Atributo que permite filtrar pelo nome do solicitante;
+        o   status: Atributo que permite filtrar pelas situações dos tickets:
+               IN_PROGRESS,
+               SUSPENDED, 
+               CANCELED, 
+               SOLVED, 
+               CLOSED 
+        o   ticketId: Atributo que permite filtrar pelo número do ticket;
+        o   unitId: Atributo que permite filtrar pelo nome da unidade;
+Exemplo de entrada no webservice
+{
+    &quot;userId&quot;: 4,
+    &quot;selectedPage&quot;: 1
+}
+
+Exemplo de entrada no webservice com os atributos não obrigatórios
+{
+    &quot;userId&quot;: 4,
+    &quot;selectedPage&quot;: 1,
+    &quot;attendantId&quot;: 0,
+    &quot;groupId&quot;: 0,
+    &quot;orderBy&quot;: &quot;TICKET_ID&quot;,
+    &quot;orderDirection&quot;: &quot;ASC&quot;,
+    &quot;requesterId&quot;: 0,
+    &quot;selectedPage&quot;: 0,
+    &quot;status&quot;: &quot;IN_PROGRESS&quot;,
+    &quot;ticketId&quot;: 0,
+    &quot;unitId&quot;: 0
+}
+
+
+```tab=&quot;Exemplo JSON&quot;
+{ 
+&quot;sessionID&quot;: &quot;39738a39-836d-4940-94d5-c9235035bb29&quot;,
+
+&quot;name&quot; : &quot;poll&quot; 
+}  
+Exemplo de entrada no webservice com atributos não obrigatórios
+{
+&quot;userId&quot;: 4,
+&quot;selectedPage&quot;: 1,
+&quot;attendantId&quot;: 0,
+&quot;groupId&quot;: 0,
+&quot;orderBy&quot;: &quot;TICKET_ID&quot;,
+&quot;orderDirection&quot;: &quot;ASC&quot;,
+&quot;requesterId&quot;: 0,
+&quot;selectedPage&quot;: 0,
+&quot;status&quot;: &quot;IN_PROGRESS&quot;,
+&quot;ticketId&quot;: 0,
+&quot;unitId&quot;: 0
+}
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_3" />
+<label for="__tab_8_3">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>&quot; id &quot; – Resposta que retorna o código do solicitante encontrado pela pesquisa;
+“name” - Resposta que retorna o nome do solicitante;
+&quot;email&quot; – Resposta que retorna o endereço de e-mail do solicitante;
+“Unit” – Resposta que retorna
+    Id: Código da unidade;
+    Name: Nome da Unidade;
+“places” – Resposta que retorna:
+    Id: Código da localidade;
+    Name: Nome da localidade;
+“phone” – Resposta que retorna o número do telefone do solicitante;
+•   &quot;id&quot; – Resposta que retorna o número do ticket;
+•   “tipo” - Resposta que retorna o tipo de demanda, ou seja, se é uma Requisição (R), Incidente (I) ou Procedimento(P);
+•   &quot;nomePrioridade&quot; – Resposta que retorna o nome da Prioridade dada ao ticket;
+•   “solicitacao” – Resposta que retorna a descrição da atividade solicitada;
+•   “tarefa” – Resposta que retorna a tarefa do fluxo que se encontra o ticket;
+•   “status” – Resposta que retorna a situação da tarefa do ticket listado;
+•   “dataLimite” – Resposta que retorna a data e a hora de encerramento da solicitação de serviço conforme o SLA e calendário vinculado a atividadexcontrato
+•   “statusFluxoNome” - Resposta que retorna a situação do SLA, podendo ser: Normal, A Vencer, Vencido, Suspenso.
+Exemplo de resposta válida do webservice
+&quot;code&quot;: &quot;200&quot;,
+&quot;message&quot;: &quot;Request processed successfully&quot;,
+&quot;payload&quot;:{
+&quot;initialNumber&quot;: 1,
+&quot;lastPage&quot;: 1.0,
+&quot;finalNumber&quot;: 20,
+&quot;totalRequests&quot;: 168,
+&quot;result&quot;:
+[
+&quot;id&quot;: 1251,
+&quot;tipo&quot;: &quot;Incidente&quot;,
+&quot;nomePrioridade&quot;: &quot;Medium&quot;,
+&quot;solicitacao&quot;: &quot;Serviço de Incidente&quot;,
+&quot;tarefa&quot;: &quot;Atender solicitacao&quot;,
+&quot;status&quot;: &quot;NORMAL&quot;,
+&quot;dataLimite&quot;: &quot;2020-06-09 09:18:00 AM UTC&quot;
+]
+}
+</code></pre></div></div>
+<input name="__tabs_8" type="radio" id="__tab_8_4" />
+<label for="__tab_8_4">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+    &quot;message&quot;: &quot;Request processed successfully&quot;,
+    &quot;payload&quot;: [
+        {
+            &quot;id&quot;: 904,
+            &quot;name&quot;: &quot;Lucas Novais&quot;,
+            &quot;email&quot;: &quot;lucas@rogalabs.com&quot;,
+            &quot;unit&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Default&quot;,
+                &quot;places&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;Brasilia&quot;
+                    }
+                ]
+            },
+            &quot;phone&quot;: &quot;(676) 76868-7687&quot;
+        }
+    ]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="gravar-ticket-em-atendimento">Gravar ticket em atendimento<a class="headerlink" href="#gravar-ticket-em-atendimento" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar os tickets para atendimento dos analistas. </p>
+<ul>
+<li>Pré-condições: Possuir acesso ao sistema e permissão de execução no fluxo de trabalho.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Gravar ticket em atendiment</p>
+<div class="superfences-tabs">
+<input name="__tabs_9" type="radio" id="__tab_9_0" checked="checked" />
+<label for="__tab_9_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>Para apenas gravar o ticket: webmvc/servicerequestincident/save  
+Para gravar e avançar o ticket: webmvc/servicerequestincident/next
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_1" />
+<label for="__tab_9_1">Possíveis códigos de retorno</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>200 – Requisição efetuada com sucesso  
+401 - Invalid authentication token or user without access to the resource  
+406 - Not Acceptable - Business Exception
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_2" />
+<label for="__tab_9_2">Atributos de entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>authentication-token: Atributo obrigatório que recebe o token de autenticação
+    Passar o authentication-token no Header;
+serviceRequestId: Atributo obrigatório que recebe o número do ticket; 
+taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+contactEmail: Atributo obrigatório que recebe o endereço de e-mail do solicitante;  
+contactExtension: Atributo não obrigatório que recebe o número do ramal do telefone do solicitante;  
+contactPhone: Atributo não obrigatório que recebe o número do telefone do solicitante;  
+goupId: Atributo não obrigatório que recebe o número do código do grupo que poderá receber o ticket;  
+statusId: Atributo obrigatório que recebe o número do código da situação que o ticket receberá após a gravação do ticket, sendo esses status:  
+In progress (1), Canceled (3) or Resolved (4)  
+originId: Atributo não obrigatório que recebe o número do código de origem que o ticket receberá após a gravação do ticket;  
+causeId: Atributo não obrigatório que recebe o número do código de causa de solução que o ticket receberá após a gravação do ticket;  
+idSolutionCategory: Atributo não obrigatório que recebe o número do código de categoria de solução que o ticket receberá após a gravação do ticket;  
+response: Atributo não obrigatório que recebe a descrição da solução resposta que o ticket receberá após a gravação do ticket;     builderObjects: Atributo não obrigatório que recebe as respostas capturadas caso, o ticket possua um formulário no ticket;  
+quiz: Atributo não obrigatório que recebe as respostas capturadas caso, o ticket possua um questionário no ticket;  
+flowAction: Atributo que recebe a ação de usuário desenhada no fluxo e respondida pelo atendente para solução do ticket;  
+reasonFlowAction: Atributo que recebe a resposta dada ao campo Motivo, quando essa é desenhada no fluxo como obrigatória;  
+
+Exemplo de entrada no webservice:  
+{ 
+    &quot;serviceRequestId&quot;: 5409, 
+&quot;taskId&quot;: 8342, 
+&quot;contactEmail&quot;: &quot;teste@teste.com&quot;, 
+&quot;contactExtension&quot;: &quot;4979&quot;,
+&quot;contactPhone&quot;: &quot;(64)999177012&quot;, 
+&quot;goupId&quot;: 21, 
+&quot;statusId&quot;: 1, 
+&quot;originId&quot;: 59, 
+&quot;causeId&quot;: 7, 
+&quot;idSolutionCategory&quot;: 13, 
+&quot;response&quot;: &quot;Teste de Gravação via webservice&quot;, 
+}  
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_3" />
+<label for="__tab_9_3">Atributos de saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>&quot; idGrupoAtual &quot; – Resposta que retorna o código do grupo atual do ticket;  
+“idTarefa” - Resposta que retorna o código da tarefa do ticket;  
+&quot; idStatus&quot; – Resposta que retorna o código da atual situação do ticket;  
+“status” – Resposta que retorna a descrição do status do ticket;  
+“dataHoraInicio” – Resposta que retorna a data e hora de criação do ticket;  
+“dataHoraInicioSLA” – Resposta que retorna a data e hora de início do SLA do ticket;
+“dataHoraLimite” – Resposta que retorna a data e hora de encerramento do SLA do ticket;  
+“dataHoraSolicitacao” - Resposta que retorna a data e hora de criação do ticket;  
+Descrição: Resposta que retorna a descrição do ticket;  
+idCategoriaSolucao: Resposta que retorna o código da categoria de solução do ticket;  
+idCausaIncidente: Resposta que retorna o código da causa de solução do ticket;  
+idContrato: Resposta que retorna o código do contrato do ticket;  
+idServico: Resposta que retorna o código do serviço de negócio ou apoio do ticket;  
+idSolicitacaoServico: Resposta que retorna o número do ticket;  
+idSolicitante: Resposta que retorna o código do solicitante do ticket;  
+idUnidade: Resposta que retorna o código da unidade do ticket,  
+impacto: Resposta que retorna a sigla do impacto;  
+resposta: Resposta que retorna dos dizeres da solução resposta;  
+siglaGrupo: Resposta que retorna a sigla do grupo;  
+tarefa: Resposta que retorna a descrição da tarefa;  
+urgencia: Resposta que retorna a sigla da urgência do ticket;  
+idUsuarioResponsavelAtual: Resposta que retorna o código do responsável do ticket;  
+nomeGrupoAtual: Resposta que retorna a descrição do grupo atual do ticket;  
+solicitanteVip: Resposta que retorna se o solicitante é vip ou não, respostas possíveis:  
+    false ou true
+</code></pre></div></div>
+<input name="__tabs_9" type="radio" id="__tab_9_4" />
+<label for="__tab_9_4">Exemplo JSON</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>{
+    &quot;status&quot;: &quot;SUCCESS&quot;, 
+&quot;code&quot;: &quot;200&quot;, 
+&quot;message&quot;: &quot;Request processed successfully&quot;, 
+&quot;payload&quot;: {
+    &quot;idGrupoAtual&quot;: 171, 
+    &quot;idTarefa&quot;: 8809, 
+    &quot;idStatus&quot;: 1, 
+    &quot;status&quot;: &quot;In Progress&quot;, 
+    &quot;dataHoraInicio&quot;: &quot;2020-09-10 11:58:28 AM BRT&quot;, 
+    &quot;dataHoraInicioSLA&quot;: &quot;2020-09-10 11:58:29 AM BRT&quot;, 
+    &quot;dataHoraLimite&quot;: &quot;2020-09-10 17:08:00 PM BRT&quot;, 
+    &quot;dataHoraSolicitacao&quot;: &quot;2020-09-10 11:58:28 AM BRT&quot;, 
+    &quot;descricao&quot;: &quot;&lt;div&gt;test&lt;/div&gt;&quot;, 
+    &quot;idCategoriaSolucao&quot;: 13, 
+    &quot;idCausaIncidente&quot;: 7, 
+    &quot;idContrato&quot;: 52, 
+    &quot;idServico&quot;: 670, 
+    &quot;idSolicitacaoServico&quot;: 5712, 
+    &quot;idSolicitante&quot;: 456, 
+    &quot;idUnidade&quot;: 2, 
+    &quot;impacto&quot;: &quot;A&quot;, 
+    &quot;resposta&quot;: &quot;Teste de Gravação via webservice&quot;, 
+    &quot;siglaGrupo&quot;: &quot;LEVEL1&quot;, 
+    &quot;tarefa&quot;: &quot;Answer Ticket&quot;, 
+    &quot;urgencia&quot;: &quot;A&quot;, 
+    &quot;idUsuarioResponsavelAtual&quot;: 254,
+    &quot;nomeGrupoAtual&quot;: &quot;Level 1&quot;, 
+    &quot;solicitanteVip&quot;: false
+}  
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="receber-unidades">Receber Unidades<a class="headerlink" href="#receber-unidades" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar as unidades ativas existentes no sistema para seleção na criação de um ticket.</p>
+<ul>
+<li>Pré-condições: Esse webservice sofre alteração de resultados caso o parâmetro 61 - Vincula contratos a unidade (Ex.: S ou N) esteja ativo.</li>
+</ul>
+<p>A documentação de desenvolvimento está no Swagger</p>
+<p>Exemplo: <a href="https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/">https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/</a></p>
+<p>Para ler essa documentação, é preciso estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.</p>
+<div class="admonition example">
+<p class="admonition-title">Receber Unidades</p>
+<div class="superfences-tabs">
+<input name="__tabs_10" type="radio" id="__tab_10_0" checked="checked" />
+<label for="__tab_10_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>webmvc/ v1/unit
+Método: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 – Justificativa não encontrada
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_1" />
+<label for="__tab_10_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo obrigatório que recebe o token de autenticação
+    o   Passar o authentication-token no Header;
+•   employeeId: Atributo obrigatório que recebe o código do usuário solicitante do ticket:
+    o   Passar o atributo como parâmetro;
+•   Limit: Atributo que retorna a quantidade de unidades a serem retornadas na pesquisa;
+    o   Passar o atributo como parâmetro;
+•   unitQuery: Atributo não obrigatório que permite pesquisar por parte do nome da unidade;
+    o   Passar o atributo como parâmetro;
+Exemplo de entrada no webservice
+{
+    Não se aplica uma vez que a URL passará todos os atributos necessários
+}
+</code></pre></div></div>
+<input name="__tabs_10" type="radio" id="__tab_10_2" />
+<label for="__tab_10_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   id:  Retorna o código da unidade;
+•   name: Retorna a descrição da unidade;
+Exemplo de saída no webservice
+{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+    &quot;message&quot;: &quot;Request processed successfully&quot;,
+    &quot;payload&quot;: [
+        {
+            &quot;id&quot;: 52,
+            &quot;name&quot;: &quot;---Human Resourcer&quot;
+        }
+    ]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="receber-justificativa-de-suspensao">Receber justificativa de suspensão<a class="headerlink" href="#receber-justificativa-de-suspensao" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar as justificativas de suspensão cadastradas e ativas no sistema.</p>
+<ul>
+<li>Pré-condições: O usuário que é passado no webservice deve possuir permissão de suspender no fluxo de trabalho;</li>
+</ul>
+<p>A documentação de desenvolvimento está no Swagger</p>
+<p>Exemplo: <a href="https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/">https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/</a></p>
+<p>Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.</p>
+<div class="admonition example">
+<p class="admonition-title">Receber justificativa de suspensão</p>
+<div class="superfences-tabs">
+<input name="__tabs_11" type="radio" id="__tab_11_0" checked="checked" />
+<label for="__tab_11_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>webmvc/v1/ticket/justification
+Método: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 – Justificativa não encontrada
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_1" />
+<label for="__tab_11_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo obrigatório que recebe o token de autenticação
+    o   Passar o authentication-token no Header;
+•   type: Atributo obrigatório que recebe uma das siglas abaixo:
+    o   Passar o type como parâmetro;
+    o   Type (S = Suspension, A = Approval)
+        Available values : S, A
+        Default value : S
+Exemplo de entrada no webservice
+{
+    Não se aplica uma vez que a URL passará todos os atributos necessários
+}
+</code></pre></div></div>
+<input name="__tabs_11" type="radio" id="__tab_11_2" />
+<label for="__tab_11_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   id:  Retorna o código da Justificativa de suspensão;
+•   description: Retorna a descrição da Justificativa de suspensão
+Exemplo de saída no webservice
+{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+    &quot;message&quot;: &quot;Request processed successfully&quot;,
+    &quot;payload&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;description&quot;: &quot;Default&quot;
+        }
+    ]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="listar-tickets-para-atendimento_1">Listar tickets para atendimento<a class="headerlink" href="#listar-tickets-para-atendimento_1" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar as opções permitidas no fluxo em um determinado grupo.</p>
+<ul>
+<li>Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.
+O usuário que é passado no webservice deve possuir permissão no fluxo de trabalho;</li>
+</ul>
+<p>A documentação de desenvolvimento está no Swagger</p>
+<p>Exemplo: <a href="https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/">https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/</a></p>
+<p>Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.</p>
+<div class="admonition example">
+<p class="admonition-title">Listar tickets para atendimento</p>
+<div class="superfences-tabs">
+<input name="__tabs_12" type="radio" id="__tab_12_0" checked="checked" />
+<label for="__tab_12_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/webmvc/v1/ticket/{ticketId}/permissions
+Método: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 – Ticket not found
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_1" />
+<label for="__tab_12_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo obrigatório que recebe o token de autenticação
+    o   Passar o authentication-token no Header;
+•   taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+    o   Passar o taskId como parâmetro na url;
+•   ticketId: Atributo obrigatório que recebe o número do ticket;
+Exemplo de entrada no webservice
+{
+    Não se aplica uma vez que a URL passará todos os atributos necessários 
+}
+</code></pre></div></div>
+<input name="__tabs_12" type="radio" id="__tab_12_2" />
+<label for="__tab_12_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   &quot;id&quot; – Resposta que retorna o número do ticket;
+•   “tipo” - Resposta que retorna o tipo de demanda, ou seja, se é uma Requisição (R), Incidente (I) ou Procedimento(P);
+•   &quot;nomePrioridade&quot; – Resposta que retorna o nome da Prioridade dada ao ticket;
+•   “solicitacao” – Resposta que retorna a descrição da atividade solicitada;
+•   “tarefa” – Resposta que retorna a tarefa do fluxo que se encontra o ticket;
+•   “status” – Resposta que retorna a situação da tarefa do ticket listado;
+•   “dataLimite” – Resposta que retorna a data e a hora de encerramento da solicitação de serviço conforme o SLA e calendário vinculado a atividadexcontrato
+•   “statusFluxoNome” - Resposta que retorna a situação do SLA, podendo ser: Normal, A Vencer, Vencido, Suspenso.
+Exemplo de resposta válida do webservice
+&quot;code&quot;: &quot;200&quot;,
+&quot;message&quot;: &quot;Request processed successfully&quot;,
+&quot;payload&quot;:{
+&quot;initialNumber&quot;: 1,
+&quot;lastPage&quot;: 1.0,
+&quot;finalNumber&quot;: 20,
+&quot;totalRequests&quot;: 168,
+&quot;result&quot;:
+[
+&quot;id&quot;: 1251,
+&quot;tipo&quot;: &quot;Incidente&quot;,
+&quot;nomePrioridade&quot;: &quot;Medium&quot;,
+&quot;solicitacao&quot;: &quot;Serviço de Incidente&quot;,
+&quot;tarefa&quot;: &quot;Atender solicitacao&quot;,
+&quot;status&quot;: &quot;NORMAL&quot;,
+&quot;dataLimite&quot;: &quot;2020-06-09 09:18:00 AM UTC&quot;
+]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="receber-acoes-de-usuario-em-um-ticket">Receber ações de usuário em um ticket<a class="headerlink" href="#receber-acoes-de-usuario-em-um-ticket" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar as ações de usuário desenhadas em um fluxo de trabalho.</p>
+<ul>
+<li>Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.
+O usuário que é passado no webservice deve possuir permissão de execução no fluxo de trabalho;</li>
+</ul>
+<p>A documentação de desenvolvimento está no Swagger</p>
+<p>Exemplo: <a href="https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/">https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/</a></p>
+<p>Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.</p>
+<div class="admonition example">
+<p class="admonition-title">Receber ações de usuário em um ticket</p>
+<div class="superfences-tabs">
+<input name="__tabs_13" type="radio" id="__tab_13_0" checked="checked" />
+<label for="__tab_13_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>webmvc/v1/ticket/{ticketId}/flow-actions
+Método: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 – Ticket não encontrado
+Pós condição:
+Para enviar a resposta selecionada na ação de usuário, utilize o webservice de Gravar e Avançar (webmvc/servicerequestincident/next)
+Atributos:
+&quot;flowAction&quot;: 
+&quot;reasonFlowAction&quot;:
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_1" />
+<label for="__tab_13_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo obrigatório que recebe o token de autenticação
+    o   Passar o authentication-token no Header;
+•   taskId: Atributo obrigatório que recebe o número da tarefa do ticket;
+    o   Passar o taskId como parâmetro na url;
+•   ticketId: Atributo obrigatório que recebe o número do ticket;
+Exemplo de entrada no webservice
+{
+    Não se aplica uma vez que a URL passará todos os atributos necessários
+}
+</code></pre></div></div>
+<input name="__tabs_13" type="radio" id="__tab_13_2" />
+<label for="__tab_13_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   &quot;id:  Código da ação de fluxo cadastrada no desenho de fluxo;
+•   Name: Nome da ação de fluxo;
+•   Description: Descrição da ação de fluxo;
+•   requiresReason: Informa se o motivo é obrigatório, existe duas respostas para esse atributo:
+    o   True: Quando o motivo for obrigatório;
+    o   False: Quando o motivo não for obrigatório;
+•   approvalActionId: Retorna o código da resposta de aprovação;
+•   ticketStatusId: Retorna o código da situação do ticket;
+{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+    &quot;message&quot;: &quot;Request processed successfully&quot;,
+    &quot;payload&quot;: [
+        {
+            &quot;id&quot;: 1302,
+            &quot;name&quot;: &quot;ApproveTicket&quot;,
+            &quot;description&quot;: &quot;Approve Ticket&quot;,
+            &quot;requiresReason&quot;: false,
+            &quot;approvalActionId&quot;: 1,
+            &quot;ticketStatusId&quot;: 1
+        },
+        {
+            &quot;id&quot;: 1304,
+            &quot;name&quot;: &quot;DenyTicket&quot;,
+            &quot;description&quot;: &quot;Deny Ticket&quot;,
+            &quot;requiresReason&quot;: false,
+            &quot;approvalActionId&quot;: 2,
+            &quot;ticketStatusId&quot;: 3
+        }
+    ]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="listar-anexos-dos-tickets">Listar anexos dos tickets<a class="headerlink" href="#listar-anexos-dos-tickets" title="Permanent link">&para;</a></h3>
+<p>Esse webservice deve ser utilizado para retornar a lista dos anexos de um  tickets para atendimento dos analistas.</p>
+<ul>
+<li>Pré-condições: O usuário que é passado no webservice precisa possuir acesso ao sistema.</li>
+</ul>
+<p>A documentação de desenvolvimento está no Swagger</p>
+<p>Exemplo: <a href="https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/">https://presentation02.citsmartcloud.com/4biz/webmvc/swagger-ui.html#/</a></p>
+<p>Para ler essa documentação, o usuário precisa estar logado na aplicação, e essa aplicação precisa estar na versão que possui esses webservices.</p>
+<p>Observação: Esse documento contém todos os webservices necessários para anexo que inclui:
+- Listar anexos de um ticket;
+- Realizar download do anexo;
+- Anexar documento ao ticket (upload);
+- Deletar anexo do ticket</p>
+<div class="admonition example">
+<p class="admonition-title">Listar anexos dos tickets</p>
+<div class="superfences-tabs">
+<input name="__tabs_14" type="radio" id="__tab_14_0" checked="checked" />
+<label for="__tab_14_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments
+Método tipo: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 - Ticket not found
+</code></pre></div></div>
+<input name="__tabs_14" type="radio" id="__tab_14_1" />
+<label for="__tab_14_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo que recebe o token de acesso à aplicação:
+    o   O token deve ser passado no header;
+•   serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+    o   O número do ticket deve ser passado no path, junto à URL;
+Exemplo de entrada no webservice
+{
+    Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+}
+</code></pre></div></div>
+<input name="__tabs_14" type="radio" id="__tab_14_2" />
+<label for="__tab_14_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   &quot;id&quot; – Resposta que retorna o código do anexo contido no ticket;
+•   “name” - Resposta que retorna a descrição do anexo;
+•   &quot;extension&quot; – Resposta que retorna a extensão do anexo;
+Exemplo de resposta válida do webservice
+{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+    &quot;message&quot;: &quot;Request processed successfully&quot;,
+    &quot;payload&quot;: [
+        {
+            &quot;id&quot;: 2253,
+            &quot;name&quot;: &quot;ei_1598697802049.png.png&quot;,
+            &quot;extension&quot;: &quot;png&quot;
+        },
+        {
+            &quot;id&quot;: 2252,
+            &quot;name&quot;: &quot;ei_1598697788434.jpg.jpg&quot;,
+            &quot;extension&quot;: &quot;jpg&quot;
+        },
+        {
+            &quot;id&quot;: 2251,
+            &quot;name&quot;: &quot;ei_1598697777801.jpg.jpg&quot;,
+            &quot;extension&quot;: &quot;jpg&quot;
+        }
+]
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="realizar-download-de-anexos-de-um-ticket">Realizar download de anexos de um ticket<a class="headerlink" href="#realizar-download-de-anexos-de-um-ticket" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Realizar download de anexos de um ticket</p>
+<div class="superfences-tabs">
+<input name="__tabs_15" type="radio" id="__tab_15_0" checked="checked" />
+<label for="__tab_15_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>webmvc/servicerequestincident/{serviceRequestIncidentId}/attachments/{documentId} 
+Método tipo: GET
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 - Document or ticket not found
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_1" />
+<label for="__tab_15_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo que recebe o token de acesso à aplicação:
+    o   O token deve ser passado no header;
+•   serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+    o   O número do ticket deve ser passado no path, junto à URL;
+•   documentId: Atributo obrigatório que recebe o código do anexo contido no ticket;
+    o   O id do anexo deve ser passado no path, junto à URL;
+Exemplo de entrada no webservice
+{
+    Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+}
+</code></pre></div></div>
+<input name="__tabs_15" type="radio" id="__tab_15_2" />
+<label for="__tab_15_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>O próprio anexo
+Exemplo de resposta válida do webservice
+{
+    Não se aplica   
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="upload-anexos-dos-tickets">Upload anexos dos tickets<a class="headerlink" href="#upload-anexos-dos-tickets" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Upload anexos dos tickets</p>
+<div class="superfences-tabs">
+<input name="__tabs_16" type="radio" id="__tab_16_0" checked="checked" />
+<label for="__tab_16_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/webmvc/services/request/addAttachments Método tipo: POST
+Pré Condição:
+1.  Verificar os parâmetros:
+2.  44 - Diretório Upload repositório path (Ex.: Windows - C:/temp)
+3.  278 - Tamanho máximo de arquivo, em bytes, para upload. Default[1073741824] = 1GB
+4.  318 - Lista de extensões de arquivos que não poderão ser anexados (Para mais de uma extensão separar por ponto e vírgula)
+5.  446 - Enviar anexos no e-mail de notificação do Ticket? (Ex.: S ou N - Default: &#39;N&#39;)
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+500 – Campos obrigatórios não informados
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_1" />
+<label for="__tab_16_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   mediaType: Atributo obrigatório que indica o formato da conversa
+    o   Importante deixar fixo em application/json
+•   requestNumber: Atributo obrigatório que recebe o número da requisição que receberá o anexo;
+•   attachments: Lista de arquivo;
+•   name: Atributo obrigatório que recebe o nome do arquivo;
+•   content: Atributo obrigatório que deverá estar codificado em base64 que recebe o conteúdo do arquivo;
+    o   O content é o conteúdo do arquivo codificado em base64;
+•   extension: Atributo obrigatório que recebe a extensão do arquivo: txt, jpg, jpeg,
+Exemplo de entrada no webservice 
+{
+    &quot;sessionID&quot;: &quot;b7f24d64-5e23-4331-ab89-63403cb00d40&quot;,
+    &quot;mediaType&quot;: &quot;application/json&quot;,
+    &quot;requestNumber&quot;: &quot;1351&quot;,
+    &quot;attachments&quot;: [{
+        &quot;name&quot;: &quot;arquivo teste&quot;,
+        &quot;content&quot;: &quot;VGVzdGU=&quot;,
+        &quot;extension&quot;: &quot;txt&quot;
+    }]
+}
+</code></pre></div></div>
+<input name="__tabs_16" type="radio" id="__tab_16_2" />
+<label for="__tab_16_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   dateTime: Atributo obrigatório que indica data e hora de execução;
+•   dateTimeMilliseconds: Hora em milissegundos;
+•   operationID: Número da operação que foi realizada;
+•   error: Atributo obrigatório que indica se houve erro durante a execução do webservice;
+Exemplo de resposta válida do webservice
+{
+    &quot;dateTime&quot;: &quot;2020-05-19 14:56:00&quot;,
+    &quot;dateTimeMilliseconds&quot;: 1589910960717,
+    &quot;operationID&quot;: 603,
+    &quot;error&quot;: null
+}
+</code></pre></div></div>
+</div>
+</div>
+<h3 id="deleta-anexos-dos-tickets">Deleta anexos dos tickets<a class="headerlink" href="#deleta-anexos-dos-tickets" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Deleta anexos dos tickets</p>
+<div class="superfences-tabs">
+<input name="__tabs_17" type="radio" id="__tab_17_0" checked="checked" />
+<label for="__tab_17_0">URL</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>/webmvc/v1/ticket/{ticketId}/attachments/{documentId}
+Método tipo: DELETE
+Possíveis Códigos de retorno
+200 – Requisição efetuada com sucesso
+401 - Invalid authentication token or user without access to the resource
+404 - Ticket not found
+</code></pre></div></div>
+<input name="__tabs_17" type="radio" id="__tab_17_1" />
+<label for="__tab_17_1">Atributos de Entrada</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>•   authentication-token: Atributo que recebe o token de acesso à aplicação:
+    o   O token deve ser passado no header;
+•   serviceRequestIncidentId: Atributo obrigatório que recebe o número do ticket;
+    o   O número do ticket deve ser passado no path, junto à URL;
+•   documentId: Atributo obrigatório que recebe o código do anexo contido no ticket;
+    o   O id do anexo deve ser passado no path, junto à URL;
+Exemplo de entrada no webservice
+{
+    Não se aplica, veja que os atributos de entrada estão no header e no Path da url.
+}
+</code></pre></div></div>
+<input name="__tabs_17" type="radio" id="__tab_17_2" />
+<label for="__tab_17_2">Atributos de Saída</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code>    {
+Não se aplica
+}
+Exemplo de resposta válida do webservice
+{
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;code&quot;: &quot;200&quot;,
+}
+</code></pre></div></div>
+</div>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="webservices-docs.html" title="Webservices - 4biz Docs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Webservices - 4biz Docs
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="webservices-neuro.html" title="Webservices - 4biz Builder" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Webservices - 4biz Builder
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+          <a href="https://www.citsmart.com">Copyright © 2018 CITSmart</a> 
+	  </div>
+        
+      </div>
+      
+        
+  <div class="md-footer-social">
+<span style="font-size: 12px ; color: #337ab7; font-weight:bold;">Linguagem: </span>
+<a href="/en-us/index.html" style="text-decoration: underline; font-size: 12px ;">en</a> 
+<a href="/pt-br/index.html" style="text-decoration: underline; font-size: 12px ;">pt</a>
+<span style="font-size: 12px ; color: #333333; font-weight:bold ; padding-left: 1.8em">Siga-nos no</span>    
+   <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/run2biz" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/Run2biz-Brasil-100181464932640" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.linkedin.com/company/run2biz-brasil" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.9e1f3b71.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
