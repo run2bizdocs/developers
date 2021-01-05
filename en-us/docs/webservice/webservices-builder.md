@@ -1,7 +1,7 @@
-﻿Title: Webservices - NEURO
-Description: NEURO Webservices
+﻿Title: Webservices - Builder
+Description: Builder Webservices
 
-#Webservices NEURO
+#Webservices Builder
 
 This document gathers the minimum knowledge necessary for the adequate use of
 the services via Rest.
