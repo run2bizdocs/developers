@@ -94,7 +94,7 @@ nav:
       - webservice/data-export.md
       - webservice/webservices-docs.md
       - webservice/webservices-esp.md
-      - webservice/webservices-neuro.md
+      - webservice/webservices-build.md
     - Toolkit:
       - Scripts:
         - toolkit/script/change-sla.md
