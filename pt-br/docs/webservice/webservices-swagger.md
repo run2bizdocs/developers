@@ -36,7 +36,7 @@ Para criação da documentação de um webservice com a utilização de Swagger 
 
  - As demais anotações são as comumente utilizadas em um webservice criado utilizando o spring, que agora são trazidas para a interface para serem implementadas no webservice desejado. 
 
- - Para verificar se a documentação foi adicionada com sucesso, adicione _webmvc/swagger-ui.html#_ após o  _citsmart/_ ou _4biz_ na url. 
+ - Para verificar se a documentação foi adicionada com sucesso, adicione _webmvc/swagger-ui.html#_ após o _4biz_ na url. 
 
 ![imagem 1](/pt-br/webservice/images-swagger/image5.png)
 
