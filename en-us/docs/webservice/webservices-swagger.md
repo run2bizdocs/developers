@@ -36,7 +36,7 @@ To create documentation for webservices using Swagger you must follow a few step
 
  - The other notations are commonly used in a webservice created with spring, which will be brought to the interface and implemented on the webservice. 
 
- - To check if the documentation was created succesfully, add _webmvc/swagger-ui.html#_ after  _citsmart/_ or _4biz_ on the URL. 
+ - To check if the documentation was created succesfully, add _webmvc/swagger-ui.html#_ after _4biz_ on the URL. 
 
 ![imagem 1](/en-us/webservice/images-swagger/image5.png)
 
