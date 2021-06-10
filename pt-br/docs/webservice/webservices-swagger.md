@@ -13,16 +13,16 @@ Para criação da documentação de um webservice com a utilização de Swagger 
 
  - Dentro da anotação @Api, na propriedade _tags_ é onde se deve colocar a identificação da categoria do webservice a qual recebe um valor do enum _ApiTagsEnum_. 
 
-![imagem 1](/pt-br//webservice/images-swagger/image1.png)
+![imagem 1](/pt-br/webservice/images-swagger/image1.png)
 
  - O enum _ApiTagsEnum_ é o responsável por guardar as categorias ao qual o webservice pode pertencer. Cada enum é composto pelo valor do enum e uma instãncia da classe Tag (pacote _springfox.documentation.service.Tag_) que recebe o valor do enum e a descrição do que esse enum representa.  
 
-![imagem 1](/pt-br//webservice/images-swagger/image2.png)
+![imagem 1](/pt-br/webservice/images-swagger/image2.png)
  
 
  - Após a configuração desses cenários, para inserir a documentação do webservice de fato, deve se criar uma interface a qual o webservice relacionado deve implementar. 
 
-![imagem 1](/pt-br//webservice/images-swagger/image3.png)
+![imagem 1](/pt-br/webservice/images-swagger/image3.png)
  
  - Na interface é o lugar onde a documentação será escrita de fato. São utilizadas mais frequentemente as seguintes anotações:  
 
@@ -32,17 +32,17 @@ Para criação da documentação de um webservice com a utilização de Swagger 
 
     **@ApiParam:** anotação responsável por especificar quais os parâmetros do endpoint e/ou se estes parâmetros são obrigatórios. 
 
-![imagem 1](/pt-br//webservice/images-swagger/image4.png)
+![imagem 1](/pt-br/webservice/images-swagger/image4.png)
 
  - As demais anotações são as comumente utilizadas em um webservice criado utilizando o spring, que agora são trazidas para a interface para serem implementadas no webservice desejado. 
 
  - Para verificar se a documentação foi adicionada com sucesso, adicione _webmvc/swagger-ui.html#_ após o  _citsmart/_ ou _4biz_ na url. 
 
-![imagem 1](/pt-br//webservice/images-swagger/image5.png)
+![imagem 1](/pt-br/webservice/images-swagger/image5.png)
 
  - Também é possível acessar diretamente a documentação do webservice desejado. Basta informar na url o path do webservice que deseja ver a documentação. 
 
- ![imagem 1](/pt-br//webservice/images-swagger/image6.png)
+ ![imagem 1](/pt-br/webservice/images-swagger/image6.png)
  
 
  
