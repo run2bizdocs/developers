@@ -1,6 +1,6 @@
 title: Criação de documentação usando Swagger
 
-description: Como criar a documentaççao de um webservice usando o Swagger
+description: Como criar a documentação de um webservice usando o Swagger
 
 # Criação de documentação usando Swagger
 
@@ -11,11 +11,11 @@ Para criação da documentação de um webservice com a utilização de Swagger 
 
  - A classe que será documentada deve receber a anotação @Api do pacote _io.swagger.annotations.Api_, que consiste na identificação da categoria a qual o webservice se refere, como por exemplo: ticket, requisição de mudança etc. 
 
- - Dentro da anotação @Api, na propriedade _tags_ é onde se deve colocar a identificação da categoria do webservice a qual recebe um valor do enum ApiTagsEnum. 
+ - Dentro da anotação @Api, na propriedade _tags_ é onde se deve colocar a identificação da categoria do webservice a qual recebe um valor do enum _ApiTagsEnum_. 
 
 ![imagem 1](/pt-br//webservice/images-swagger/image1.png)
 
- - O enum _ApiTagsEnum_ é o responsável por guardar as categorias ao qual o webservice pode pertencer. Cada enum é composto pelo valor do enum e uma instancia da classe Tag (pacote _springfox.documentation.service.Tag_) que recebe o valor do enum e a descrição do que esse enum representa.  
+ - O enum _ApiTagsEnum_ é o responsável por guardar as categorias ao qual o webservice pode pertencer. Cada enum é composto pelo valor do enum e uma instãncia da classe Tag (pacote _springfox.documentation.service.Tag_) que recebe o valor do enum e a descrição do que esse enum representa.  
 
 ![imagem 1](/pt-br//webservice/images-swagger/image2.png)
  
