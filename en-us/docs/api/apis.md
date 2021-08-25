@@ -1172,3 +1172,62 @@ This section is intended to describe the communication structure REST, establish
 		error: alphanumeric value that can be null but not empty;
 		number: alphanumeric not empty and not null;
 	```
+
+### Logout with Authorization in the header
+
+!!! example "The webservice presented below makes the user logout of the platform, there is no body for this request."
+	```tab="Method"
+ 	POST
+	```
+
+	```HTML tab="URL"
+ 	<4biz_URL>/services/logout
+	```
+	
+	```tab="Header"
+	Accept = application/json;
+	Content-Type = application/json
+	Authorization: Bearer${númerodotokendesessaodousuario}
+	```	
+	
+	```tab="Parameter"
+	sessionID – represents user authentication token
+	```		
+	
+	```tab="Possible return codes"
+	1. 200 Success
+	2. 412 Precondition Failed para o UnAuthorized
+	```			
+	
+	```tab="Input attributes"
+	Not applicable
+	```			
+
+### Logout with SessionID in the parameter
+
+!!! example "The webservice presented makes the user logout of the platform."
+	```tab="Method"
+ 	POST
+	```
+
+	```HTML tab="URL"
+ 	<4biz_URL>/services/logout
+	```
+	
+	```tab="Header"
+	Accept = application/json;
+	Content-Type = application/json
+	```	
+	
+	```tab="Parâmetro"
+	sessionID – represents user authentication token
+	```		
+	
+	```tab="Possible return codes"
+	1. 200 Success
+	2. 412 Precondition Failed para o UnAuthorized
+	```			
+	
+	```tab="Input attributes"
+	Not applicable
+	```	
