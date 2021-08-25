@@ -70,10 +70,6 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 	Authorization: Bearer${númerodotokendesessaodousuario}
 	```	
 	
-	```tab="Parâmetro"
-	sessionID – representa o token de autenticação do usuário
-	```		
-	
 	```tab="Possíveis códigos de retorno"
 	1. 200 Success
 	2. 412 Precondition Failed para o UnAuthorized
