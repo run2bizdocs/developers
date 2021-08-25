@@ -6,6 +6,7 @@ Description: 4biz - API´s
 This section is intended to describe the communication structure REST, established between applications and the back-end server.
 
 !!! warning
+
     "**4biz_URL**": URL unalterable prefix, so that you can access the services made available to the mobile applications.</br>
     _ALL API THAT REQUIRES A “**sessionID**” WILL NEED TO BE IN A SESSION PROVIDED BY THE “Login” API._
 
