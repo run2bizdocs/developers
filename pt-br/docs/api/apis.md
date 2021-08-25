@@ -53,7 +53,64 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		locationInterval: é inteiro, não nulo e maior que zero. Representa, em minutos, o intervalo de tempo que o aplicativo deve enviar o posicionamento do atendente.
 	```
 
+### Logout com Authorization no header
 
+!!! example "O webservice apresentado abaixo realiza o logout do usuário na plataforma, não existe body para essa requisição."
+	```tab="Método"
+ 	POST
+	```
+
+	```HTML tab="URL"
+ 	<4biz_URL>/services/logout
+	```
+	
+	```tab="Header"
+	Accept = application/json;
+	Content-Type = application/json
+	Authorization: Bearer${númerodotokendesessaodousuario}
+	```	
+	
+	```tab="Parâmetro"
+	sessionID – representa o token de autenticação do usuário
+	```		
+	
+	```tab="Possíveis códigos de retorno"
+	1. 200 Success
+	2. 412 Precondition Failed para o UnAuthorized
+	```			
+	
+	```tab="Atributos de entrada"
+	Não se aplica
+	```			
+
+### Logout com SessionID no parâmetro
+
+!!! example "O webservice apresentado abaixo realiza o logout do usuário na plataforma."
+	```tab="Método"
+ 	POST
+	```
+
+	```HTML tab="URL"
+ 	<4biz_URL>/services/logout
+	```
+	
+	```tab="Header"
+	Accept = application/json;
+	Content-Type = application/json
+	```	
+	
+	```tab="Parâmetro"
+	sessionID – representa o token de autenticação do usuário
+	```		
+	
+	```tab="Possíveis códigos de retorno"
+	1. 200 Success
+	2. 412 Precondition Failed para o UnAuthorized
+	```			
+	
+	```tab="Atributos de entrada"
+	Não se aplica
+	```	
 
 
 
@@ -1174,61 +1231,3 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		number: alfanumérico não vazio nem nulo;
 	```
 
-### Logout com Authorization no header
-
-!!! example "O webservice apresentado abaixo realiza o logout do usuário na plataforma, não existe body para essa requisição."
-	```tab="Método"
- 	POST
-	```
-
-	```HTML tab="URL"
- 	<4biz_URL>/services/logout
-	```
-	
-	```tab="Header"
-	Accept = application/json;
-	Content-Type = application/json
-	Authorization: Bearer${númerodotokendesessaodousuario}
-	```	
-	
-	```tab="Parâmetro"
-	sessionID – representa o token de autenticação do usuário
-	```		
-	
-	```tab="Possíveis códigos de retorno"
-	1. 200 Success
-	2. 412 Precondition Failed para o UnAuthorized
-	```			
-	
-	```tab="Atributos de entrada"
-	Não se aplica
-	```			
-
-### Logout com SessionID no parâmetro
-
-!!! example "O webservice apresentado abaixo realiza o logout do usuário na plataforma."
-	```tab="Método"
- 	POST
-	```
-
-	```HTML tab="URL"
- 	<4biz_URL>/services/logout
-	```
-	
-	```tab="Header"
-	Accept = application/json;
-	Content-Type = application/json
-	```	
-	
-	```tab="Parâmetro"
-	sessionID – representa o token de autenticação do usuário
-	```		
-	
-	```tab="Possíveis códigos de retorno"
-	1. 200 Success
-	2. 412 Precondition Failed para o UnAuthorized
-	```			
-	
-	```tab="Atributos de entrada"
-	Não se aplica
-	```	
