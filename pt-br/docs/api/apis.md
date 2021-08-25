@@ -1173,3 +1173,33 @@ Esta seção destina-se a descrever a estrutura de comunicação REST, estabelec
 		error: valor alfanumérico que pode ser nulo mas não pode ser vazio;
 		number: alfanumérico não vazio nem nulo;
 	```
+
+### Logout com Authorization no header
+
+!!! example "O webservice apresentado abaixo realiza o logout do usuário na plataforma, não existe body para essa requisição."
+	```tab="Método"
+ 	POST
+	```
+
+	```HTML tab="URL"
+ 	<4biz_URL>/services/logout
+	```
+	
+	```tab="Header"
+	Accept = application/json;
+	Content-Type = application/json
+	Authorization: Bearer${númerodotokendesessaodousuario}
+	```	
+	
+	```tab="Parâmetro"
+	sessionID – representa o token de autenticação do usuário
+	```		
+	
+	```tab="Possíveis códigos de retorno"
+	1. 200 Success
+	2. 412 Precondition Failed para o UnAuthorized
+	```			
+	
+	```tab="Atributos de entrada"
+	Não se aplica
+	```			
