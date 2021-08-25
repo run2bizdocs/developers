@@ -70,11 +70,7 @@ This section is intended to describe the communication structure REST, establish
 	Content-Type = application/json
 	Authorization: Bearer${númerodotokendesessaodousuario}
 	```	
-	
-	```tab="Parameter"
-	sessionID – represents user authentication token
-	```		
-	
+
 	```tab="Possible return codes"
 	1. 200 Success
 	2. 412 Precondition Failed para o UnAuthorized
